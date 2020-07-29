@@ -1,0 +1,1654 @@
+html, body {
+    font-size: 1rem;/* "x" pixel / 16 rem*/ 
+    width: 100%;
+    height: 100%;
+}
+body {    
+    padding-top: 0;
+    background-color: #e6b244;
+    /*font-family: 'Anton', sans-serif;
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Lobster Two', cursive;
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Quicksand', sans-serif;*/
+}
+
+/*NAV BAR*/
+.bg-dark a {
+    color: rgb(66, 155, 155);
+    font-size: 1.3rem;
+}
+.bg-dark a:hover {
+    color: #e2af40;
+}
+h4 {
+    color: rgb(255, 255, 255);
+    font-size: 1.3rem;
+    font-family: 'Manrope', sans-serif; 
+}
+.navbar {
+    color: rgb(66, 155, 155);
+    font-size: 1.3rem;
+    font-family: 'Manrope', sans-serif;
+    background-color: rgba(56, 56, 56, 0);
+    border-color: rgba(56, 56, 56, 0);
+}
+.navbar-toggler {
+    border-color: rgba(236, 236, 236, 0.719) !important;
+    border-width: 0.2rem;
+    border-radius: 0%;
+    margin-top: 0.5rem;
+    padding: 0.3rem;
+}
+button:focus {
+    outline: 0px !important;
+}
+/*END OF NAV BAR*/
+
+
+/*BANNER -------------------------------------------------------------------------------------------------------------------------------------*/
+
+.jumbotron {
+    overflow: hidden;
+    height: 40rem;
+    width: 100%;
+    z-index: 1;
+    background-color: rgb(58, 138, 138);
+    padding-top: 3rem;
+}
+.imgContainer {
+    height: 100%;
+    width: 28.87rem;
+    background-color: rgba(255, 255, 255, 0);  
+}
+#imgBg {
+    max-width: 28.87rem;
+    max-height: 42.75rem;
+    visibility: hidden;
+    padding: 0rem;
+}
+#imgBgDerp {
+    max-width: 28.87rem;
+    max-height: 42.75rem;
+    padding: 0rem;
+}
+.pointeSvg{
+    background-image: url("images/pointe.svg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 5rem;
+    background-color: #e6b244;
+    padding: 0rem;
+}
+.fleche {
+    margin-top: 2rem;
+    color: #2b2b2b;
+    transition: margin-top .1s ease-out;
+}
+.fleche:hover {
+    margin-top: 2.2rem;
+    color: #e2af40;
+}
+
+/*PHOTO*/
+#face {
+    content: '';
+    position: absolute;
+    top: 177px; /*Bouger les yeux de haut en bas*/
+    width: 150px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.eyes {
+    position: relative;
+    /* top: 170px; */
+    display: flex;
+    z-index: 10;
+    right: -148px;
+
+}
+.eyes .eye {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    display: block;
+    background-color: rgb(255, 255, 255);
+    margin-right: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: none;
+}
+.eyes .eye::before {
+    content:'';
+    position: absolute;
+    z-index: 11;
+    top: 36px; /*changer la position des deux yeux haut/bas*/
+    left: 15px;
+    transform: translate(-40%, -40%); /*changer la distance entre le centre de rotation et les pupilles*/
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    border: 20px solid rgb(69, 168, 69) ;   
+}
+/*END OF PHOTO*/
+
+/*TITLE*/
+.bannerBox {
+    padding: 3rem 1rem 1rem 1rem;
+    width: 32rem;
+}
+h1.banner {
+    font-size: 5rem;
+    letter-spacing: -0.2rem;
+    padding-bottom: 2rem;
+    font-family: 'Manrope', sans-serif;
+    color:  rgb(34, 34, 34);
+}
+.lead {
+    color: rgb(255, 213, 98);
+    font-family: 'Manrope', sans-serif;
+    font-weight: lighter;
+    font-size: 2rem;
+}
+.contactUp {
+    color:  rgb(34, 34, 34);
+    font-family: 'Manrope', sans-serif;
+    font-weight: normal;
+    font-size: 1.4rem;
+    width: 10rem;
+    margin: 0rem;
+}
+.contactUp:hover {
+    color: rgb(255, 213, 98);
+}
+.linkedin {
+    color:  rgb(34, 34, 34);
+    padding-right: 1rem;
+}
+.linkedin:hover {
+    color: rgb(255, 213, 98);
+}
+.twitter {
+    padding-right: 0.7rem;
+    color:  rgb(34, 34, 34);
+    font-family: 'Manrope', sans-serif;
+}
+.twitter:hover {
+    color: rgb(255, 213, 98);
+}
+.cv {
+    padding-left: 1rem;
+    padding-right: 0rem;
+    color:  rgb(34, 34, 34);
+    font-family: 'Manrope', sans-serif;
+}
+.cv:hover {
+    color: rgb(255, 213, 98);
+}
+hr {
+    height: 0.1rem;
+    color: rgb(0, 0, 0);
+}
+/*END OF TITLE*/
+/*END OF BANNER -------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*SKILLS*/
+.fondSkills {
+    background-color: #e6b244;
+    padding-bottom: 3.7rem;
+    margin: auto;
+    padding: 0rem;
+}
+h2#skills {
+    padding: 1.5rem;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: rgb(44, 44, 44);
+}
+.fondPriority {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 2rem;
+}
+p.priority {
+    text-align: center;
+    color: #000000;
+    font-family: 'Manrope', sans-serif; 
+    font-weight: lighter;
+    font-size: 1.2rem;
+    padding: 0rem 0.5rem !important;
+}
+.margins {
+    font-size: 3rem;
+    text-align: center;
+}
+h2.priorityH2 {
+    color: #000000;
+    font-family: 'Manrope', sans-serif; 
+    font-weight: lighter;
+    font-size: 1.6rem;
+    text-align: center;
+}
+.Profile {
+    border: rgba(0, 0, 0, 0) solid 1px;
+    padding: 1rem 1rem;
+    margin: 2rem 0rem;
+    width: 27rem;
+}
+.profileImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+h2.profileh2 {
+    color: rgb(31, 31, 31);
+    font-family: 'Manrope', sans-serif; 
+    font-weight: 500;
+    font-size: 1.6rem;
+    text-align: center;
+    padding-top: 1rem;
+}
+.profileP {
+    color: #000000;
+    font-family: 'Manrope', sans-serif; 
+    font-weight: lighter;
+    font-size: 1.1rem;
+    text-align: left;
+}
+.ProfileBars {
+    margin: 0rem;
+    padding: 0 !important;
+}
+.progress {
+    height: 1.8rem;
+    background-color: rgb(245, 200, 132);
+}
+.barName {
+    height: 1.8rem;
+    width: 10rem;
+    letter-spacing: 2px;
+    padding: 0rem 0rem;
+    color: #000000;
+    background-color: rgb(250, 228, 104);
+    font-family: 'Manrope', sans-serif; 
+    font-weight: normal;
+    font-size: 1rem;
+    text-align: center;
+}
+div.barName p {
+    text-align: center;
+    padding-top: 0.1rem;
+}
+.progress-bar {
+    background-color: rgb(67, 156, 156);
+    font-family: 'Manrope', sans-serif; 
+    font-weight: normal;
+    font-size: 1rem;
+}
+span#age {
+    color: #000000;
+    font-family: 'Manrope', sans-serif; 
+    font-weight: lighter;
+    font-size: 1.1rem;
+    text-align: center;
+}
+i.profileInfosFA {
+    font-size: 1.4rem;
+    padding-right: 0.1rem;
+    color: rgb(0, 0, 0);
+}
+p.profileInfos {
+    font-family: 'Manrope', sans-serif; 
+    color: rgb(0, 0, 0);
+    margin-bottom: 0.3rem;
+}
+.profileInfosFA:hover {
+    color: rgb(255, 255, 255);
+}
+
+/*END OF SKILLS*/
+
+
+/*WEB DESIGN CARDS*/
+h2 {
+    color: #e6b244;
+    font-family: 'Manrope', sans-serif; 
+    font-weight: lighter;
+    font-size: 2rem;
+}
+.fond1 {
+    background-color: #292929;
+    padding-bottom: 3.7rem;
+}
+#revealWeb {
+    background-image: url("images/exgSite.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 47.18rem;
+    height: 44.43rem;
+    padding: 0rem;
+}
+.TexteWeb {
+    background-image: linear-gradient(rgba(16, 15, 31, 0.89)60%, rgba(255, 192, 203, 0)98%);
+    width: 47.18rem;
+    height: 44.43rem;
+    padding-bottom: 0rem;
+    padding-top: 18rem;
+    transform: translate(0, -28rem); /*-33rem*/
+    transition: transform .3s ease-out;
+    text-shadow: 1px 1px 2px rgb(32, 32, 32);
+}    
+#revealWeb:hover div.TexteWeb {
+    transform: translate(0, -14rem);
+}
+
+.btn-style {
+    color: rgb(58, 138, 138);
+    font-family: 'Manrope', sans-serif;
+    font-weight: lighter;
+    font-size: 1.3rem;
+    width: fit-content;
+    padding: 0.6rem;
+}
+.h2CenterCardWeb {
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: lighter;
+    font-size: 3rem;
+    padding: 1rem 0.5rem;
+    transform: translate(0rem, -150px);
+    transition: all 0.3s ease-out;
+    background-image: linear-gradient( rgba(26, 26, 133, 0), rgba(48, 33, 104, 0)90%);
+    text-shadow: 1px 1px 5px rgb(32, 32, 32);
+}
+.h2TitleWeb {
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: lighter;
+    font-size: 3rem;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+}
+.cardSubtitleWeb{
+    color: rgb(58, 138, 138);
+    font-family: 'Manrope', sans-serif;
+    font-weight: lighter;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-bottom: 0.5rem;
+}
+
+div.card {
+    overflow: hidden;
+    min-width: 30rem;
+    height: 20rem;
+    margin: 0.5rem;
+    background-color: #e6b244;
+}
+div.cardWeb {
+    overflow: hidden;
+    width: 47.18rem;
+    height: 44.43rem;
+    margin: 0rem;
+}
+
+.flecheWebDown{
+    padding: 1rem 9rem;
+    background-image: url("images/PointeCardGameDown.svg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 4rem;
+    transform: translate(0rem, -150px);
+}
+.flecheWeb{
+    color: white;
+    padding: 1rem 22.5rem;
+    background-image: url("images/PointeCardGame.svg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 4rem;
+}
+.pointeSvg2{
+    background-image: url("images/pointe2.svg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 4rem;
+    background-color: #292929;
+    padding: 0rem;
+}
+.fleche2 {
+    margin-top: 1.8rem;
+    color: #2b2b2b;
+    transition: margin-top .1s ease-out;
+}
+.fleche2:hover {
+    margin-top: 2rem;
+    color: rgb(58, 138, 138);
+}
+/*END OF WEB DESIGN CARDS*/
+
+
+/*GAME CARDS*/
+.fondGame {
+    background-color: #3a3a3a;
+    padding-bottom: 3.7rem;
+}   
+.h2TitleGame {
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: lighter;
+    font-size: 3rem;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+}
+.h2TitleGameWMM {
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: lighter;
+    font-size: 2rem;
+    padding: 0rem 2rem;
+    margin-bottom: 1rem;
+}
+.h2TitleGameOTV {
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: lighter;
+    font-size: 2.2rem;
+    padding: 0rem 2rem;
+    margin-bottom: 1rem;
+}
+.h2CenterCard {
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: lighter;
+    font-size: 2rem;
+    padding: 1rem 0.5rem;
+    transform: translate(0rem, -141px);
+    transition: all 0.3s ease-out;
+    background-image: linear-gradient( rgba(26, 26, 133, 0), rgba(48, 33, 104, 0)90%);
+    text-shadow: 1px 1px 5px rgb(32, 32, 32);
+}
+.h2CenterCardWMM {
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: lighter;
+    font-size: 1.9rem;
+    padding: 1rem 0.5rem;
+    transform: translate(0rem, -141px);
+    transition: all 0.3s ease-out;
+    background-image: linear-gradient( rgba(26, 26, 133, 0), rgba(48, 33, 104, 0)90%);
+    text-shadow: 1px 1px 5px rgb(32, 32, 32);
+}
+.cardSubtitleGame {
+    color: rgb(255, 255, 255);
+    font-family: 'Manrope', sans-serif;
+    font-weight: lighter;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 0rem;
+    padding: 0rem 1rem;
+}
+.btn-styleGame {
+    color: rgb(255, 255, 255);
+    font-family: 'Manrope', sans-serif;
+    font-weight: lighter;
+    font-size: 1.3rem;
+    width: fit-content;
+    border-color: ivory;
+    padding: 0.9rem 0.9rem;
+    margin-bottom: 0.7rem !important;
+}
+.mission {
+    color: #ffffff;
+    font-family: 'Manrope', sans-serif;
+    font-weight: lighter;
+    font-size: 1.2rem;
+    text-align: left;
+    padding-bottom: 0.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+#bold  {
+    color: rgb(236, 196, 62);
+    font-weight: lighter;
+    font-size: 1.2rem;
+}
+.pointeSvg3{
+    background-image: url("images/pointe3.svg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 4rem;
+    background-color: #3a3a3a;
+    padding: 0rem;
+}
+.fleche4 {
+    margin-top: 1.8rem;
+    color: #e6b244;
+    transition: margin-top .1s ease-out;
+}
+.fleche4:hover {
+    margin-top: 2rem;
+    color: rgb(64, 148, 130);
+}
+.flecheGame{
+    color: white;
+    padding: 1rem 9rem;
+    background-image: url("images/PointeCardGame.svg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 4rem;
+}
+.flecheGameDown{
+    padding: 1rem 9rem;
+    background-image: url("images/PointeCardGameDown.svg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 4rem;
+    transform: translate(0rem, -140px);
+}
+i.flecheGame {
+    margin-bottom: 0.5rem;
+}
+.GameTexte {
+    background-image: linear-gradient(rgba(16, 15, 31, 0.89)85%, rgba(255, 192, 203, 0));
+    width: 20rem;
+    height: 40rem;
+    padding-bottom: 0rem;
+    padding-top: 18rem;
+    transform: translate(0, -33rem); /*-33rem*/
+    transition: transform .3s ease-out;
+    text-shadow: 1px 1px 2px rgb(32, 32, 32);
+}
+.GameTexteWMM {
+    background-image: linear-gradient(rgba(16, 15, 31, 0.89)85%, rgba(255, 192, 203, 0));
+    width: 20rem;
+    height: 40rem;
+    padding-bottom: 0rem;
+    padding-top: 18rem;
+    transform: translate(0, -33.2rem); /*-33rem*/
+    transition: transform .3s ease-out;
+    text-shadow: 1px 1px 2px rgb(32, 32, 32);
+}
+.GameTexteOTV {
+    background-image: linear-gradient(rgba(16, 15, 31, 0.89)85%, rgba(255, 192, 203, 0));
+    width: 20rem;
+    height: 40rem;
+    padding-bottom: 0rem;
+    padding-top: 20rem;
+    transform: translate(0, -33rem); /*-33rem*/
+    transition: transform .3s ease-out;
+    text-shadow: 1px 1px 2px rgb(32, 32, 32);
+}
+#revealexi {
+    background-image: linear-gradient(rgba(255, 192, 203, 0), rgba(0, 0, 255, 0.5)), url("images/patron-mokupexi1.jpg");
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    min-width: 20rem;
+    min-height: 20rem;
+    padding: 0rem;
+}
+#revealWMM {
+    background-image: linear-gradient(rgba(255, 192, 203, 0), rgba(0, 0, 255, 0.5)), url("images/patron-mokupWMM1.jpg");
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    min-width: 20rem;
+    min-height: 20rem;
+    padding: 0rem;
+}
+#revealOTV {
+    background-image: linear-gradient(rgba(255, 192, 203, 0), rgba(0, 0, 255, 0.5)), url("images/patron-mokupOTV1.jpg");
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    min-width: 20rem;
+    min-height: 20rem;
+    padding: 0rem;
+}
+#revealexi:hover div.GameTexte, #revealWMM:hover div.GameTexteWMM, #revealOTV:hover div.GameTexteOTV {
+    transform: translate(0, -15rem);
+}
+
+
+/*GAME CARDS MODAL*/
+.trailer {
+    width: 100%;
+    height: 35.59rem;
+    padding: 0rem 5rem;
+    background-color: rgb(14, 14, 14);
+}
+.carousel-control-next, .carousel-control-prev {
+    width: 7% !important;
+    opacity: 23%;
+    height: 20%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.61);
+}
+.carousel-indicators {
+    margin-bottom: 3rem !important;
+}
+.modal-dialog {
+    margin: auto !important;
+}
+.modal-content {
+    border-radius: 0rem !important;
+    border: solid 0rem !important;
+}
+h2.modTitle {
+    color: #0f0f0f;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: lighter;
+    font-size: 2.3rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.3rem;
+    margin: 0rem 0.5rem;
+    border-bottom: solid 1px rgba(128, 128, 128, 0.281);
+}
+.modP {
+    color: #0f0f0f;
+    font-family: 'Manrope', sans-serif;
+    font-weight: normal;
+    font-size: 1.2rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    padding-top: 0.2rem;
+    margin: 0rem 0.5rem;
+}
+span {
+    color: rgb(64, 148, 130);
+    font-size: 1.1rem;
+}
+/*END OF GAME CARDS MODAL*/
+/*END OF GAME CARDS*/
+
+
+/*GRAPHISME CARDS*/
+#reveal2 {
+    padding: 0rem;
+    background-image: linear-gradient(rgba(255, 192, 203, 0.336), rgba(0, 0, 255, 0.5)),url("images/g1.JPG");
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    min-width: 20rem;
+    min-height: 20rem;
+    padding: 0rem !important;
+}
+#reveal3 {
+    padding: 0rem;
+    background-image: linear-gradient(rgba(255, 192, 203, 0.336), rgba(0, 0, 255, 0.5)),
+    url("images/v2.JPG");
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    min-width: 20rem;
+    min-height: 20rem;
+    padding: 0rem !important;
+}
+#reveal4 {
+    padding: 0rem;
+    background-image: linear-gradient(rgba(255, 192, 203, 0.336), rgba(0, 0, 255, 0.5)),
+    url("images/a2.JPG");
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    min-width: 20rem;
+    min-height: 20rem;
+    padding: 0rem !important;
+}
+
+.GameTexteG2 {
+    background-image: linear-gradient(rgba(35, 24, 192, 0.89)50%, rgba(255, 22, 61, 0));
+    width: 20rem;
+    height: 40rem;
+    padding-bottom: 0rem;
+    padding-top: 18rem;
+    transform: translate(0, -21rem); /*-33rem*/
+    transition: transform .2s ease-out;
+    text-shadow: 1px 1px 2px rgb(32, 32, 32);
+}
+.GameTexteV1 {
+    background-image: linear-gradient(rgba(35, 24, 192, 0.89)50%, rgba(255, 22, 61, 0));
+    width: 20rem;
+    height: 40rem;
+    padding-bottom: 0rem;
+    padding-top: 18rem;
+    transform: translate(0, -21rem); /*-33rem*/
+    transition: transform .2s ease-out;
+    text-shadow: 1px 1px 2px rgb(32, 32, 32);
+}
+.GameTexteA1 {
+    background-image: linear-gradient(rgba(35, 24, 192, 0.89)50%, rgba(255, 22, 61, 0));
+    width: 20rem;
+    height: 40rem;
+    padding-bottom: 0rem;
+    padding-top: 18rem;
+    transform: translate(0, -23.3rem); /*-33rem*/
+    transition: transform .2s ease-out;
+    text-shadow: 1px 1px 2px rgb(32, 32, 32);
+}
+
+.cardSubtitleGraph {
+    color: rgb(255, 255, 255);
+    font-family: 'Manrope', sans-serif;
+    font-weight: lighter;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 0rem 1rem;
+}
+
+#reveal2:hover div.GameTexteG2, #reveal3:hover div.GameTexteV1, #reveal4:hover div.GameTexteA1  {
+    transform: translate(0, -15rem);
+}
+
+div.cardGraph {
+    overflow: hidden;
+    width: 20rem;
+    height: 40rem;
+    margin: 0.5rem;
+}
+.pointeSvg4{
+    background-image: url("images/pointe4.svg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 4rem;
+    background-color: #292929;
+    padding: 0rem;
+}
+
+/*GRAPHISME CARDS MODAL*/
+.modal-title {
+    color: rgb(255, 255, 255); 
+    font-family: 'Manrope', sans-serif;    
+    font-weight: normal;
+    border-bottom: grey solid 1px;
+}
+.modal-lg {
+    max-width: 600px !important;
+    max-height: 500px !important;
+}
+.modal-footer {
+    border-bottom-left-radius: 0rem;
+    border-bottom-right-radius: 0rem;
+}
+.background {
+    background-color: rgb(26, 25, 25);
+}
+
+/*END OF GRAPHISME CARDS MODAL*/
+/*END OF GRAPHISME CARDS*/
+
+/*GRAPHISTE FREELANCE*/
+.videoContainer {
+    padding: 0rem;
+}
+.spirouIMG {
+    background-image: url("images/petitSpirou.JPG");
+    background-color: rgb(212, 236, 245);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 270px;
+}
+.h2TitleCom {
+    color: rgb(47, 48, 48);
+    font-family: 'Manrope', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 0rem 1rem;
+}
+.h2CenterCardFreelance {
+    color: #000000;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: lighter;
+    font-size: 2rem;
+    padding: 1rem 0.5rem;
+    margin: 0rem;
+    border-bottom: rgba(0, 0, 0, 0) solid 10px;
+    transform: translate(0rem, 8px);
+    transition: all 0.2s ease-out;
+    background-image: linear-gradient( rgba(26, 26, 133, 0), rgba(48, 33, 104, 0)90%);
+}
+.flecheFreelanceDown{
+    padding: 1rem 0rem;
+    background-image: url("images/PointeCardGameDown.svg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 4rem;
+    transition: all .2s ease-out;
+    transform: translate(0rem, 15px);
+}
+.ComText {
+    background-color: #ffffff;
+    padding: 0rem;
+}
+.card-text{
+    font-size: 1.3rem;
+}
+.freelancePicture {
+    display: block;
+    margin: auto;
+    padding: 0.2rem 0rem;
+    filter: drop-shadow(0 0 0.75rem rgb(155, 154, 154));
+}
+div#comContainer {
+    height: fit-content !important;
+    margin-top: 0rem;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+    margin-bottom: 0.4rem;
+}
+div#comContainerSpirou {
+    height: fit-content !important;
+    margin-top: 0rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    margin-bottom: 1rem;
+    width: 60.5rem;
+}
+div#comContainer p {
+    color: rgb(26, 26, 26);
+    font-weight: normal;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 0rem;
+    margin: 0rem;
+}
+div#comContainerSpirou p {
+    color: rgb(26, 26, 26);
+    font-weight: normal;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 0rem;
+}
+span.freelance {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.4rem;
+    color: #2b2b2b;
+
+    background-color: #ffc64b;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+div#comContainer:hover .h2CenterCardFreelance {
+    transform: translate(0rem, 2px);
+    color: rgb(46, 46, 46);
+    border-bottom: rgb(252, 178, 41) solid 10px;
+}
+div#comContainer:hover .flecheFreelanceDown {
+    transform: translate(0rem, 10px);
+}
+div#comContainerSpirou:hover .h2CenterCardFreelance {
+    transform: translate(0rem, 2px);
+    color: rgb(46, 46, 46);
+    border-bottom: rgb(252, 178, 41) solid 10px;
+}
+div#comContainerSpirou:hover .flecheFreelanceDown {
+    transform: translate(0rem, 10px);
+}
+
+
+/*END OF GRAPHISTE FREELANCE*/
+
+
+
+
+
+/*FOOTER*/
+.footer {
+    height: 3.75rem;
+    padding-top: 1rem;
+    background-color: #292929;
+}
+.fleche5 {
+    margin-top: 1.8rem;
+    color: #e6b244;
+    transition: margin-top .1s ease-out;
+}
+.fleche5:hover {
+    margin-top: 1.3rem;
+    color: #2db6af;
+}
+.footer span {
+    font-family: 'Manrope', sans-serif;
+    font-weight: lighter;
+    color: rgba(243, 229, 103, 0.568);
+}
+.contactFooter{
+    color: rgba(255, 202, 87, 0.466);
+    font-size: 1.5rem;
+    padding-left: 1rem;
+}
+.contactFooter:hover{
+    color: rgb(255, 202, 87);
+    font-size: 1.5rem;
+    padding-left: 1rem;
+}
+.container {
+    width: auto;
+    max-width: 680px;
+    padding: 0 15px;
+}
+/*END OF FOOTER*/
+
+
+
+
+
+
+/*PADDING UNDER NAVBAR AND TYPO RESPONSIVE*/
+/*XXXL*/
+@media (max-width: 4000px) {
+    h1.banner {
+        font-size: 6rem;
+        line-height: 5rem;
+        padding-bottom: 0.5rem;
+    }
+    section.jumbotron {
+        background-color: rgb(58, 138, 138);
+        height: 40rem;
+        padding-top: 0rem;
+        margin-bottom: 0rem;
+    }
+    .bannerBox {
+        padding-top: 6rem;
+    }
+    p.lead {
+        font-size: 2.5rem
+    }
+}
+
+/*XL*/
+@media (max-width: 1200px) {
+    body {
+      padding-top: 0rem;
+    }
+    h1.banner {
+        font-size: 4rem;
+        line-height: 3rem;
+    }
+    .bannerBox {
+        padding-top: 0rem;
+    }
+    section.jumbotron {
+        padding-top: 4rem;
+        margin-bottom: 0rem;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    h1.banner {
+        font-size: 6.5rem;
+        padding-bottom: 1rem;
+        padding-top: 2rem;
+        line-height: 5rem;
+    }
+    p.lead {
+        padding-bottom: 1rem;
+        font-size: 2.5rem;
+    }
+    section.jumbotron {
+        height: fit-content;
+        padding-top: 1.5rem;
+        margin-bottom: 0rem;
+    }
+    #fondBanner {
+        height: 37rem;
+    }
+    #face {
+        top: 200px; /*Bouger les yeux de haut en bas*/
+    }
+    .trailer {
+        height: 25rem;
+        padding: 0rem 0rem;
+    }
+    p.priority {
+        font-size: 1.1rem;
+    }
+}
+
+/*LG*/
+@media (max-width: 992px) {
+
+    h1.banner {
+        font-size: 5rem;
+        padding-bottom: 1rem;
+        padding-top: 2rem;
+        line-height: 5rem;
+    }
+    p.lead {
+        padding-bottom: 1rem;
+    }
+    section.jumbotron {
+        height: fit-content;
+        padding-top: 3rem;
+        margin-bottom: 0rem;
+    }
+    #fondBanner {
+        height: 37rem;
+    }
+    #imgBgDerp {
+        visibility: collapse;
+    }
+    #face {
+        visibility: collapse;
+    }
+    .trailer {
+        height: 10rem;
+        padding: 0rem 0rem;
+    }
+}
+
+/*MD*/
+@media (max-width: 768px) {
+
+    h1.banner {
+        font-size: 6rem;
+        line-height: 5rem;
+        padding-bottom: 1rem;
+        margin-bottom: 0rem;
+        padding-top: 0rem;
+    }
+    p.lead {
+        font-size: 2.5rem;
+    }
+    .bannerBox {
+        padding-top: 0rem;
+    }
+    section.jumbotron {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        padding-top: 0.5rem;
+        margin-bottom: 2rem;
+    }
+
+    #imgBgDerp {
+        visibility: collapse;
+    }
+    #imgBg {
+        margin-left: 1.4rem;
+    }
+    #face {
+        visibility: collapse;
+    }
+
+    div.cardGraph {
+        overflow: hidden;
+        width: 20rem;
+        height: 40rem;
+        margin-right: 1rem;
+        margin-left: 0rem;
+        margin-bottom: 1rem !important;
+        margin-top: 1rem;
+        padding-bottom: 0rem;
+    }
+    div#comContainer {
+        margin-top: 0rem;
+        margin-left: 0.2rem;
+        margin-right: 0.2rem;
+        margin-bottom: 0.4rem;
+    }
+    div#comContainerSpirou {
+        width: 30rem;
+    }
+    .trailer {
+        height: 18rem;
+        padding: 0rem 0rem;
+    }
+    .fondPriority {
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+    p.priority {
+        text-align: center;
+        color: #000000;
+        font-family: 'Manrope', sans-serif; 
+        font-weight: lighter;
+        font-size: 1.2rem;
+        padding: 0rem 0rem !important;
+    }
+    .margins {
+        font-size: 3rem;
+        text-align: center;
+    }
+    h2#skills {
+        padding: 1rem;
+        text-align: center;
+        font-size: 1.8rem;
+        color: rgb(44, 44, 44);
+    }
+    .contactBox {
+        padding: 0rem !important;
+        margin-left: 0rem !important;
+        margin-right: 0rem !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .modal-dialog {
+        max-width: 100%;
+    }
+}
+
+/*SM*/
+@media (max-width: 425px) {
+
+    h1.banner {
+        font-size: 4rem;
+        line-height: 4rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 0rem;
+        padding-top: 0rem;
+    }
+    p.lead {
+        font-size: 2rem;
+        padding-top: 0rem;
+        padding-left: 1.6rem;
+        padding-right: 1.6rem;
+    }
+    hr {
+       margin: 0.2rem !important;
+    }
+
+    section.jumbotron {
+        height: fit-content;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .bannerBox {
+        padding-top: 0rem;
+    }
+    #imgBgDerp {
+        visibility: collapse;
+        padding: 0 2rem;
+    }
+    #imgBg {
+        margin-left: 0.6rem;
+    }
+    #face {
+        visibility: collapse;
+    }
+
+    .modal-body {
+        height: fit-content;
+    }
+    .modal-backdrop {
+        width: 100%;
+        height: 100%;
+    }
+    .btn-style {
+        font-size: 1rem;
+        padding: 0.3rem;
+    }
+    .trailer {
+        width: 100%;
+        height: 13.3rem;
+        padding: 0rem 0rem;
+        background-color: rgb(14, 14, 14);
+    }
+    .modal-title {
+        color: rgb(255, 255, 255); 
+        font-family: 'Manrope', sans-serif;    
+        font-weight: normal;
+        border-bottom: grey solid 1px;
+    }
+
+    div.card {
+        overflow: hidden;
+        min-width: 100%;
+        height: 17.1rem;
+        margin: 0rem;
+        background-color: rgb(28, 28, 28);
+    }
+
+    div.cardWeb {
+        overflow: hidden;
+        width: fit-content;
+        height: 20rem;
+        margin: 0.5rem 0rem !important;
+    }
+    .TexteWeb {
+        background-image: linear-gradient(rgb(16, 15, 31)20%, rgba(255, 192, 203, 0));
+        width: 100%;
+        height: 44.43rem;
+        padding-bottom: 0rem;
+        padding-top: 18rem;
+        transform: translate(0, -27.9rem); /*-33rem*/
+        transition: transform .3s ease-out;
+        text-shadow: 1px 1px 2px rgb(32, 32, 32);
+    }
+    #revealWeb {
+        height: 100%;
+        width: 100%;
+        margin: 0rem;
+    }
+    #revealWeb:hover div.TexteWeb {
+        transform: translate(0, -18rem);
+    }
+    .flecheWeb{
+        color: white;
+        padding: 0rem 10rem;
+        background-image: url("images/PointeCardGame.svg");
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 3rem;
+    } 
+    .flecheWebDown{
+        padding: 1rem 9rem;
+        background-image: url("images/PointeCardGameDown.svg");
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 3rem;
+        transform: translate(0rem, -490px);
+    }
+    .h2CenterCardWeb {
+        color: #ffffff;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: lighter;
+        font-size: 1.8rem;
+        padding: 1rem 0.5rem;
+        transform: translate(0rem, -505px);
+        transition: all 0.3s ease-out;
+        background-image: linear-gradient( rgba(26, 26, 133, 0), rgba(48, 33, 104, 0)90%);
+        text-shadow: 1px 1px 5px rgb(32, 32, 32);
+    }
+    .h2TitleWeb {
+        color: #ffffff;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: lighter;
+        font-size: 1.7rem;
+        padding-top: 1rem;
+        margin-bottom: 0rem;
+    }
+    .cardSubtitleWeb{
+        color: rgb(58, 138, 138);
+        font-family: 'Manrope', sans-serif;
+        font-weight: lighter;
+        font-size: 1.3rem;
+        text-align: center;
+        margin-bottom: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    h2#games {
+        font-size: 1.7rem;
+        padding: 1rem 1.2rem !important;
+    }
+    h2#webDesign {
+        font-size: 1.7rem;
+        padding: 1rem 1.2rem !important;
+    }
+    h2#h2graphisme {
+        font-size: 1.5rem;
+        padding: 1rem 1.2rem !important;
+    }
+    h2#com {
+        font-size: 1.5rem;
+        padding-top: 1.5rem !important;
+        padding-right: 1.2rem !important;
+        padding-left: 1.2rem !important;
+    }
+
+    .pointeSvg2 {
+        height: 4rem;
+    }
+    .pointeSvg {
+        height: 4rem;
+    }
+    .fleche2 {
+        padding-bottom: 2rem;
+    }
+    .fleche {
+        margin-top: 1.3rem;
+        padding-bottom: 2rem;
+    }
+    .fleche2:hover {
+        color: rgb(58, 138, 138);
+    }
+    .fleche:hover {
+        margin-top: 1.5rem;
+        color: rgb(235, 190, 69);
+    }
+    .fleche3 {
+        margin-top: -0.5rem;
+    }
+    .fleche3:hover {
+        margin-top: -0.7rem;
+    }
+
+    div.cardGraph {
+        overflow: hidden;
+        width: 20rem;
+        height: 40rem;
+        margin: 0rem;
+        padding-bottom: 0rem;
+    }
+    div#comContainer {
+        margin-top: 0rem;
+        margin-left: 0.2rem;
+        margin-right: 0.2rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .linkedin {
+        padding-left: 0rem;
+    }
+    .contactBox {
+        padding: 0rem !important;
+        margin-left: 1.5rem !important;
+        margin-right: 2rem !important;
+    }
+    .footer {
+        height: 7rem;
+        padding: 0.6rem 0rem;
+    }
+    .contactFooter {
+        padding: 1rem;
+    }
+    .fondPriority {
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+    p.priority {
+        text-align: center;
+        color: #000000;
+        font-family: 'Manrope', sans-serif; 
+        font-weight: lighter;
+        font-size: 1.2rem;
+        padding: 0rem 0rem !important;
+    }
+    .margins {
+        font-size: 3rem;
+        text-align: center;
+    }
+    h2#skills {
+        padding: 1rem;
+        text-align: center;
+        font-size: 1.8rem;
+        color: rgb(44, 44, 44);
+    }
+}
+
+/*XS*/
+@media (max-width: 320px) {
+    h1.banner {
+        font-size: 3.5rem;
+        line-height: 4rem;
+        margin: 0rem 2rem;
+        padding: 0rem 2rem;
+    }
+    hr {
+        margin: 0.1rem;
+        
+    }
+    p.lead {
+        font-size: 2.5rem;
+        margin: 0rem 2rem;
+        padding: 0rem 2rem;
+    }
+    .bannerBox {
+        padding: 0rem;
+    }
+    .jumbotron {
+        height: fit-content;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    #imgBgDerp {
+        visibility: collapse;
+        padding: 0 2rem;
+    }
+    #imgBg {
+        margin-left: 0.6rem;
+    }
+
+    .modal-backdrop {
+        width: 100%;
+        height: 100%;
+    } 
+    .modal-body {
+        height: fit-content;
+    }
+    .trailer {
+        height: 10rem;
+        padding: 0rem 0rem;
+    }
+    .btn-style {
+        font-size: 1rem;
+        padding: 0.3rem;
+    }
+    .modal-title {
+        color: rgb(255, 255, 255); 
+        font-family: 'Manrope', sans-serif;    
+        font-weight: normal;
+        border-bottom: grey solid 1px;
+    }
+
+    div.card {
+        overflow: hidden;
+        min-width: 100%;
+        height: 13.8rem;
+        background-color: rgb(58, 138, 138);
+    }
+
+    div.cardWeb {
+        overflow: hidden;
+        width: fit-content;
+        height: 20rem;
+        margin: 0rem;
+    }
+    .TexteWeb {
+        background-image: linear-gradient(rgb(16, 15, 31), rgba(255, 192, 203, 0));
+        width: 100%;
+        height: 44.43rem;
+        padding-bottom: 0rem;
+        padding-top: 18rem;
+        transform: translate(0, -27.8rem); /*-33rem*/
+        transition: transform .3s ease-out;
+        text-shadow: 1px 1px 2px rgb(32, 32, 32);
+    }
+    #revealWeb {
+        height: 100%;
+        width: 100%;
+        margin: 0rem;
+    }
+    #revealWeb:hover div.TexteWeb {
+        transform: translate(0, -18rem);
+    }
+    .flecheWeb{
+        color: white;
+        padding: 0rem 9rem;
+        background-image: url("images/PointeCardGame.svg");
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 3rem;
+    } 
+    .flecheWebDown{
+        padding: 1rem 9rem;
+        background-image: url("images/PointeCardGameDown.svg");
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 3rem;
+        transform: translate(0rem, -490px);
+    }
+    .h2CenterCardWeb {
+        color: #ffffff;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: lighter;
+        font-size: 1.8rem;
+        padding: 1rem 0.5rem;
+        transform: translate(0rem, -505px);
+        transition: all 0.3s ease-out;
+        background-image: linear-gradient( rgba(26, 26, 133, 0), rgba(48, 33, 104, 0)90%);
+        text-shadow: 1px 1px 5px rgb(32, 32, 32);
+    }
+    .h2TitleWeb {
+        color: #ffffff;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: lighter;
+        font-size: 1.7rem;
+        padding-top: 1rem;
+        margin-bottom: 0rem;
+    }
+    .cardSubtitleWeb{
+        color: rgb(58, 138, 138);
+        font-family: 'Manrope', sans-serif;
+        font-weight: lighter;
+        font-size: 1.3rem;
+        text-align: center;
+        margin-bottom: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    #revealexi {
+        margin-bottom: 0rem;
+    }
+    #revealOTV {
+        margin-bottom: 0rem;
+    }
+    #revealWMM {
+        margin-bottom: 0rem;
+    }
+
+    h2#games {
+        font-size: 1.5rem;
+        padding-top: 1.5rem !important;
+        padding-right: 1.2rem !important;
+        padding-left: 1.2rem !important;
+    }
+    h2#webDesign {
+        font-size: 1.5rem;
+        padding-top: 1.5rem !important;
+        padding-right: 1.2rem !important;
+        padding-left: 1.2rem !important;
+    }
+    h2#h2graphisme {
+        font-size: 1.5rem;
+        padding-top: 1.5rem !important;
+        padding-right: 1.2rem !important;
+        padding-left: 1.2rem !important;
+    }
+    h2#com {
+        font-size: 1.5rem;
+        padding-top: 1.5rem !important;
+        padding-right: 1.2rem !important;
+        padding-left: 1.2rem !important;
+        padding-bottom: 1rem !important;
+    }
+
+    .pointeSvg2 {
+        height: 4rem;
+    }
+    .pointeSvg {
+        height: 4rem;
+    }
+    .fleche2 {
+        padding-bottom: 2rem;
+    }
+    .fleche {
+        margin-top: 1.2rem;
+        padding-bottom: 2rem;
+    }
+    .fleche2:hover {
+        margin-top: 1.5rem;
+        color: rgb(58, 138, 138);
+    }
+    .fleche:hover {
+        margin-top: 1.5rem;
+        color: rgb(235, 190, 69);
+    }
+    .fleche3 {
+        margin-top: -0.5rem;
+    }
+    .fleche3:hover {
+        margin-top: -0.7rem;
+    }
+
+    div.cardGraph {
+        overflow: hidden;
+        width: 20rem;
+        height: 40rem;
+        margin: 0rem;
+        padding-bottom: 0rem;
+    }
+    div#comContainer {
+        margin-top: 0rem;
+        margin-left: 0.2rem;
+        margin-right: 0.2rem;
+        margin-bottom: 2rem;
+    }
+
+    .footer {
+        height: 7rem;
+        padding: 0.6rem 0rem;
+    }
+    .contactFooter {
+        padding: 0.5rem;
+    }
+    .linkedin {
+        padding-left: 0rem;
+    }
+    .contactBox {
+        padding: 2rem !important;
+        margin-left: 2rem !important;
+        margin-right: 2rem !important;
+    }
+    .fondPriority {
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+    p.priority {
+        text-align: center;
+        color: #000000;
+        font-family: 'Manrope', sans-serif; 
+        font-weight: lighter;
+        font-size: 1.2rem;
+        padding: 0rem 0rem !important;
+    }
+    .margins {
+        font-size: 3rem;
+        text-align: center;
+    }
+    h2#skills {
+        padding: 1rem;
+        text-align: center;
+        font-size: 1.8rem;
+        color: rgb(44, 44, 44);
+    }
+}
+
+
+
+
+
+
+
