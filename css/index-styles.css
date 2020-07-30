@@ -84,7 +84,7 @@ button:focus {
     background-color: #e6b244;
     padding: 0rem;
     -webkit-backface-visibility: hidden;
-
+    backface-visibility: hidden;
 }
 .fleche {
     margin-top: 2rem;
