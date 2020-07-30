@@ -5,7 +5,7 @@ html, body {
 }
 body {    
     padding-top: 0;
-    background-color: #e6b244;
+    background-color: #e6b34400;
     /*font-family: 'Anton', sans-serif;
     font-family: 'Comfortaa', cursive;
     font-family: 'Lexend Deca', sans-serif;
@@ -83,6 +83,8 @@ button:focus {
     height: 5rem;
     background-color: #e6b244;
     padding: 0rem;
+    -webkit-backface-visibility: hidden;
+
 }
 .fleche {
     margin-top: 2rem;
@@ -412,6 +414,7 @@ div.cardWeb {
     width: 100%;
     height: 4rem;
     transform: translate(0rem, -150px);
+    backface-visibility: hidden;
 }
 .flecheWeb{
     color: white;
@@ -421,6 +424,7 @@ div.cardWeb {
     background-size: cover;
     width: 100%;
     height: 4rem;
+    backface-visibility: hidden;
 }
 .pointeSvg2{
     background-image: url("images/pointe2.svg");
@@ -430,6 +434,7 @@ div.cardWeb {
     height: 4rem;
     background-color: #292929;
     padding: 0rem;
+    backface-visibility: hidden;
 }
 .fleche2 {
     margin-top: 1.8rem;
@@ -536,6 +541,7 @@ div.cardWeb {
     height: 4rem;
     background-color: #3a3a3a;
     padding: 0rem;
+    backface-visibility: hidden;
 }
 .fleche4 {
     margin-top: 1.8rem;
@@ -554,6 +560,7 @@ div.cardWeb {
     background-size: cover;
     width: 100%;
     height: 4rem;
+    backface-visibility: hidden;
 }
 .flecheGameDown{
     padding: 1rem 9rem;
@@ -563,6 +570,7 @@ div.cardWeb {
     width: 100%;
     height: 4rem;
     transform: translate(0rem, -140px);
+    backface-visibility: hidden;
 }
 i.flecheGame {
     margin-bottom: 0.5rem;
@@ -776,6 +784,7 @@ div.cardGraph {
     height: 4rem;
     background-color: #292929;
     padding: 0rem;
+    backface-visibility: hidden;
 }
 
 /*GRAPHISME CARDS MODAL*/
@@ -841,6 +850,7 @@ div.cardGraph {
     height: 4rem;
     transition: all .2s ease-out;
     transform: translate(0rem, 15px);
+    backface-visibility: hidden;
 }
 .ComText {
     background-color: #ffffff;
@@ -1261,6 +1271,7 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         background-size: cover;
         width: 100%;
         height: 3rem;
+        backface-visibility: hidden;
     } 
     .flecheWebDown{
         padding: 1rem 9rem;
@@ -1270,6 +1281,7 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         width: 100%;
         height: 3rem;
         transform: translate(0rem, -490px);
+        backface-visibility: hidden;
     }
     .h2CenterCardWeb {
         color: #ffffff;
@@ -1492,6 +1504,7 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         background-size: cover;
         width: 100%;
         height: 3rem;
+        backface-visibility: hidden;
     } 
     .flecheWebDown{
         padding: 1rem 9rem;
@@ -1501,6 +1514,7 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         width: 100%;
         height: 3rem;
         transform: translate(0rem, -490px);
+        backface-visibility: hidden;
     }
     .h2CenterCardWeb {
         color: #ffffff;
