@@ -58,6 +58,22 @@ button:focus {
     z-index: 1;
     background-color: rgb(58, 138, 138);
     padding-top: 3rem;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.artefactCover {
+    background-color: rgb(85, 190, 190);
+
+}
+.artefactCover2 {
+    background: linear-gradient(#fffbf2 90%, #000000 100%);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.artefactCover3 {
+    background: linear-gradient(#252525 90%, #3b3b3b 100%);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 .imgContainer {
     height: 100%;
@@ -82,9 +98,10 @@ button:focus {
     width: 100%;
     height: 5rem;
     background-color: #e6b244;
-    padding: 0rem;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
+   /* padding: 0rem;*/
+    padding: 0px;
+    -webkit-backface-visibility:hidden;
+    backface-visibility:hidden;
 }
 .fleche {
     margin-top: 2rem;
@@ -331,6 +348,8 @@ h2 {
 .fond1 {
     background-color: #292929;
     padding-bottom: 3.7rem;
+    -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
 }
 #revealWeb {
     background-image: url("images/exgSite.jpg");
@@ -452,6 +471,14 @@ div.cardWeb {
 .fondGame {
     background-color: #3a3a3a;
     padding-bottom: 3.7rem;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+} 
+.fondGameFree {
+    background-color: #3a3a3a;
+    padding-bottom: 3.7rem;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }   
 .h2TitleGame {
     color: #ffffff;
@@ -977,7 +1004,7 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
 
 /*PADDING UNDER NAVBAR AND TYPO RESPONSIVE*/
 /*XXXL*/
-@media (max-width: 4000px) {
+@media (min-width: 2560px) {
     h1.banner {
         font-size: 6rem;
         line-height: 5rem;
@@ -988,15 +1015,76 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         height: 40rem;
         padding-top: 0rem;
         margin-bottom: 0rem;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
     }
     .bannerBox {
-        padding-top: 6rem;
+        padding-top: 10rem;
     }
     p.lead {
         font-size: 2.5rem
     }
+    .pointeSvg {
+        height: 7.5rem;
+    }
+    .pointeSvg2 {
+        height: 6rem;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+    .pointeSvg3 {
+        height: 6rem;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+    .pointeSvg4 {
+        height: 6rem;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+    .fondGameFree {
+        padding-left: 30rem;
+        padding-right: 30rem;
+    } 
 }
 
+@media (max-width: 1440px) {
+    
+    body {
+      padding-top: 0rem;
+    }
+    h1.banner {
+        font-size: 5rem;
+        line-height: 4rem;
+    }
+    .bannerBox {
+        padding-top: 11rem;
+    }
+    section.jumbotron {
+        padding-top: 0rem;
+        margin-bottom: 0rem;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+    .pointeSvg {
+        height: 6rem;
+    }
+    .pointeSvg2 {
+        height: 5rem;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+    .pointeSvg3 {
+        height: 5rem;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+    .pointeSvg4 {
+        height: 5rem;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+}
 /*XL*/
 @media (max-width: 1200px) {
     body {
@@ -1012,6 +1100,8 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     section.jumbotron {
         padding-top: 4rem;
         margin-bottom: 0rem;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
     }
 }
 
@@ -1020,7 +1110,7 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     h1.banner {
         font-size: 6.5rem;
         padding-bottom: 1rem;
-        padding-top: 2rem;
+        padding-top: 11rem;
         line-height: 5rem;
     }
     p.lead {
@@ -1031,6 +1121,8 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         height: fit-content;
         padding-top: 1.5rem;
         margin-bottom: 0rem;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
     }
     #fondBanner {
         height: 37rem;
@@ -1063,6 +1155,8 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         height: fit-content;
         padding-top: 3rem;
         margin-bottom: 0rem;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
     }
     #fondBanner {
         height: 37rem;
@@ -1099,6 +1193,8 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         padding-top: 0.5rem;
         margin-bottom: 2rem;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
     }
 
     #imgBgDerp {
@@ -1193,6 +1289,8 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     section.jumbotron {
         height: fit-content;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
     }
     .bannerBox {
         padding-top: 0rem;
@@ -1435,6 +1533,8 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     .jumbotron {
         height: fit-content;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
     }
     #imgBgDerp {
         visibility: collapse;
