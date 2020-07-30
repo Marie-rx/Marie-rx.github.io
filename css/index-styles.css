@@ -857,6 +857,7 @@ div.cardGraph {
 }
 div#comContainer {
     height: fit-content !important;
+    height: -moz-fit-content;
     margin-top: 0rem;
     margin-left: 0.2rem;
     margin-right: 0.2rem;
@@ -864,6 +865,7 @@ div#comContainer {
 }
 div#comContainerSpirou {
     height: fit-content !important;
+    height: -moz-fit-content;
     margin-top: 0rem;
     margin-left: 0rem;
     margin-right: 0rem;
