@@ -695,7 +695,7 @@ span {
 #reveal2 {
     padding: 0rem;
     background-image: linear-gradient(rgba(255, 192, 203, 0.336), rgba(0, 0, 255, 0.5)),
-    url("images/g1.jpg");
+    url("images/g1.JPG");
     background-position: center;
     background-size: cover;
     overflow: hidden;
@@ -815,7 +815,7 @@ div.cardGraph {
     padding: 0rem;
 }
 .spirouIMG {
-    background-image: url("images/petitSpirou.jpg");
+    background-image: url("images/petitSpirou.JPG");
     background-color: rgb(212, 236, 245);
     background-position: center;
     background-size: cover;
