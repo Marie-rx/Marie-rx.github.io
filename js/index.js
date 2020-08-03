@@ -106,6 +106,7 @@ if (minWidth200px.matches) {
             duration: 1000,
             origin: 'bottom',
             distance: '25rem',
+            viewFactor: 0,
         });
 
          //PHOTO SHOW/HIDE
@@ -143,7 +144,7 @@ if (minWidth200px.matches) {
             origin: 'top',
             distance: '10rem',
             delay: 100,
-            viewFactor: 1.0
+            viewFactor: 0,
         });
     
         sr.reveal('p.lead', {
@@ -151,7 +152,7 @@ if (minWidth200px.matches) {
             origin: 'left',
             distance: '5rem',
             delay: 500,
-            viewFactor: 1.0
+            viewFactor: 0,
         });
     
         sr.reveal('hr.text-left', {
@@ -159,7 +160,7 @@ if (minWidth200px.matches) {
             origin: 'right',
             distance: '5rem',
             delay: 600,
-            viewFactor: 1.0
+            viewFactor: 0,
         });
 
 //banner icons anim
@@ -168,7 +169,7 @@ if (minWidth200px.matches) {
             origin: 'left',
             distance: '5rem',
             delay: 700,
-            viewFactor: 1.0
+            viewFactor: 0,
         });
 
         sr.reveal('.linkIcon', {
@@ -176,7 +177,7 @@ if (minWidth200px.matches) {
             origin: 'left',
             distance: '5rem',
             delay: 800,
-            viewFactor: 1.0
+            viewFactor: 0,
         });
 
         sr.reveal('.twitIcon', {
@@ -184,7 +185,7 @@ if (minWidth200px.matches) {
             origin: 'left',
             distance: '5rem',
             delay: 900,
-            viewFactor: 1.0
+            viewFactor: 0,
         });
 
         sr.reveal('.mailIcon', {
@@ -192,7 +193,7 @@ if (minWidth200px.matches) {
             origin: 'left',
             distance: '5rem',
             delay: 1000,
-            viewFactor: 1.0
+            viewFactor: 0,
         });
 
         sr.reveal('.cvIcon', {
@@ -200,7 +201,7 @@ if (minWidth200px.matches) {
             origin: 'left',
             distance: '5rem',
             delay: 1100,
-            viewFactor: 1.0
+            viewFactor: 0,
         });
 
 //about anim
@@ -208,7 +209,7 @@ if (minWidth200px.matches) {
             duration: 1000,
             origin: 'bottom',
             distance: '5rem',
-            delay: 1400,
+
             viewFactor: 1.0
         });
 

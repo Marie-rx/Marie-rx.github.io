@@ -57,7 +57,7 @@ button:focus {
     width: 100%;
     z-index: 1;
     background-color: rgb(58, 138, 138);
-    padding-top: 3rem;
+    padding-top: 0rem;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
@@ -1097,8 +1097,8 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     .bannerBox {
         padding-top: 0rem;
     }
-    section.jumbotron {
-        padding-top: 4rem;
+    .jumbotron {
+        padding: 0rem 0rem !important;
         margin-bottom: 0rem;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
@@ -1119,7 +1119,7 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     }
     section.jumbotron {
         height: fit-content;
-        padding-top: 1.5rem;
+        padding-top: 1.4rem !important;
         margin-bottom: 0rem;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
