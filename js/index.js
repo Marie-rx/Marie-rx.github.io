@@ -257,50 +257,101 @@ if (minWidth200px.matches) {
             origin: 'left',
             viewFactor: 0.5,
             distance: '10rem',
-            delay: 700,
+            viewFactor: 0.5,
         });
 
         sr.reveal('.allBars', {
-            duration: 1000,
+            duration: 500,
             origin: 'right',
             viewFactor: 0.5,
             distance: '10rem',
-            delay: 700,
         });
 
-        sr.reveal('.progress-bar', {
+        sr.reveal('.bar1', {
             duration: 1000,
             origin: 'left',
-            viewFactor: 0.5,
             distance: '10rem',
-            delay: 1500,
-        });
+            delay: 200,
 
+        });
+        sr.reveal('.bar2', {
+            duration: 1000,
+            origin: 'left',
+            distance: '10rem',
+            delay: 300,
+ 
+        });
+        sr.reveal('.bar3', {
+            duration: 1000,
+            origin: 'left',
+            distance: '10rem',
+            delay: 400,
+
+        });
+        sr.reveal('.bar4', {
+            duration: 1000,
+            origin: 'left',
+            distance: '10rem',
+            delay: 500,
+
+        });
+        sr.reveal('.bar5', {
+            duration: 1000,
+            origin: 'left',
+            distance: '10rem',
+            delay: 600,
+
+        });
+        sr.reveal('.bar6', {
+            duration: 1000,
+            origin: 'left',
+            distance: '10rem',
+            delay: 700,
+            
+        });
+        sr.reveal('.bar7', {
+            duration: 1000,
+            origin: 'left',
+            distance: '10rem',
+            delay: 800,
+
+        });
+        sr.reveal('.bar8', {
+            duration: 1000,
+            origin: 'left',
+            distance: '10rem',
+            delay: 900,
+
+        });
+        sr.reveal('.bar9', {
+            duration: 1000,
+            origin: 'left',
+            distance: '10rem',
+            delay: 1000,
+
+        });
+        sr.reveal('.bar10', {
+            duration: 1000,
+            origin: 'left',
+            distance: '10rem',
+            delay: 1100,
+
+        });
+        sr.reveal('.bar11', {
+            duration: 1000,
+            origin: 'left',
+            distance: '10rem',
+            delay: 1200,
+
+        });
 
  
         sr.reveal('.animtop1', {
-            duration: 1000,
+            duration: 500,
             origin: 'bottom',
             distance: '3rem',
             delay: 50,
-        });
-
-        sr.reveal('.animRight', {
-            duration: 1000,
-            origin: 'right',
-            distance: '5rem',
-            delay: 50,
-            rotate: {
-                x: 20,
-                z: 20
-            }
-        });
-
-        sr.reveal('ul.liste', {
-            duration: 1000,
-            origin: 'right',
-            distance: '5rem',
-            delay: 200,
+            viewFactor: 1.0,
         });
     }
 //END OF LARGE ANIMATIONS
