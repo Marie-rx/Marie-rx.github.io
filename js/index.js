@@ -9,6 +9,7 @@ var minWidth200px = window.matchMedia("(min-width:200px)");
 var minWidth1024px = window.matchMedia("(min-width:1024px)");
 
 $(document).ready(() => {  
+    
     //Change my age with time
     var myAge = document.getElementById("age");
     const getAge = birthDate => Math.floor((new Date() - new Date(birthDate).getTime()) / 3.15576e+10);
@@ -102,6 +103,7 @@ if (minWidth200px.matches) {
 //-------------------------------------LARGE SIZE SCREEN ANIM
     if (minWidth1024px.matches) {
         document.getElementById("imgBg").style.visibility = "visible";
+
         sr.reveal('#imgBg', {
             duration: 1000,
             origin: 'bottom',
@@ -138,7 +140,8 @@ if (minWidth200px.matches) {
                 eye.style.transform = "rotate("+ rot +"deg)";
             });
         };
-//banner anim
+
+        //banner anim
         sr.reveal('h1', {
             duration: 1000,
             origin: 'top',
