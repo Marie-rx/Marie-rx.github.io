@@ -2,9 +2,11 @@ $("#face").hide();
 $("#imgBgDerp").hide();
 $(".eyes").hide();
 $(".eye").hide();
+
 window.sr = ScrollReveal(/*{ reset: true }*/);
 
 $("[data-toggle='tooltip']").tooltip(); // Initialize Tooltip
+
 var minWidth200px = window.matchMedia("(min-width:200px)");
 var minWidth1024px = window.matchMedia("(min-width:1024px)");
 
@@ -50,55 +52,287 @@ if (minWidth200px.matches) {
         $("#imgBg").show();
         });
 
+        //Anim banner
         sr.reveal('#imgBg', {
             duration: 500,
             origin: 'bottom',
             distance: '15rem',
         });
-
         sr.reveal('h1', {
             duration: 1000,
             origin: 'top',
             distance: '1rem',
         });
-    
         sr.reveal('p.lead', {
             duration: 1000,
             origin: 'left',
             distance: '1rem',
+            viewFactor: 0.5,
         });
-    
         sr.reveal('hr.text-left', {
             duration: 1000,
             origin: 'right',
             distance: '1rem',
         });
 
-        sr.reveal('.animtop1', {
+        //banner icons anim
+        sr.reveal('.gitIcon', {
+            duration: 1000,
+            origin: 'left',
+            distance: '2rem',
+            viewFactor: 0,
+        });
+        sr.reveal('.linkIcon', {
+            duration: 1000,
+            origin: 'left',
+            distance: '2rem',
+            delay: 100,
+            viewFactor: 0,
+        });
+        sr.reveal('.twitIcon', {
+            duration: 1000,
+            origin: 'left',
+            distance: '2rem',
+            delay: 200,
+            viewFactor: 0,
+        });
+        sr.reveal('.mailIcon', {
+            duration: 1000,
+            origin: 'left',
+            distance: '2rem',
+            delay: 300,
+            viewFactor: 0,
+        });
+        sr.reveal('.cvIcon', {
+            duration: 1000,
+            origin: 'left',
+            distance: '2rem',
+            delay: 400,
+            viewFactor: 0,
+        });
+
+        //about anim skills
+        sr.reveal('#skills', {
             duration: 1000,
             origin: 'bottom',
+            distance: '2rem',
+            viewFactor: 1.0
+        });
+        sr.reveal('.Priority1', {
+            duration: 1000,
+            origin: 'left',
+            rotate: {
+                y: 100,
+            },
+            scale: 0.75,
+            viewFactor: 0.5,
+            
+        });
+        sr.reveal('.Priority2', {
+            delay: 200,
+            duration: 1000,
+            origin: 'left',
+            rotate: {
+                y: 100,
+            },
+            viewFactor: 0.5,
+            scale: 0.75
+        });
+        sr.reveal('.Priority3', {
+            duration: 1000,
+            origin: 'left',
+            rotate: {
+                y: 100,
+            },
+            viewFactor: 0.5,
+            delay: 400,
+            scale: 0.75
+        });
+        sr.reveal('.Priority4', {
+            duration: 1000,
+            origin: 'left',
+            rotate: {
+                y: 100,
+            },
+            viewFactor: 0.5,
+            delay: 600,
+            scale: 0.75
+        });
+        sr.reveal('.Profile', {
+            duration: 1000,
+            origin: 'bottom',
+            viewFactor: 0.5,
+            distance: '2rem',
+            viewFactor: 0.5,
+        });
+        sr.reveal('.allBars', {
+            duration: 500,
+            origin: 'bottom',
+            viewFactor: 0.5,
+            distance: '2rem',
+        });
+        sr.reveal('.bar1', {
+            duration: 1000,
+            origin: 'left',
             distance: '3rem',
-            delay: 50,
+            delay: 200,
+
+        });
+        sr.reveal('.bar2', {
+            duration: 1000,
+            origin: 'left',
+            distance: '3rem',
+            delay: 300,
+
+        });
+        sr.reveal('.bar3', {
+            duration: 1000,
+            origin: 'left',
+            distance: '3rem',
+            delay: 400,
+
+        });
+        sr.reveal('.bar4', {
+            duration: 1000,
+            origin: 'left',
+            distance: '3rem',
+            delay: 500,
+
+        });
+        sr.reveal('.bar5', {
+            duration: 1000,
+            origin: 'left',
+            distance: '3rem',
+            delay: 600,
+
+        });
+        sr.reveal('.bar6', {
+            duration: 1000,
+            origin: 'left',
+            distance: '3rem',
+            delay: 700,
+            
+        });
+        sr.reveal('.bar7', {
+            duration: 1000,
+            origin: 'left',
+            distance: '3rem',
+            delay: 800,
+
+        });
+        sr.reveal('.bar8', {
+            duration: 1000,
+            origin: 'left',
+            distance: '3rem',
+            delay: 900,
+
+        });
+        sr.reveal('.bar9', {
+            duration: 1000,
+            origin: 'left',
+            distance: '3rem',
+            delay: 1000,
+
+        });
+        sr.reveal('.bar10', {
+            duration: 1000,
+            origin: 'left',
+            distance: '3rem',
+            delay: 1100,
+
+        });
+        sr.reveal('.bar11', {
+            duration: 1000,
+            origin: 'left',
+            distance: '3rem',
+            delay: 1200,
+
         });
 
-        sr.reveal('.animtop2', {
-            duration: 1000,
-            origin: 'top',
-            distance: '3rem',
-            delay: 60,
+        //Anim webdesign
+        sr.reveal('.animWeb', {
+            duration: 500,
+            viewFactor: 0.5,
+            rotate: {
+                y: 100,
+            },
+            scale: 0.75
         });
 
-        sr.reveal('.animtop3', {
-            duration: 1000,
-            origin: 'top',
-            distance: '3rem',
-            delay: 70,
+        //Anim Games
+        sr.reveal('.animGameLeft', {
+            duration: 700,
+            origin: 'bottom',
+            distance: '2rem',
+            viewFactor: 0.5,
+        });
+        sr.reveal('.animGameCenter', {
+            duration: 700,
+            origin: 'bottom',
+            distance: '2rem',
+            viewFactor: 0.5,
+            delay: 200,
+        });
+        sr.reveal('.animGameRight', {
+            duration: 700,
+            origin: 'bottom',
+            distance: '2rem',
+            viewFactor: 0.5,
+        });
+
+        //Anim Graph
+        sr.reveal('.animGraphLeft', {
+            duration: 700,
+            origin: 'bottom',
+            distance: '2rem',
+            viewFactor: 0.5,
+        });
+        sr.reveal('.animGraphCenter', {
+            duration: 700,
+            origin: 'bottom',
+            distance: '2rem',
+            viewFactor: 0.5,
+            delay: 200,
+        });
+        sr.reveal('.animGraphRight', {
+            duration: 700,
+            origin: 'bottom',
+            distance: '2rem',
+            viewFactor: 0.5,
+        });
+
+        //Anim Freelance
+        sr.reveal('.animFree1', {
+            duration: 700,
+            viewFactor: 0.5,
+            rotate: {
+                y: 100,
+            },
+            scale: 1.2,
+        });
+        sr.reveal('.animFree2', {
+            duration: 700,
+            viewFactor: 0.5,
+            rotate: {
+                y: 100,
+            },
+            delay: 200,
+            scale: 1.2,
+        });
+        sr.reveal('.animFree3', {
+            duration: 700,
+            viewFactor: 0.5,
+            rotate: {
+                y: 100,
+            },
+            delay: 200,
+            scale: 1.2,
         });
 
        
     };
+//-------------------------------------END OF SMALL ANIMATIONS
 
-//END OF SMALL ANIMATIONS
 
 //-------------------------------------LARGE SIZE SCREEN ANIM
     if (minWidth1024px.matches) {
@@ -112,21 +346,21 @@ if (minWidth200px.matches) {
         });
 
          //PHOTO SHOW/HIDE
-    $(".imgContainer").hover(function(){
-        $("#imgBg").hide();
-        $("#imgBgDerp").show();
-        $("#face").show();
-        $(".eyes").show();
-        $(".eye").show(); 
+        $(".imgContainer").hover(function(){
+            $("#imgBg").hide();
+            $("#imgBgDerp").show();
+            $("#face").show();
+            $(".eyes").show();
+            $(".eye").show(); 
 
-        }, function(){
+            }, function(){
 
-            $("#imgBg").show();
-            $("#imgBgDerp").hide();
-            $("#face").hide();
-            $(".eyes").hide();
-            $(".eye").hide(); 
-    });
+                $("#imgBg").show();
+                $("#imgBgDerp").hide();
+                $("#face").hide();
+                $(".eyes").hide();
+                $(".eye").hide(); 
+        });
 
         //ANIMATION EYEBALLS
         document.querySelector('.imgContainer').addEventListener('mousemove', eyeball);
@@ -149,7 +383,6 @@ if (minWidth200px.matches) {
             delay: 100,
             viewFactor: 0,
         });
-    
         sr.reveal('p.lead', {
             duration: 1000,
             origin: 'left',
@@ -157,7 +390,6 @@ if (minWidth200px.matches) {
             delay: 500,
             viewFactor: 0,
         });
-    
         sr.reveal('hr.text-left', {
             duration: 1000,
             origin: 'right',
@@ -166,7 +398,7 @@ if (minWidth200px.matches) {
             viewFactor: 0,
         });
 
-//banner icons anim
+        //banner icons anim
         sr.reveal('.gitIcon', {
             duration: 1000,
             origin: 'left',
@@ -174,7 +406,6 @@ if (minWidth200px.matches) {
             delay: 700,
             viewFactor: 0,
         });
-
         sr.reveal('.linkIcon', {
             duration: 1000,
             origin: 'left',
@@ -182,7 +413,6 @@ if (minWidth200px.matches) {
             delay: 800,
             viewFactor: 0,
         });
-
         sr.reveal('.twitIcon', {
             duration: 1000,
             origin: 'left',
@@ -190,7 +420,6 @@ if (minWidth200px.matches) {
             delay: 900,
             viewFactor: 0,
         });
-
         sr.reveal('.mailIcon', {
             duration: 1000,
             origin: 'left',
@@ -198,7 +427,6 @@ if (minWidth200px.matches) {
             delay: 1000,
             viewFactor: 0,
         });
-
         sr.reveal('.cvIcon', {
             duration: 1000,
             origin: 'left',
@@ -207,7 +435,7 @@ if (minWidth200px.matches) {
             viewFactor: 0,
         });
 
-//about anim
+        //about anim skills
         sr.reveal('#skills', {
             duration: 1000,
             origin: 'bottom',
@@ -215,14 +443,15 @@ if (minWidth200px.matches) {
 
             viewFactor: 1.0
         });
-
         sr.reveal('.Priority1', {
             duration: 1000,
             origin: 'left',
             rotate: {
                 y: 100,
             },
-            viewFactor: 1.0
+            scale: 0.75,
+            viewFactor: 1.0,
+            
         });
         sr.reveal('.Priority2', {
             delay: 200,
@@ -231,7 +460,8 @@ if (minWidth200px.matches) {
             rotate: {
                 y: 100,
             },
-            viewFactor: 1.0
+            viewFactor: 1.0,
+            scale: 0.75
         });
         sr.reveal('.Priority3', {
             duration: 1000,
@@ -241,6 +471,7 @@ if (minWidth200px.matches) {
             },
             viewFactor: 1.0,
             delay: 400,
+            scale: 0.75
         });
         sr.reveal('.Priority4', {
             duration: 1000,
@@ -250,8 +481,8 @@ if (minWidth200px.matches) {
             },
             viewFactor: 1.0,
             delay: 600,
+            scale: 0.75
         });
-
         sr.reveal('.Profile', {
             duration: 1000,
             origin: 'left',
@@ -259,14 +490,12 @@ if (minWidth200px.matches) {
             distance: '10rem',
             viewFactor: 0.5,
         });
-
         sr.reveal('.allBars', {
             duration: 500,
             origin: 'right',
             viewFactor: 0.5,
             distance: '10rem',
         });
-
         sr.reveal('.bar1', {
             duration: 1000,
             origin: 'left',
@@ -345,13 +574,85 @@ if (minWidth200px.matches) {
 
         });
 
- 
-        sr.reveal('.animtop1', {
+        //Anim webdesign
+        sr.reveal('.animWeb', {
             duration: 500,
+            origin: 'left',
+            distance: '10rem',
+            viewFactor: 0.5,
+            rotate: {
+                y: 100,
+            },
+            scale: 0.75
+        });
+
+        //Anim Games
+        sr.reveal('.animGameLeft', {
+            duration: 700,
+            origin: 'left',
+            distance: '20rem',
+            viewFactor: 0.5,
+        });
+        sr.reveal('.animGameCenter', {
+            duration: 700,
             origin: 'bottom',
-            distance: '3rem',
-            delay: 50,
-            viewFactor: 1.0,
+            distance: '20rem',
+            viewFactor: 0.5,
+            delay: 200,
+        });
+        sr.reveal('.animGameRight', {
+            duration: 700,
+            origin: 'right',
+            distance: '20rem',
+            viewFactor: 0.5,
+            delay: 300,
+        });
+
+        //Anim Graph
+        sr.reveal('.animGraphLeft', {
+            duration: 700,
+            origin: 'left',
+            distance: '20rem',
+            viewFactor: 0.5,
+            delay: 200,
+        });
+        sr.reveal('.animGraphCenter', {
+            duration: 700,
+            origin: 'bottom',
+            distance: '20rem',
+            viewFactor: 0.5,
+        });
+        sr.reveal('.animGraphRight', {
+            duration: 700,
+            origin: 'right',
+            distance: '20rem',
+            viewFactor: 0.5,
+            delay: 200,
+        });
+
+        //Anim Freelance
+        sr.reveal('.animFree1', {
+            duration: 700,
+            viewFactor: 0.5,
+            rotate: {
+                y: 100,
+            },
+        });
+        sr.reveal('.animFree2', {
+            duration: 700,
+            viewFactor: 0.5,
+            rotate: {
+                y: 100,
+            },
+            delay: 200,
+        });
+        sr.reveal('.animFree3', {
+            duration: 700,
+            viewFactor: 0.5,
+            rotate: {
+                y: 100,
+            },
+            delay: 200,
         });
     }
 //END OF LARGE ANIMATIONS

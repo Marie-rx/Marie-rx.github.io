@@ -240,7 +240,7 @@ hr {
 }
 h2#skills {
     padding: 1.5rem;
-    margin-top: 6rem;
+    margin-top: 2rem;
     margin-bottom: 2rem;
     text-align: center;
     color: rgb(44, 44, 44);
@@ -1304,7 +1304,7 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
 /*MD*/
 @media (max-width: 768px) {
     .bg-dark a { 
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
     h1.banner {
         font-size: 6rem;
@@ -1499,6 +1499,7 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         height: 100%;
         width: 100%;
         margin: 0rem;
+        background-size: cover;
     }
     #revealWeb:hover div.TexteWeb {
         transform: translate(0, -18rem);
@@ -1600,10 +1601,53 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
 
     div.cardGraph {
         overflow: hidden;
-        width: 20rem;
-        height: 40rem;
+        width: 27rem; /*20rem*/
+        height: 47rem; /*40rem*/
         margin: 0rem;
         padding-bottom: 0rem;
+    }
+    .GameTexte {
+        width: 27rem; /*20*/
+        height: 41rem; /*40*/
+        transform: translate(0, -29rem); /*-33rem*/
+    }
+    .GameTexteWMM {
+        width: 27rem;
+        height: 41rem;
+        transform: translate(0, -27rem); /*-33.2rem*/
+    }
+    .GameTexteOTV {
+        width: 27rem;
+        height: 41rem;
+        transform: translate(0, -29rem); /*-33rem*/
+    }
+    .flecheGameDown{
+        transform: translate(0rem, -25px);
+    }
+    .h2CenterCard {
+        transform: translate(0rem, -35px);
+    }
+    .h2CenterCardWMM {
+        transform: translate(0rem, -34px); /*-141*/
+    }
+    .GameTexteG2 {
+        width: 26.5rem; /*20*/
+        height: 41rem; /*40*/
+        transform: translate(0, -21rem); /*-33rem*/
+    }
+    .GameTexteV1 {
+        width: 26.5rem; /*20*/
+        height: 41rem; /*40*/
+        transform: translate(0, -21rem); /*-33rem*/
+    }
+    .GameTexteA1 {
+        width: 27rem;
+        height: 41rem;
+        transform: translate(0, -23rem); /*-33rem*/
+    }
+    i.flecheGame {
+        margin-bottom: 0.5rem;
+        text-align: center;
     }
     div#comContainer {
         margin-top: 0rem;
@@ -1652,7 +1696,7 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
 }
 
 /*XS*/
-@media (max-width: 320px) {
+@media (max-width: 375px) {
     .bg-dark a { 
         font-size: 1.6rem;
     }
@@ -1729,7 +1773,7 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         height: 44.43rem;
         padding-bottom: 0rem;
         padding-top: 18rem;
-        transform: translate(0, -27.8rem); /*-33rem*/
+        transform: translate(0, -27.9rem); /*-33rem*/
         transition: transform .3s ease-out;
         text-shadow: 1px 1px 2px rgb(32, 32, 32);
     }
@@ -1856,10 +1900,351 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
 
     div.cardGraph {
         overflow: hidden;
-        width: 20rem;
-        height: 40rem;
+        width: 23.3rem; /*20rem*/
+        height: 43.3rem; /*40rem*/
         margin: 0rem;
         padding-bottom: 0rem;
+    }
+    .GameTexte {
+        width: 23.3rem; /*20rem*/
+        height: 43.3rem; /*40rem*/
+        transform: translate(0, -31rem); /*-33rem*/
+    }
+    .GameTexteWMM {
+        width: 23.3rem; /*20rem*/
+        height: 43.3rem; /*40rem*/
+        transform: translate(0, -31rem); /*-33rem*/
+    }
+    .GameTexteOTV {
+        width: 23.3rem; /*20rem*/
+        height: 43.3rem; /*40rem*/
+        transform: translate(0, -31rem); /*-33rem*/
+    }
+    .flecheGameDown{
+        transform: translate(0rem, -120px);
+    }
+    .h2CenterCard {
+        transform: translate(0rem, -131px);
+    }
+    .h2CenterCardWMM {
+        transform: translate(0rem, -131px); /*-141*/
+    }
+    .GameTexteG2 {
+        width: 23.3rem; /*20rem*/
+        height: 43.3rem; /*40rem*/
+        transform: translate(0, -21rem); /*-33rem*/
+    }
+    .GameTexteV1 {
+        width: 23.3rem; /*20rem*/
+        height: 43.3rem; /*40rem*/
+        transform: translate(0, -21rem); /*-33rem*/
+    }
+    .GameTexteA1 {
+        width: 23.3rem; /*20rem*/
+        height: 43.3rem; /*40rem*/
+        transform: translate(0, -23rem); /*-33rem*/
+    }
+    i.flecheGame {
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+    div#comContainer {
+        margin-top: 0rem;
+        margin-left: 0.2rem;
+        margin-right: 0.2rem;
+        margin-bottom: 2rem;
+    }
+
+    .footer {
+        height: 7rem;
+        padding: 0.6rem 0rem;
+    }
+    .contactFooter {
+        padding: 0.5rem;
+    }
+    .linkedin {
+        padding-left: 0rem;
+    }
+    .contactBox {
+        padding: 2rem !important;
+        margin-left: 2rem !important;
+        margin-right: 2rem !important;
+    }
+    .fondPriority {
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+    p.priority {
+        text-align: center;
+        color: #000000;
+        font-family: 'Manrope', sans-serif; 
+        font-weight: lighter;
+        font-size: 1.2rem;
+        padding: 0rem 0rem !important;
+    }
+    .margins {
+        font-size: 3rem;
+        text-align: center;
+    }
+    h2#skills {
+        padding: 1rem;
+        text-align: center;
+        font-size: 1.8rem;
+        color: rgb(44, 44, 44);
+    }
+}
+
+@media (max-width: 320px /*320*/) {
+    .bg-dark a { 
+        font-size: 1.4rem;
+    }
+    h1.banner {
+        font-size: 3.5rem;
+        line-height: 4rem;
+        margin: 0rem 2rem;
+        padding: 0rem 2rem;
+    }
+    hr {
+        margin: 0.1rem;
+        
+    }
+    p.lead {
+        font-size: 2.5rem;
+        margin: 0rem 2rem;
+        padding: 0rem 2rem;
+    }
+    .bannerBox {
+        padding: 0rem;
+    }
+    .jumbotron {
+        height: fit-content;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+    #imgBgDerp {
+        visibility: collapse;
+        padding: 0 2rem;
+    }
+    #imgBg {
+        margin-left: 0.6rem;
+    }
+
+    .modal-backdrop {
+        width: 100%;
+        height: 100%;
+    } 
+    .modal-body {
+        height: fit-content;
+    }
+    .trailer {
+        height: 10rem;
+        padding: 0rem 0rem;
+    }
+    .btn-style {
+        font-size: 1rem;
+        padding: 0.3rem;
+    }
+    .modal-title {
+        color: rgb(255, 255, 255); 
+        font-family: 'Manrope', sans-serif;    
+        font-weight: normal;
+        border-bottom: grey solid 1px;
+    }
+
+    div.card {
+        overflow: hidden;
+        min-width: 100%;
+        height: 13.8rem;
+        background-color: rgb(58, 138, 138);
+    }
+
+    div.cardWeb {
+        overflow: hidden;
+        width: fit-content;
+        height: 20rem;
+        margin: 0rem;
+    }
+    .TexteWeb {
+        background-image: linear-gradient(rgb(16, 15, 31), rgba(255, 192, 203, 0));
+        width: 100%;
+        height: 44.43rem;
+        padding-bottom: 0rem;
+        padding-top: 18rem;
+        transform: translate(0, -27.9rem); /*-33rem*/
+        transition: transform .3s ease-out;
+        text-shadow: 1px 1px 2px rgb(32, 32, 32);
+    }
+    #revealWeb {
+        height: 100%;
+        width: 100%;
+        margin: 0rem;
+    }
+    #revealWeb:hover div.TexteWeb {
+        transform: translate(0, -18rem);
+    }
+    .flecheWeb{
+        color: white;
+        padding: 0rem 9rem;
+        background-image: url("images/PointeCardGame.svg");
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 3rem;
+        backface-visibility: hidden;
+    } 
+    .flecheWebDown{
+        padding: 1rem 9rem;
+        background-image: url("images/PointeCardGameDown.svg");
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 3rem;
+        transform: translate(0rem, -490px);
+        backface-visibility: hidden;
+    }
+    .h2CenterCardWeb {
+        color: #ffffff;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: lighter;
+        font-size: 1.8rem;
+        padding: 1rem 0.5rem;
+        transform: translate(0rem, -505px);
+        transition: all 0.3s ease-out;
+        background-image: linear-gradient( rgba(26, 26, 133, 0), rgba(48, 33, 104, 0)90%);
+        text-shadow: 1px 1px 5px rgb(32, 32, 32);
+    }
+    .h2TitleWeb {
+        color: #ffffff;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: lighter;
+        font-size: 1.7rem;
+        padding-top: 1rem;
+        margin-bottom: 0rem;
+    }
+    .cardSubtitleWeb{
+        color: rgb(58, 138, 138);
+        font-family: 'Manrope', sans-serif;
+        font-weight: lighter;
+        font-size: 1.3rem;
+        text-align: center;
+        margin-bottom: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    #revealexi {
+        margin-bottom: 0rem;
+    }
+    #revealOTV {
+        margin-bottom: 0rem;
+    }
+    #revealWMM {
+        margin-bottom: 0rem;
+    }
+
+    h2#games {
+        font-size: 1.5rem;
+        padding-top: 1.5rem !important;
+        padding-right: 1.2rem !important;
+        padding-left: 1.2rem !important;
+    }
+    h2#webDesign {
+        font-size: 1.5rem;
+        padding-top: 1.5rem !important;
+        padding-right: 1.2rem !important;
+        padding-left: 1.2rem !important;
+    }
+    h2#h2graphisme {
+        font-size: 1.5rem;
+        padding-top: 1.5rem !important;
+        padding-right: 1.2rem !important;
+        padding-left: 1.2rem !important;
+    }
+    h2#com {
+        font-size: 1.5rem;
+        padding-top: 1.5rem !important;
+        padding-right: 1.2rem !important;
+        padding-left: 1.2rem !important;
+        padding-bottom: 1rem !important;
+    }
+
+    .pointeSvg2 {
+        height: 4rem;
+    }
+    .pointeSvg {
+        height: 4rem;
+    }
+    .fleche2 {
+        padding-bottom: 2rem;
+    }
+    .fleche {
+        margin-top: 1.2rem;
+        padding-bottom: 2rem;
+    }
+    .fleche2:hover {
+        margin-top: 1.5rem;
+        color: rgb(58, 138, 138);
+    }
+    .fleche:hover {
+        margin-top: 1.5rem;
+        color: rgb(235, 190, 69);
+    }
+    .fleche3 {
+        margin-top: -0.5rem;
+    }
+    .fleche3:hover {
+        margin-top: -0.7rem;
+    }
+
+    div.cardGraph {
+        overflow: hidden;
+        width: 20rem; /*20rem*/
+        height: 40rem; /*40rem*/
+        margin: 0rem;
+        padding-bottom: 0rem;
+    }
+    .GameTexte {
+        width: 20rem; /*20*/
+        height: 40rem; /*40*/
+        transform: translate(0, -33rem); /*-33rem*/
+    }
+    .GameTexteWMM {
+        width: 20rem;
+        height: 40rem;
+        transform: translate(0, -33.2rem); /*-33.2rem*/
+    }
+    .GameTexteOTV {
+        width: 20rem;
+        height: 40rem;
+        transform: translate(0, -33rem); /*-33rem*/
+    }
+    .flecheGameDown{
+        transform: translate(0rem, -120px);
+    }
+    .h2CenterCard {
+        transform: translate(0rem, -131px);
+    }
+    .h2CenterCardWMM {
+        transform: translate(0rem, -131px); /*-141*/
+    }
+    .GameTexteG2 {
+        width: 20rem; /*20*/
+        height: 40rem; /*40*/
+        transform: translate(0, -21rem); /*-33rem*/
+    }
+    .GameTexteV1 {
+        width: 20rem; /*20*/
+        height: 40rem; /*40*/
+        transform: translate(0, -21rem); /*-33rem*/
+    }
+    .GameTexteA1 {
+        width: 20rem;
+        height: 40rem;
+        transform: translate(0, -23rem); /*-33rem*/
+    }
+    i.flecheGame {
+        margin-bottom: 0.5rem;
+        text-align: center;
     }
     div#comContainer {
         margin-top: 0rem;
