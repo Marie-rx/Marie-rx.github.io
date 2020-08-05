@@ -172,7 +172,9 @@ button:focus {
 h1.banner {
     font-size: 5rem;
     letter-spacing: -0.2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 0rem;
+    padding-top: 9rem;
+    line-height: 4rem;
     font-family: 'Manrope', sans-serif;
     color:  rgb(34, 34, 34);
 }
@@ -1018,8 +1020,9 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     }
     h1.banner {
         font-size: 7rem;
-        line-height: 5.5rem;
         padding-bottom: 0.5rem;
+        padding-top: 1rem;
+        line-height: 6rem;
     }
     section.jumbotron {
         background-color: rgb(58, 138, 138);
@@ -1182,6 +1185,7 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         font-size: 5rem;
         line-height: 4rem;
         padding-bottom: 0rem;
+        padding-top: 3rem;
     }
     .bannerBox {
         padding-top: 11rem;
@@ -1221,7 +1225,8 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     }
     h1.banner {
         font-size: 4rem;
-        line-height: 3rem;
+        padding-top: 9rem;
+        line-height: 4rem;
     }
     .bannerBox {
         padding-top: 0rem;
