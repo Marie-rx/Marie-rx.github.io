@@ -1181,6 +1181,7 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     h1.banner {
         font-size: 5rem;
         line-height: 4rem;
+        padding-bottom: 0rem;
     }
     .bannerBox {
         padding-top: 11rem;
