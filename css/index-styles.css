@@ -46,6 +46,13 @@ h4 {
 button:focus {
     outline: 0px !important;
 }
+.mrxLogo {
+    position: absolute;
+    top: 4px;
+    left: 4rem;
+    width: 8rem;
+    height: 4rem;
+}
 /*END OF NAV BAR*/
 
 
@@ -1171,6 +1178,13 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     .contactFooter {
         font-size: 1.5rem !important;
     }
+    .mrxLogo {
+        position: absolute;
+        top: 15px;
+        left: 7rem;
+        width: 11rem;
+        height: 5rem;
+    }
 
 }
 
@@ -1270,6 +1284,13 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     }
     p.priority {
         font-size: 1.1rem;
+    }
+    .mrxLogo {
+        position: absolute;
+        top: 15px;
+        left: 51rem;
+        width: 11rem;
+        height: 5rem;
     }
 }
 
@@ -1393,6 +1414,13 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         margin-left: 0rem !important;
         margin-right: 0rem !important;
     }
+    .mrxLogo {
+        position: absolute;
+        top: 6px;
+        left: 36rem;
+        width: 11rem;
+        height: 5rem;
+    }
 }
 
 @media (max-width: 576px) {
@@ -1422,6 +1450,13 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     }
     hr {
        margin: 0.2rem !important;
+    }
+    .mrxLogo {
+        position: absolute;
+        top: 6px;
+        left: 17rem;
+        width: 9rem;
+        height: 4rem;
     }
 
     section.jumbotron {
@@ -1998,6 +2033,13 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         font-size: 1.8rem;
         color: rgb(44, 44, 44);
     }
+    .mrxLogo {
+        position: absolute;
+        top: 6px;
+        left: 16rem;
+        width: 7rem;
+        height: 3.2rem;
+    }
 }
 
 @media (max-width: 320px /*320*/) {
@@ -2295,6 +2337,13 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         text-align: center;
         font-size: 1.8rem;
         color: rgb(44, 44, 44);
+    }
+    .mrxLogo {
+        position: absolute;
+        top: 6px;
+        left: 13rem;
+        width: 6.5rem;
+        height: 3rem;
     }
 }
 
