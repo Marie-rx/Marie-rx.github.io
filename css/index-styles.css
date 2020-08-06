@@ -1734,6 +1734,13 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         font-size: 1.8rem;
         color: rgb(44, 44, 44);
     }
+    .mrxLogo {
+        position: absolute;
+        top: 20px;
+        left: 20rem;
+        width: 5rem;
+        height: 2.2rem;
+    }
 }
 
 /*XS*/
@@ -2035,10 +2042,10 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     }
     .mrxLogo {
         position: absolute;
-        top: 6px;
+        top: 20px;
         left: 16rem;
-        width: 7rem;
-        height: 3.2rem;
+        width: 5rem;
+        height: 2.2rem;
     }
 }
 
@@ -2340,10 +2347,10 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     }
     .mrxLogo {
         position: absolute;
-        top: 6px;
-        left: 13rem;
-        width: 6.5rem;
-        height: 3rem;
+        top: 9px;
+        left: 14rem;
+        width: 4.5rem;
+        height: 2rem;
     }
 }
 
