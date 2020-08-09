@@ -1294,10 +1294,10 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     }
     .mrxLogo {
         position: absolute;
-        top: 15px;
-        left: 51rem;
-        width: 11rem;
-        height: 5rem;
+        top: 5px;
+        left: 5rem;
+        width: 9rem;
+        height: 4rem;
     }
 }
 
@@ -1423,20 +1423,20 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     }
     .mrxLogo {
         position: absolute;
-        top: 6px;
-        left: 36rem;
-        width: 11rem;
-        height: 5rem;
+        top: 5px;
+        left: 4.5rem;
+        width: 9rem;
+        height: 4rem;
     }
 }
 
 @media (max-width: 640px) {
     .mrxLogo {
         position: absolute;
-        top: 20px;
-        left: 32rem;
-        width: 5.9rem;
-        height: 3rem;
+        top: 5px;
+        left: 4.5rem;
+        width: 9rem;
+        height: 4rem;
     }
     .h2CenterCardWeb {
         color: #ffffff;
@@ -1785,10 +1785,10 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     }
     .mrxLogo {
         position: absolute;
-        top: 20px;
-        left: 20rem;
-        width: 5rem;
-        height: 2.2rem;
+        top: 5px;
+        left: 4.5rem;
+        width: 9rem;
+        height: 4rem;
     }
 }
 
@@ -2091,10 +2091,10 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     }
     .mrxLogo {
         position: absolute;
-        top: 20px;
-        left: 16rem;
-        width: 5rem;
-        height: 2.2rem;
+        top: 5px;
+        left: 4.5rem;
+        width: 9rem;
+        height: 4rem;
     }
 }
 
@@ -2396,10 +2396,10 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     }
     .mrxLogo {
         position: absolute;
-        top: 9px;
-        left: 14rem;
-        width: 4.5rem;
-        height: 2rem;
+        top: 5px;
+        left: 4.5rem;
+        width: 9rem;
+        height: 4rem;
     }
 }
 
