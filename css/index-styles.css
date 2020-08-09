@@ -1439,25 +1439,11 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         height: 4rem;
     }
     .h2CenterCardWeb {
-        color: #ffffff;
-        font-family: 'Quicksand', sans-serif;
-        font-weight: lighter;
-        font-size: 1.8rem;
-        padding: 1rem 0.5rem;
-        transform: translate(0rem, -171px);
-        transition: all 0.3s ease-out;
-        background-image: linear-gradient( rgba(26, 26, 133, 0), rgba(48, 33, 104, 0)90%);
-        text-shadow: 1px 1px 5px rgb(32, 32, 32);
+        transform: translate(0rem, -273px);
     }
     .TexteWeb {
-        background-image: linear-gradient(rgb(16, 15, 31)20%, rgba(255, 192, 203, 0));
+        transform: translate(0, -28rem);
         width: 100%;
-        height: 44.43rem;
-        padding-bottom: 0rem;
-        padding-top: 18rem;
-        transform: translate(0, -27.9rem); /*-33rem*/
-        transition: transform .3s ease-out;
-        text-shadow: 1px 1px 2px rgb(32, 32, 32);
     }
     .flecheWeb{
         color: white;
@@ -1468,7 +1454,13 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         width: 100%;
         height: 3rem;
         backface-visibility: hidden;
-    } 
+    }
+    .flecheWebDown {
+        transform: translate(0rem, -250px);
+    }
+    #revealWeb {
+        height: 36rem;
+    }
     
 }
 
