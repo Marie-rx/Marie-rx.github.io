@@ -17,7 +17,7 @@ body {
 }
 
 /*NAV BAR*/
-.bg-dark a {
+/*.bg-dark a {
     color: rgb(66, 155, 155);
     font-size: 1.3rem;
 }
@@ -35,13 +35,16 @@ h4 {
     font-family: 'Manrope', sans-serif;
     background-color: rgba(56, 56, 56, 0);
     border-color: rgba(56, 56, 56, 0);
-}
+}*/
 .navbar-toggler {
     border-color: rgba(236, 236, 236, 0.719) !important;
     border-width: 0.2rem;
     border-radius: 0%;
     margin-top: 0.5rem;
-    padding: 0.3rem;
+    margin-left: 0.5rem;
+    padding: 0.5rem;
+    position: fixed;
+    z-index: 1;
 }
 button:focus {
     outline: 0px !important;
@@ -52,6 +55,71 @@ button:focus {
     left: 4rem;
     width: 8rem;
     height: 4rem;
+}
+
+.sidenav {
+    height: 100%; 
+    width: 25rem; 
+    position: fixed; 
+    z-index: 5; 
+    top: 0; 
+    left: -27rem;
+    background: linear-gradient(15deg, #e2af40a9, rgba(51, 116, 116, 0.589)30%, rgb(51, 116, 116));
+    overflow: hidden;
+    padding-top: 1rem; 
+    transition: all ease-in-out 0.4s; 
+}
+  
+.sidenav a.item {
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+    font-family: 'Manrope', sans-serif;
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: rgb(92, 206, 206);
+    border-bottom: rgba(157, 196, 255, 0.13) solid 1px;
+    display: block;
+    border-left: solid 0px rgba(235, 248, 112, 0.281);
+}
+a.item:hover {
+    color: #e2af40 !important;
+    background-color: rgba(64, 224, 208, 0.13);
+    border-left: solid 15px rgba(235, 248, 112, 0.479);
+    transition: all ease-in-out 0.2s;
+}
+a.item:not(:hover) {
+    border-left: solid 0px;
+    transition: all ease-in-out 0.5s;
+}
+
+.closebtn {
+    padding: 0.1rem 1rem;
+    font-family: 'Manrope', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 0rem;
+    color: rgb(92, 206, 206);
+    display: block;
+}
+  
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    font-size: 36px;
+    z-index: 1;
+    transition: 0.2s;
+    overflow: hidden;
+}
+.sidenav .closebtn:hover {
+    color: #e2af40 !important;
+    background-color: rgba(64, 224, 208, 0.13);
+    transition: 0.1s;
+}
+#logo {
+      margin-left: 2rem;
+      width: 11rem;
+      height: 5rem;
+      transition: 0.2s;
 }
 /*END OF NAV BAR*/
 
@@ -90,7 +158,8 @@ button:focus {
 .imgContainer {
     height: 100%;
     width: 28.87rem;
-    background-color: rgba(255, 255, 255, 0);  
+    background-color: rgba(255, 255, 255, 0);
+    margin-top: 1.2rem;  
 }
 #imgBg {
     max-width: 28.87rem;
@@ -102,6 +171,7 @@ button:focus {
     max-width: 28.87rem;
     max-height: 42.75rem;
     padding: 0rem;
+    display: none;
 }
 .pointeSvg{
     background-image: url("images/pointe.svg");
@@ -129,13 +199,12 @@ button:focus {
 #face {
     content: '';
     position: absolute;
-    top: 177px; /*Bouger les yeux de haut en bas*/
+    top: 197px; /*Bouger les yeux de haut en bas*/
     width: 150px;
     height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 .eyes {
     position: relative;
@@ -236,6 +305,8 @@ a.mailIcon, a.cvIcon {
 hr {
     height: 0.1rem;
     color: rgb(0, 0, 0);
+    margin-top: 1rem;
+    margin-bottom: 0.1rem;
 }
 /*END OF TITLE*/
 /*END OF BANNER -------------------------------------------------------------------------------------------------------------------------------------*/
@@ -247,7 +318,7 @@ hr {
     margin: auto;
     padding: 0rem;
 }
-h2#skills {
+h2.about {
     padding: 1.5rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -1039,6 +1110,14 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
     }
+    .imgContainer {
+        width: 28.87rem;
+        background-color: rgba(255, 255, 255, 0);
+        margin-top: 1.2rem;
+    }
+    #face {
+        top: 195px; /*Bouger les yeux de haut en bas*/
+    }
     .bannerBox {
         padding-top: 10rem;
     }
@@ -1121,7 +1200,7 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         padding-top: 0.5rem;
         color: #33977e;
     }
-    h2#skills {
+    h2.about {
         font-size: 2.5rem;
     }
     h2.priorityH2 {
@@ -1204,6 +1283,14 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     .bannerBox {
         padding-top: 11rem;
     }
+    .imgContainer {
+        width: 28.87rem;
+        background-color: rgba(255, 255, 255, 0);
+        margin-top: 1.1rem;
+    }
+    #face {
+        top: 195px; /*Bouger les yeux de haut en bas*/
+    }
     section.jumbotron {
         padding-top: 0rem;
         margin-bottom: 0rem;
@@ -1235,6 +1322,13 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         width: 8rem;
         height: 3.6rem;
     }
+    hr {
+        margin-top: 1rem;
+        margin-bottom: 0.1rem;
+    }
+    .sidenav {
+        width: 25rem; 
+    }
 }
 /*XL*/
 @media (max-width: 1200px) {
@@ -1257,6 +1351,9 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         margin-bottom: 0rem;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
+    }
+    .sidenav {
+        width: 25rem; 
     }
 }
 
@@ -1283,7 +1380,7 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         height: 37rem;
     }
     #face {
-        top: 200px; /*Bouger les yeux de haut en bas*/
+        top: 246px; /*Bouger les yeux de haut en bas*/
     }
     .trailer {
         height: 25rem;
@@ -1299,6 +1396,14 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         width: 9rem;
         height: 4rem;
     }
+    .imgContainer {
+        width: 28.87rem;
+        background-color: rgba(255, 255, 255, 0);
+        margin-top: 3rem;
+    }
+    .sidenav {
+        width: 25rem; 
+    }
 }
 
 /*LG*/
@@ -1309,6 +1414,7 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         padding-bottom: 1rem;
         padding-top: 2rem;
         line-height: 5rem;
+        margin-top: 10rem;
     }
     p.lead {
         padding-bottom: 1rem;
@@ -1333,6 +1439,18 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         height: 10rem;
         padding: 0rem 0rem;
     }
+    .imgContainer {
+        width: 28.87rem;
+        background-color: rgba(255, 255, 255, 0);
+        margin-left: 1.1rem;
+    }
+    .bannerBox {
+        padding-top: 0rem;
+        width: 20rem;
+    }
+    .sidenav {
+        width: 25rem; 
+    }
 }
 
 /*MD*/
@@ -1346,12 +1464,17 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         padding-bottom: 1rem;
         margin-bottom: 0rem;
         padding-top: 0rem;
+        margin-top: 0rem;
     }
     p.lead {
         font-size: 2.5rem;
     }
     .bannerBox {
         padding-top: 0rem;
+        width: 30rem;
+    }
+    hr{
+        margin: 0rem !important;
     }
     section.jumbotron {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -1369,6 +1492,13 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     }
     #face {
         visibility: collapse;
+    }
+    .imgContainer {
+        height: 40rem;
+        width: 28.87rem;
+        background-color: rgba(255, 255, 255, 0);
+        margin-top: 2rem;
+        margin-left: 0rem;
     }
 
     div.cardGraph {
@@ -1410,7 +1540,7 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         font-size: 3rem;
         text-align: center;
     }
-    h2#skills {
+    h2.about {
         padding: 1rem;
         text-align: center;
         font-size: 1.8rem;
@@ -1427,6 +1557,9 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         left: 4.5rem;
         width: 9rem;
         height: 4rem;
+    }
+    .sidenav {
+        width: 25rem; 
     }
 }
 
@@ -1460,6 +1593,9 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     }
     #revealWeb {
         height: 36rem;
+    }
+    .sidenav {
+        width: 22rem; 
     }
     
 }
@@ -1737,6 +1873,12 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         margin-right: 0.2rem;
         margin-bottom: 0.4rem;
     }
+    .imgContainer {
+        height: 36rem;
+        width: 28.87rem;
+        background-color: rgba(255, 255, 255, 0);
+        margin-top: 3rem;
+    }
 
     .linkedin {
         padding-left: 0rem;
@@ -1769,7 +1911,7 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         font-size: 3rem;
         text-align: center;
     }
-    h2#skills {
+    h2.about {
         padding: 1rem;
         text-align: center;
         font-size: 1.8rem;
@@ -1781,6 +1923,9 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         left: 4.5rem;
         width: 9rem;
         height: 4rem;
+    }
+    .sidenav {
+        width: 100%; 
     }
 }
 
@@ -1796,8 +1941,7 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         padding: 0rem 2rem;
     }
     hr {
-        margin: 0.1rem;
-        
+        margin: 0.1rem !important;  
     }
     p.lead {
         font-size: 2.5rem;
@@ -1819,6 +1963,12 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     }
     #imgBg {
         margin-left: 0.6rem;
+    }
+    .imgContainer {
+        height: 32rem;
+        width: 28.87rem;
+        background-color: rgba(255, 255, 255, 0);
+        margin-top: 3rem;
     }
 
     .modal-backdrop {
@@ -2075,7 +2225,7 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         font-size: 3rem;
         text-align: center;
     }
-    h2#skills {
+    h2.about {
         padding: 1rem;
         text-align: center;
         font-size: 1.8rem;
@@ -2088,9 +2238,12 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         width: 9rem;
         height: 4rem;
     }
+    .sidenav {
+        width: 100%; 
+    }
 }
 
-@media (max-width: 320px /*320*/) {
+@media (max-width: 320px) {
     .bg-dark a { 
         font-size: 1.4rem;
     }
@@ -2102,7 +2255,6 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     }
     hr {
         margin: 0.1rem;
-        
     }
     p.lead {
         font-size: 2.5rem;
@@ -2124,6 +2276,12 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     }
     #imgBg {
         margin-left: 0.6rem;
+    }
+    .imgContainer {
+        height: 28rem;
+        width: 28.87rem;
+        background-color: rgba(255, 255, 255, 0);
+        margin-top: 3rem;
     }
 
     .modal-backdrop {
@@ -2380,7 +2538,7 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         font-size: 3rem;
         text-align: center;
     }
-    h2#skills {
+    h2.about {
         padding: 1rem;
         text-align: center;
         font-size: 1.8rem;
@@ -2392,6 +2550,9 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         left: 4.5rem;
         width: 9rem;
         height: 4rem;
+    }
+    .sidenav {
+        width: 100%; 
     }
 }
 
