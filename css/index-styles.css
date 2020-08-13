@@ -53,7 +53,7 @@ button:focus {
     position: fixed;
     z-index: 5;
     left: -27rem;
-    background: linear-gradient(15deg, #e2af40a9, rgba(51, 116, 116, 0.589)30%, rgb(51, 116, 116));
+    background: linear-gradient(-25deg, #ffb71d3d, rgba(51, 116, 116, 0.61), rgb(51, 116, 116)30%);
     overflow: hidden;
     padding-top: 1rem;
     transition: all ease-in-out 0.4s;
@@ -1429,6 +1429,13 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         width: 11rem;
         height: 5rem;
     }
+    .sidenav {
+        width: 25rem;
+        background: linear-gradient(-25deg, #ffb71d5e, rgba(51, 116, 116, 0.575), rgb(51, 116, 116)30%);
+    }
+    .sidenav a.item {
+        font-size: 1.6rem;
+    }
 }
 
 @media (max-width: 1440px) {
@@ -1493,6 +1500,10 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     }
     .sidenav {
         width: 25rem;
+        background: linear-gradient(-25deg, #ffb71d5e, rgba(51, 116, 116, 0.575), rgb(51, 116, 116)30%);
+    }
+    .sidenav a.item {
+        font-size: 1.6rem;
     }
 }
 
@@ -1570,7 +1581,11 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         margin-top: 3rem;
     }
     .sidenav {
-        width: 25rem;
+        width: 20rem;
+        background: linear-gradient(-25deg, #ffb81da1, rgb(51, 116, 116)25%);
+    }
+    .sidenav a.item {
+        font-size: 1.3rem;
     }
 }
 
@@ -1619,7 +1634,10 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     }
     .sidenav {
         width: 25rem;
-        background: linear-gradient(15deg, #e2af408c, rgb(51, 116, 116)50%, rgb(51, 116, 116));
+        background: linear-gradient(-25deg, #ffb81da1, rgb(51, 116, 116)25%);
+    }
+    .sidenav a.item {
+        font-size: 1.6rem;
     }
 }
 
