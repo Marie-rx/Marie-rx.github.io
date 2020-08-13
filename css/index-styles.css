@@ -1,11 +1,16 @@
-html, body {
-    font-size: 1rem;/* "x" pixel / 16 rem*/ 
+html,
+body {
+    font-size: 1rem;
+    /* "x" pixel / 16 rem*/
     width: 100%;
     height: 100%;
 }
-body {    
+
+body {
     padding-top: 0;
     background-color: #e6b34400;
+    z-index:-1000;
+  position:relative;
     /*font-family: 'Anton', sans-serif;
     font-family: 'Comfortaa', cursive;
     font-family: 'Lexend Deca', sans-serif;
@@ -16,26 +21,9 @@ body {
     font-family: 'Quicksand', sans-serif;*/
 }
 
+
 /*NAV BAR*/
-/*.bg-dark a {
-    color: rgb(66, 155, 155);
-    font-size: 1.3rem;
-}
-.bg-dark a:hover {
-    color: #e2af40;
-}
-h4 {
-    color: rgb(255, 255, 255);
-    font-size: 1.3rem;
-    font-family: 'Manrope', sans-serif; 
-}
-.navbar {
-    color: rgb(66, 155, 155);
-    font-size: 1.3rem;
-    font-family: 'Manrope', sans-serif;
-    background-color: rgba(56, 56, 56, 0);
-    border-color: rgba(56, 56, 56, 0);
-}*/
+
 .navbar-toggler {
     border-color: rgba(236, 236, 236, 0.719) !important;
     border-width: 0.2rem;
@@ -46,9 +34,11 @@ h4 {
     position: fixed;
     z-index: 1;
 }
+
 button:focus {
     outline: 0px !important;
 }
+
 .mrxLogo {
     position: absolute;
     top: 4px;
@@ -58,17 +48,17 @@ button:focus {
 }
 
 .sidenav {
-    height: 100%; 
-    width: 25rem; 
-    position: fixed; 
-    z-index: 5;  
+    height: 100%;
+    width: 25rem;
+    position: fixed;
+    z-index: 5;
     left: -27rem;
     background: linear-gradient(15deg, #e2af40a9, rgba(51, 116, 116, 0.589)30%, rgb(51, 116, 116));
     overflow: hidden;
-    padding-top: 1rem; 
-    transition: all ease-in-out 0.4s; 
+    padding-top: 1rem;
+    transition: all ease-in-out 0.4s;
 }
-  
+
 .sidenav a.item {
     padding: 1.5rem 1.5rem 1.5rem 1.5rem;
     font-family: 'Manrope', sans-serif;
@@ -79,12 +69,14 @@ button:focus {
     display: block;
     border-left: solid 0px rgba(235, 248, 112, 0.281);
 }
+
 a.item:hover {
     color: #e2af40 !important;
     background-color: rgba(64, 224, 208, 0.13);
     border-left: solid 15px rgba(235, 248, 112, 0.479);
     transition: all ease-in-out 0.2s;
 }
+
 a.item:not(:hover) {
     border-left: solid 0px;
     transition: all ease-in-out 0.5s;
@@ -99,7 +91,7 @@ a.item:not(:hover) {
     color: rgb(92, 206, 206);
     display: block;
 }
-  
+
 .sidenav .closebtn {
     position: absolute;
     top: 0;
@@ -109,17 +101,21 @@ a.item:not(:hover) {
     transition: 0.2s;
     overflow: hidden;
 }
+
 .sidenav .closebtn:hover {
     color: #e2af40 !important;
     background-color: rgba(64, 224, 208, 0.13);
     transition: 0.1s;
 }
+
 #logo {
-      margin-left: 2rem;
-      width: 11rem;
-      height: 5rem;
-      transition: 0.2s;
+    margin-left: 2rem;
+    width: 11rem;
+    height: 5rem;
+    transition: 0.2s;
 }
+
+
 /*END OF NAV BAR*/
 
 
@@ -135,84 +131,97 @@ a.item:not(:hover) {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
+
 .artefactCover {
     background-color: rgb(85, 190, 190);
-
 }
+
 .artefactCover2 {
     background-color: #e6b244;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
+
 .artefactCover3 {
     background: linear-gradient(#252525 90%, #3b3b3b 100%);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
+
 .artefactCover4 {
     background-color: #3d3d3d;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
+
 .imgContainer {
     height: 100%;
     width: 28.87rem;
     background-color: rgba(255, 255, 255, 0);
-    margin-top: 1.2rem;  
+    margin-top: 1.2rem;
 }
+
 #imgBg {
     max-width: 28.87rem;
     max-height: 42.75rem;
     visibility: hidden;
     padding: 0rem;
 }
+
 #imgBgDerp {
     max-width: 28.87rem;
     max-height: 42.75rem;
     padding: 0rem;
     display: none;
 }
-.pointeSvg{
+
+.pointeSvg {
     background-image: url("images/pointe.svg");
     background-position: center;
     background-size: cover;
     width: 100%;
     height: 5.5rem;
     background-color: #e6b244;
-   /* padding: 0rem;*/
+    /* padding: 0rem;*/
     padding: 0px;
-    -webkit-backface-visibility:hidden;
-    backface-visibility:hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
+
 .fleche {
     margin-top: 2rem;
     color: #2b2b2b;
     transition: margin-top .1s ease-out;
 }
+
 .fleche:hover {
     margin-top: 2.2rem;
     color: #e2af40;
 }
 
+
 /*PHOTO*/
+
 #face {
     content: '';
     position: absolute;
-    top: 197px; /*Bouger les yeux de haut en bas*/
+    top: 197px;
+    /*Bouger les yeux de haut en bas*/
     width: 150px;
     height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .eyes {
     position: relative;
     /* top: 170px; */
     display: flex;
     z-index: 10;
     right: -148px;
-    
 }
+
 .eyes .eye {
     position: relative;
     width: 80px;
@@ -224,26 +233,34 @@ a.item:not(:hover) {
     overflow: hidden;
     display: none;
 }
+
 .eyes .eye::before {
-    content:'';
+    content: '';
     position: absolute;
     z-index: 11;
-    top: 36px; /*changer la position des deux yeux haut/bas*/
+    top: 36px;
+    /*changer la position des deux yeux haut/bas*/
     left: 15px;
-    transform: translate(-40%, -40%); /*changer la distance entre le centre de rotation et les pupilles*/
+    transform: translate(-40%, -40%);
+    /*changer la distance entre le centre de rotation et les pupilles*/
     width: 50px;
     height: 50px;
     background-color: black;
     border-radius: 50%;
-    border: 20px solid rgb(69, 168, 69) ;   
+    border: 20px solid rgb(69, 168, 69);
 }
+
+
 /*END OF PHOTO*/
 
+
 /*TITLE*/
+
 .bannerBox {
     padding: 3rem 1rem 1rem 1rem;
     width: 32rem;
 }
+
 h1.banner {
     font-size: 5rem;
     letter-spacing: -0.2rem;
@@ -251,53 +268,69 @@ h1.banner {
     padding-top: 9rem;
     line-height: 4rem;
     font-family: 'Manrope', sans-serif;
-    color:  rgb(34, 34, 34);
+    color: rgb(34, 34, 34);
 }
+
 .lead {
     color: rgb(255, 213, 98);
     font-family: 'Manrope', sans-serif;
     font-weight: lighter;
     font-size: 2rem;
 }
+
 .contactUp {
-    color:  rgb(34, 34, 34);
+    color: rgb(34, 34, 34);
     font-family: 'Manrope', sans-serif;
     font-weight: normal;
     font-size: 1.4rem;
     width: 10rem;
     margin: 0rem;
 }
+
 .contactUp:hover {
     color: rgb(255, 213, 98);
 }
+
 .linkedin {
-    color:  rgb(34, 34, 34);
+    color: rgb(34, 34, 34);
     padding-right: 1rem;
 }
+
 .linkedin:hover {
     color: rgb(255, 213, 98);
 }
+
 .twitter {
     padding-right: 0.7rem;
-    color:  rgb(34, 34, 34);
+    color: rgb(34, 34, 34);
     font-family: 'Manrope', sans-serif;
 }
+
 .twitter:hover {
     color: rgb(255, 213, 98);
 }
+
 .cv {
     padding-left: 1rem;
     padding-right: 0rem;
-    color:  rgb(34, 34, 34);
+    color: rgb(34, 34, 34);
     font-family: 'Manrope', sans-serif;
 }
+
 .cv:hover {
     color: rgb(255, 213, 98);
 }
-.fa-github, .fa-linkedin, .fa-twitter, .fa-envelope, .fa-file-pdf {
+
+.fa-github,
+.fa-linkedin,
+.fa-twitter,
+.fa-envelope,
+.fa-file-pdf {
     font-size: 1.7rem !important;
 }
-a.mailIcon, a.cvIcon {
+
+a.mailIcon,
+a.cvIcon {
     font-size: 1.1rem;
 }
 
@@ -307,16 +340,23 @@ hr {
     margin-top: 1rem;
     margin-bottom: 0.1rem;
 }
+
+
 /*END OF TITLE*/
+
+
 /*END OF BANNER -------------------------------------------------------------------------------------------------------------------------------------*/
 
+
 /*SKILLS*/
+
 .fondSkills {
     background-color: #e6b244;
     padding-bottom: 3.7rem;
     margin: auto;
     padding: 0rem;
 }
+
 h2.about {
     padding: 1.5rem;
     margin-top: 2rem;
@@ -324,65 +364,76 @@ h2.about {
     text-align: center;
     color: rgb(44, 44, 44);
 }
+
 .fondPriority {
     margin-left: 5rem;
     margin-right: 5rem;
     margin-bottom: 2rem;
 }
+
 p.priority {
     text-align: center;
     color: #000000;
-    font-family: 'Manrope', sans-serif; 
+    font-family: 'Manrope', sans-serif;
     font-weight: lighter;
     font-size: 1.2rem;
     padding: 0rem 0.5rem !important;
 }
+
 .margins {
     font-size: 3rem;
     text-align: center;
 }
+
 h2.priorityH2 {
     color: #000000;
-    font-family: 'Manrope', sans-serif; 
+    font-family: 'Manrope', sans-serif;
     font-weight: lighter;
     font-size: 1.6rem;
     text-align: center;
 }
+
 .Profile {
     border: rgba(0, 0, 0, 0) solid 1px;
     padding: 1rem 1rem;
     margin: 2rem 0rem;
     width: 27rem;
 }
+
 .profileImg {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 70%;
 }
+
 h2.profileh2 {
     color: rgb(31, 31, 31);
-    font-family: 'Manrope', sans-serif; 
+    font-family: 'Manrope', sans-serif;
     font-weight: 500;
     font-size: 1.6rem;
     text-align: center;
     padding-top: 1rem;
 }
+
 .profileP {
     color: #000000;
-    font-family: 'Manrope', sans-serif; 
+    font-family: 'Manrope', sans-serif;
     font-weight: lighter;
     font-size: 1.1rem;
     text-align: left;
 }
+
 .ProfileBars {
     margin: 0rem;
     padding: 0 !important;
 }
+
 .progress {
     height: 1.8rem;
     background-color: rgb(245, 200, 132);
 }
+
 .barName {
     height: 1.8rem;
     width: 10rem;
@@ -390,58 +441,68 @@ h2.profileh2 {
     padding: 0rem 0rem;
     color: #000000;
     background-color: rgb(250, 228, 104);
-    font-family: 'Manrope', sans-serif; 
+    font-family: 'Manrope', sans-serif;
     font-weight: normal;
     font-size: 1rem;
     text-align: center;
 }
+
 div.barName p {
     text-align: center;
     padding-top: 0.1rem;
 }
+
 .progress-bar {
     background-color: rgb(67, 156, 156);
-    font-family: 'Manrope', sans-serif; 
+    font-family: 'Manrope', sans-serif;
     font-weight: normal;
     font-size: 1rem;
 }
+
 span#age {
     color: #000000;
-    font-family: 'Manrope', sans-serif; 
+    font-family: 'Manrope', sans-serif;
     font-weight: lighter;
     font-size: 1.1rem;
     text-align: center;
 }
+
 i.profileInfosFA {
     font-size: 1.4rem;
     padding-right: 0.1rem;
     color: rgb(0, 0, 0);
 }
+
 p.profileInfos {
-    font-family: 'Manrope', sans-serif; 
+    font-family: 'Manrope', sans-serif;
     color: rgb(0, 0, 0);
     margin-bottom: 0.3rem;
 }
+
 .profileInfosFA:hover {
     color: rgb(255, 255, 255);
 }
+
 
 /*END OF SKILLS*/
 
 
 /*WEB DESIGN CARDS*/
+
 h2 {
     color: #e6b244;
-    font-family: 'Manrope', sans-serif; 
+    font-family: 'Manrope', sans-serif;
     font-weight: lighter;
     font-size: 2rem;
 }
+
 .fond1 {
     background-color: #292929;
     padding-bottom: 3.7rem;
     -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
+    backface-visibility: hidden;
 }
+
 #revealWeb {
     background-image: url("images/exgSite.jpg");
     background-position: center;
@@ -451,16 +512,19 @@ h2 {
     height: 44.43rem;
     padding: 0rem;
 }
+
 .TexteWeb {
     background-image: linear-gradient(rgba(16, 15, 31, 0.89)60%, rgba(255, 192, 203, 0)98%);
     width: 47.18rem;
     height: 44.43rem;
     padding-bottom: 0rem;
     padding-top: 18rem;
-    transform: translate(0, -28rem); /*-33rem*/
+    transform: translate(0, -28rem);
+    /*-33rem*/
     transition: transform .3s ease-out;
     text-shadow: 1px 1px 2px rgb(32, 32, 32);
-}    
+}
+
 #revealWeb:hover div.TexteWeb {
     transform: translate(0, -14rem);
 }
@@ -473,6 +537,7 @@ h2 {
     width: fit-content;
     padding: 0.6rem;
 }
+
 .h2CenterCardWeb {
     color: #ffffff;
     font-family: 'Quicksand', sans-serif;
@@ -484,6 +549,7 @@ h2 {
     background-image: linear-gradient( rgba(26, 26, 133, 0), rgba(48, 33, 104, 0)90%);
     text-shadow: 1px 1px 5px rgb(32, 32, 32);
 }
+
 .h2TitleWeb {
     color: #ffffff;
     font-family: 'Quicksand', sans-serif;
@@ -492,7 +558,8 @@ h2 {
     padding-top: 1rem;
     margin-bottom: 1rem;
 }
-.cardSubtitleWeb{
+
+.cardSubtitleWeb {
     color: rgb(58, 138, 138);
     font-family: 'Manrope', sans-serif;
     font-weight: lighter;
@@ -509,6 +576,7 @@ div.card {
     margin: 0.5rem;
     background-color: #e6b244;
 }
+
 div.cardWeb {
     overflow: hidden;
     width: 47.18rem;
@@ -516,7 +584,7 @@ div.cardWeb {
     margin: 0rem;
 }
 
-.flecheWebDown{
+.flecheWebDown {
     padding: 1rem 9rem;
     background-image: url("images/PointeCardGameDown.svg");
     background-position: center;
@@ -526,7 +594,8 @@ div.cardWeb {
     transform: translate(0rem, -150px);
     backface-visibility: hidden;
 }
-.flecheWeb{
+
+.flecheWeb {
     color: white;
     padding: 1rem 22.5rem;
     background-image: url("images/PointeCardGame.svg");
@@ -536,7 +605,8 @@ div.cardWeb {
     height: 4rem;
     backface-visibility: hidden;
 }
-.pointeSvg2{
+
+.pointeSvg2 {
     background-image: url("images/pointe2.svg");
     background-position: center;
     background-size: cover;
@@ -546,31 +616,38 @@ div.cardWeb {
     padding: 0rem;
     backface-visibility: hidden;
 }
+
 .fleche2 {
     margin-top: 1.8rem;
     color: #2b2b2b;
     transition: margin-top .1s ease-out;
 }
+
 .fleche2:hover {
     margin-top: 2rem;
     color: rgb(58, 138, 138);
 }
+
+
 /*END OF WEB DESIGN CARDS*/
 
 
 /*GAME CARDS*/
+
 .fondGame {
     background-color: #3a3a3a;
     padding-bottom: 3.7rem;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-} 
+}
+
 .fondGameFree {
     background-color: #3a3a3a;
     padding-bottom: 3.7rem;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-}   
+}
+
 .h2TitleGame {
     color: #ffffff;
     font-family: 'Quicksand', sans-serif;
@@ -579,6 +656,7 @@ div.cardWeb {
     padding-top: 1rem;
     margin-bottom: 1rem;
 }
+
 .h2TitleGameWMM {
     color: #ffffff;
     font-family: 'Quicksand', sans-serif;
@@ -587,6 +665,7 @@ div.cardWeb {
     padding: 0rem 2rem;
     margin-bottom: 1rem;
 }
+
 .h2TitleGameOTV {
     color: #ffffff;
     font-family: 'Quicksand', sans-serif;
@@ -595,6 +674,7 @@ div.cardWeb {
     padding: 0rem 2rem;
     margin-bottom: 1rem;
 }
+
 .h2CenterCard {
     color: #ffffff;
     font-family: 'Quicksand', sans-serif;
@@ -606,6 +686,7 @@ div.cardWeb {
     background-image: linear-gradient( rgba(26, 26, 133, 0), rgba(48, 33, 104, 0)90%);
     text-shadow: 1px 1px 5px rgb(32, 32, 32);
 }
+
 .h2CenterCardWMM {
     color: #ffffff;
     font-family: 'Quicksand', sans-serif;
@@ -617,6 +698,7 @@ div.cardWeb {
     background-image: linear-gradient( rgba(26, 26, 133, 0), rgba(48, 33, 104, 0)90%);
     text-shadow: 1px 1px 5px rgb(32, 32, 32);
 }
+
 .cardSubtitleGame {
     color: rgb(255, 255, 255);
     font-family: 'Manrope', sans-serif;
@@ -626,6 +708,7 @@ div.cardWeb {
     margin-bottom: 0rem;
     padding: 0rem 1rem;
 }
+
 .btn-styleGame {
     color: rgb(255, 255, 255);
     font-family: 'Manrope', sans-serif;
@@ -636,6 +719,7 @@ div.cardWeb {
     padding: 0.9rem 0.9rem;
     margin-bottom: 0.7rem !important;
 }
+
 .mission {
     color: #ffffff;
     font-family: 'Manrope', sans-serif;
@@ -646,12 +730,14 @@ div.cardWeb {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
 }
-#bold  {
+
+#bold {
     color: rgb(236, 196, 62);
     font-weight: lighter;
     font-size: 1.2rem;
 }
-.pointeSvg3{
+
+.pointeSvg3 {
     background-image: url("images/pointe3.svg");
     background-position: center;
     background-size: cover;
@@ -661,16 +747,19 @@ div.cardWeb {
     padding: 0rem;
     backface-visibility: hidden;
 }
+
 .fleche4 {
     margin-top: 1.8rem;
     color: #e6b244;
     transition: margin-top .1s ease-out;
 }
+
 .fleche4:hover {
     margin-top: 2rem;
     color: rgb(64, 148, 130);
 }
-.flecheGame{
+
+.flecheGame {
     color: white;
     padding: 1rem 9rem;
     background-image: url("images/PointeCardGame.svg");
@@ -680,7 +769,8 @@ div.cardWeb {
     height: 4rem;
     backface-visibility: hidden;
 }
-.flecheGameDown{
+
+.flecheGameDown {
     padding: 1rem 9rem;
     background-image: url("images/PointeCardGameDown.svg");
     background-position: center;
@@ -690,39 +780,47 @@ div.cardWeb {
     transform: translate(0rem, -140px);
     backface-visibility: hidden;
 }
+
 i.flecheGame {
     margin-bottom: 0.5rem;
 }
+
 .GameTexte {
     background-image: linear-gradient(rgba(16, 15, 31, 0.89)85%, rgba(255, 192, 203, 0));
     width: 20rem;
     height: 40rem;
     padding-bottom: 0rem;
     padding-top: 18rem;
-    transform: translate(0, -33rem); /*-33rem*/
+    transform: translate(0, -33rem);
+    /*-33rem*/
     transition: transform .3s ease-out;
     text-shadow: 1px 1px 2px rgb(32, 32, 32);
 }
+
 .GameTexteWMM {
     background-image: linear-gradient(rgba(16, 15, 31, 0.89)85%, rgba(255, 192, 203, 0));
     width: 20rem;
     height: 40rem;
     padding-bottom: 0rem;
     padding-top: 18rem;
-    transform: translate(0, -33.2rem); /*-33rem*/
+    transform: translate(0, -33.2rem);
+    /*-33rem*/
     transition: transform .3s ease-out;
     text-shadow: 1px 1px 2px rgb(32, 32, 32);
 }
+
 .GameTexteOTV {
     background-image: linear-gradient(rgba(16, 15, 31, 0.89)85%, rgba(255, 192, 203, 0));
     width: 20rem;
     height: 40rem;
     padding-bottom: 0rem;
     padding-top: 20rem;
-    transform: translate(0, -33rem); /*-33rem*/
+    transform: translate(0, -33rem);
+    /*-33rem*/
     transition: transform .3s ease-out;
     text-shadow: 1px 1px 2px rgb(32, 32, 32);
 }
+
 #revealexi {
     background-image: linear-gradient(rgba(255, 192, 203, 0), rgba(0, 0, 255, 0.5)), url("images/patron-mokupexi1.jpg");
     background-position: center;
@@ -732,6 +830,7 @@ i.flecheGame {
     min-height: 20rem;
     padding: 0rem;
 }
+
 #revealWMM {
     background-image: linear-gradient(rgba(255, 192, 203, 0), rgba(0, 0, 255, 0.5)), url("images/patron-mokupWMM1.jpg");
     background-position: center;
@@ -741,6 +840,7 @@ i.flecheGame {
     min-height: 20rem;
     padding: 0rem;
 }
+
 #revealOTV {
     background-image: linear-gradient(rgba(255, 192, 203, 0), rgba(0, 0, 255, 0.5)), url("images/patron-mokupOTV1.jpg");
     background-position: center;
@@ -750,35 +850,45 @@ i.flecheGame {
     min-height: 20rem;
     padding: 0rem;
 }
-#revealexi:hover div.GameTexte, #revealWMM:hover div.GameTexteWMM, #revealOTV:hover div.GameTexteOTV {
+
+#revealexi:hover div.GameTexte,
+#revealWMM:hover div.GameTexteWMM,
+#revealOTV:hover div.GameTexteOTV {
     transform: translate(0, -15rem);
 }
 
 
 /*GAME CARDS MODAL*/
+
 .trailer {
     width: 100%;
     height: 35.59rem;
     padding: 0rem 5rem;
     background-color: rgb(14, 14, 14);
 }
-.carousel-control-next, .carousel-control-prev {
+
+.carousel-control-next,
+.carousel-control-prev {
     width: 7% !important;
     opacity: 23%;
     height: 20%;
     margin: auto;
     background-color: rgba(0, 0, 0, 0.61);
 }
+
 .carousel-indicators {
     margin-bottom: 3rem !important;
 }
+
 .modal-dialog {
     margin: auto !important;
 }
+
 .modal-content {
     border-radius: 0rem !important;
     border: solid 0rem !important;
 }
+
 h2.modTitle {
     color: #0f0f0f;
     font-family: 'Quicksand', sans-serif;
@@ -791,6 +901,7 @@ h2.modTitle {
     margin: 0rem 0.5rem;
     border-bottom: solid 1px rgba(128, 128, 128, 0.281);
 }
+
 .modP {
     color: #0f0f0f;
     font-family: 'Manrope', sans-serif;
@@ -801,19 +912,24 @@ h2.modTitle {
     padding-top: 0.2rem;
     margin: 0rem 0.5rem;
 }
+
 span {
     color: rgb(64, 148, 130);
     font-size: 1.1rem;
 }
+
+
 /*END OF GAME CARDS MODAL*/
+
+
 /*END OF GAME CARDS*/
 
 
 /*GRAPHISME CARDS*/
+
 #reveal2 {
     padding: 0rem;
-    background-image: linear-gradient(rgba(255, 192, 203, 0.336), rgba(0, 0, 255, 0.5)),
-    url("images/g1.JPG");
+    background-image: linear-gradient(rgba(255, 192, 203, 0.336), rgba(0, 0, 255, 0.5)), url("images/g1.JPG");
     background-position: center;
     background-size: cover;
     overflow: hidden;
@@ -821,10 +937,10 @@ span {
     min-height: 20rem;
     padding: 0rem !important;
 }
+
 #reveal3 {
     padding: 0rem;
-    background-image: linear-gradient(rgba(255, 192, 203, 0.336), rgba(0, 0, 255, 0.5)),
-    url("images/v2.jpg");
+    background-image: linear-gradient(rgba(255, 192, 203, 0.336), rgba(0, 0, 255, 0.5)), url("images/v2.jpg");
     background-position: center;
     background-size: cover;
     overflow: hidden;
@@ -832,10 +948,10 @@ span {
     min-height: 20rem;
     padding: 0rem !important;
 }
+
 #reveal4 {
     padding: 0rem;
-    background-image: linear-gradient(rgba(255, 192, 203, 0.336), rgba(0, 0, 255, 0.5)),
-    url("images/a2.jpg");
+    background-image: linear-gradient(rgba(255, 192, 203, 0.336), rgba(0, 0, 255, 0.5)), url("images/a2.jpg");
     background-position: center;
     background-size: cover;
     overflow: hidden;
@@ -850,27 +966,32 @@ span {
     height: 40rem;
     padding-bottom: 0rem;
     padding-top: 18rem;
-    transform: translate(0, -21rem); /*-33rem*/
+    transform: translate(0, -21rem);
+    /*-33rem*/
     transition: transform .2s ease-out;
     text-shadow: 1px 1px 2px rgb(32, 32, 32);
 }
+
 .GameTexteV1 {
     background-image: linear-gradient(rgba(35, 24, 192, 0.89)50%, rgba(255, 22, 61, 0));
     width: 20rem;
     height: 40rem;
     padding-bottom: 0rem;
     padding-top: 18rem;
-    transform: translate(0, -21rem); /*-33rem*/
+    transform: translate(0, -21rem);
+    /*-33rem*/
     transition: transform .2s ease-out;
     text-shadow: 1px 1px 2px rgb(32, 32, 32);
 }
+
 .GameTexteA1 {
     background-image: linear-gradient(rgba(35, 24, 192, 0.89)50%, rgba(255, 22, 61, 0));
     width: 20rem;
     height: 40rem;
     padding-bottom: 0rem;
     padding-top: 18rem;
-    transform: translate(0, -23.3rem); /*-33rem*/
+    transform: translate(0, -23.3rem);
+    /*-33rem*/
     transition: transform .2s ease-out;
     text-shadow: 1px 1px 2px rgb(32, 32, 32);
 }
@@ -885,7 +1006,9 @@ span {
     padding: 0rem 1rem;
 }
 
-#reveal2:hover div.GameTexteG2, #reveal3:hover div.GameTexteV1, #reveal4:hover div.GameTexteA1  {
+#reveal2:hover div.GameTexteG2,
+#reveal3:hover div.GameTexteV1,
+#reveal4:hover div.GameTexteA1 {
     transform: translate(0, -15rem);
 }
 
@@ -895,7 +1018,8 @@ div.cardGraph {
     height: 40rem;
     margin: 0.5rem;
 }
-.pointeSvg4{
+
+.pointeSvg4 {
     background-image: url("images/pointe4.svg");
     background-position: center;
     background-size: cover;
@@ -906,32 +1030,43 @@ div.cardGraph {
     backface-visibility: hidden;
 }
 
+
 /*GRAPHISME CARDS MODAL*/
+
 .modal-title {
-    color: rgb(255, 255, 255); 
-    font-family: 'Manrope', sans-serif;    
+    color: rgb(255, 255, 255);
+    font-family: 'Manrope', sans-serif;
     font-weight: normal;
     border-bottom: grey solid 1px;
 }
+
 .modal-lg {
     max-width: 600px !important;
     max-height: 500px !important;
 }
+
 .modal-footer {
     border-bottom-left-radius: 0rem;
     border-bottom-right-radius: 0rem;
 }
+
 .background {
     background-color: rgb(26, 25, 25);
 }
 
+
 /*END OF GRAPHISME CARDS MODAL*/
+
+
 /*END OF GRAPHISME CARDS*/
 
+
 /*GRAPHISTE FREELANCE*/
+
 .videoContainer {
     padding: 0rem;
 }
+
 .spirouIMG {
     background-image: url("images/petitSpirou.JPG");
     background-color: rgb(212, 236, 245);
@@ -940,6 +1075,7 @@ div.cardGraph {
     background-repeat: no-repeat;
     height: 270px;
 }
+
 .h2TitleCom {
     color: rgb(47, 48, 48);
     font-family: 'Manrope', sans-serif;
@@ -948,6 +1084,7 @@ div.cardGraph {
     text-transform: uppercase;
     padding: 0rem 1rem;
 }
+
 .h2CenterCardFreelance {
     color: #000000;
     font-family: 'Quicksand', sans-serif;
@@ -960,7 +1097,8 @@ div.cardGraph {
     transition: all 0.2s ease-out;
     background-image: linear-gradient( rgba(26, 26, 133, 0), rgba(48, 33, 104, 0)90%);
 }
-.flecheFreelanceDown{
+
+.flecheFreelanceDown {
     padding: 1rem 0rem;
     background-image: url("images/PointeCardGameDown.svg");
     background-position: center;
@@ -971,19 +1109,23 @@ div.cardGraph {
     transform: translate(0rem, 15px);
     backface-visibility: hidden;
 }
+
 .ComText {
     background-color: #ffffff;
     padding: 0rem;
 }
-.card-text{
+
+.card-text {
     font-size: 1.3rem;
 }
+
 .freelancePicture {
     display: block;
     margin: auto;
     padding: 0.2rem 0rem;
     filter: drop-shadow(0 0 0.75rem rgb(155, 154, 154));
 }
+
 div#comContainer {
     height: fit-content !important;
     height: -moz-fit-content;
@@ -992,6 +1134,7 @@ div#comContainer {
     margin-right: 0.2rem;
     margin-bottom: 0.4rem;
 }
+
 div#comContainerSpirou {
     height: fit-content !important;
     height: -moz-fit-content;
@@ -1001,6 +1144,7 @@ div#comContainerSpirou {
     margin-bottom: 1rem;
     width: 60.5rem;
 }
+
 div#comContainer p {
     color: rgb(26, 26, 26);
     font-weight: normal;
@@ -1010,6 +1154,7 @@ div#comContainer p {
     padding-bottom: 0rem;
     margin: 0rem;
 }
+
 div#comContainerSpirou p {
     color: rgb(26, 26, 26);
     font-weight: normal;
@@ -1018,78 +1163,94 @@ div#comContainerSpirou p {
     padding-right: 2rem;
     padding-bottom: 0rem;
 }
+
 span.freelance {
     font-family: 'Manrope', sans-serif;
     font-size: 1.4rem;
     color: #2b2b2b;
-
     background-color: #ffc64b;
     padding-left: 1rem;
     padding-right: 1rem;
 }
+
 div#comContainer:hover .h2CenterCardFreelance {
     transform: translate(0rem, 2px);
     color: rgb(46, 46, 46);
     border-bottom: rgb(252, 178, 41) solid 10px;
 }
+
 div#comContainer:hover .flecheFreelanceDown {
     transform: translate(0rem, 10px);
 }
+
 div#comContainerSpirou:hover .h2CenterCardFreelance {
     transform: translate(0rem, 2px);
     color: rgb(46, 46, 46);
     border-bottom: rgb(252, 178, 41) solid 10px;
 }
+
 div#comContainerSpirou:hover .flecheFreelanceDown {
     transform: translate(0rem, 10px);
 }
+
+
 /*END OF GRAPHISTE FREELANCE*/
 
 
-
 /*FOOTER*/
+
 .footer {
     height: 3.75rem;
     padding-top: 1rem;
     background-color: #292929;
 }
+
 .fleche5 {
     margin-top: 1.8rem;
     color: #e6b244;
     transition: margin-top .1s ease-out;
 }
+
 .fleche5:hover {
     margin-top: 1.3rem;
     color: #2db6af;
 }
+
 .footer span {
     font-family: 'Manrope', sans-serif;
     font-weight: lighter;
     color: rgba(243, 229, 103, 0.568);
 }
-.contactFooter{
+
+.contactFooter {
     color: rgba(255, 202, 87, 0.466);
     font-size: 1.5rem;
     padding-left: 1rem;
 }
-.contactFooter:hover{
+
+.contactFooter:hover {
     color: rgb(255, 202, 87);
     font-size: 1.5rem;
     padding-left: 1rem;
 }
+
 .container {
     width: auto;
     max-width: 680px;
     padding: 0 15px;
 }
+
+
 /*END OF FOOTER*/
 
 
-
 /*PADDING UNDER NAVBAR AND TYPO RESPONSIVE*/
+
+
 /*XXXL*/
+
 @media (min-width: 2560px) {
-    .bg-dark a { 
+    .bg-dark a {
         font-size: 2rem;
     }
     span.navbar-toggler-icon {
@@ -1115,7 +1276,8 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         margin-top: 1.2rem;
     }
     #face {
-        top: 195px; /*Bouger les yeux de haut en bas*/
+        top: 195px;
+        /*Bouger les yeux de haut en bas*/
     }
     .bannerBox {
         padding-top: 10rem;
@@ -1145,10 +1307,15 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         padding-left: 30rem;
         padding-right: 30rem;
     }
-    .fa-github, .fa-linkedin, .fa-twitter, .fa-envelope, .fa-file-pdf {
+    .fa-github,
+    .fa-linkedin,
+    .fa-twitter,
+    .fa-envelope,
+    .fa-file-pdf {
         font-size: 3rem !important;
     }
-    a.mailIcon, a.cvIcon {
+    a.mailIcon,
+    a.cvIcon {
         font-size: 1.5rem;
     }
     .fa-chevron-down {
@@ -1164,7 +1331,6 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     .fleche:hover {
         padding-top: 2.2rem;
         color: #e2af40;
-
     }
     .fleche2 {
         padding-top: 1.1rem;
@@ -1263,15 +1429,14 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         width: 11rem;
         height: 5rem;
     }
-
 }
 
 @media (max-width: 1440px) {
-    .bg-dark a { 
+    .bg-dark a {
         font-size: 1.2rem;
     }
     body {
-      padding-top: 0rem;
+        padding-top: 0rem;
     }
     h1.banner {
         font-size: 5rem;
@@ -1288,7 +1453,8 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         margin-top: 1.1rem;
     }
     #face {
-        top: 195px; /*Bouger les yeux de haut en bas*/
+        top: 195px;
+        /*Bouger les yeux de haut en bas*/
     }
     section.jumbotron {
         padding-top: 0rem;
@@ -1326,16 +1492,19 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         margin-bottom: 0.1rem;
     }
     .sidenav {
-        width: 25rem; 
+        width: 25rem;
     }
 }
+
+
 /*XL*/
+
 @media (max-width: 1200px) {
-    .bg-dark a { 
+    .bg-dark a {
         font-size: 1.1rem;
     }
     body {
-      padding-top: 0rem;
+        padding-top: 0rem;
     }
     h1.banner {
         font-size: 4rem;
@@ -1352,12 +1521,11 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         backface-visibility: hidden;
     }
     .sidenav {
-        width: 25rem; 
+        width: 25rem;
     }
 }
 
 @media (max-width: 1024px) {
-
     h1.banner {
         font-size: 6.5rem;
         padding-bottom: 1rem;
@@ -1379,7 +1547,8 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         height: 37rem;
     }
     #face {
-        top: 246px; /*Bouger les yeux de haut en bas*/
+        top: 246px;
+        /*Bouger les yeux de haut en bas*/
     }
     .trailer {
         height: 25rem;
@@ -1401,13 +1570,14 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         margin-top: 3rem;
     }
     .sidenav {
-        width: 25rem; 
+        width: 25rem;
     }
 }
 
-/*LG*/
-@media (max-width: 992px) {
 
+/*LG*/
+
+@media (max-width: 992px) {
     h1.banner {
         font-size: 5rem;
         padding-bottom: 1rem;
@@ -1448,13 +1618,15 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         width: 20rem;
     }
     .sidenav {
-        width: 25rem; 
+        width: 25rem;
     }
 }
 
+
 /*MD*/
+
 @media (max-width: 768px) {
-    .bg-dark a { 
+    .bg-dark a {
         font-size: 1.4rem;
     }
     h1.banner {
@@ -1472,7 +1644,7 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         padding-top: 0rem;
         width: 30rem;
     }
-    hr{
+    hr {
         margin: 0rem !important;
     }
     section.jumbotron {
@@ -1482,7 +1654,6 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
     }
-
     #imgBgDerp {
         visibility: collapse;
     }
@@ -1499,7 +1670,6 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         margin-top: 2rem;
         margin-left: 0rem;
     }
-
     div.cardGraph {
         overflow: hidden;
         width: 20rem;
@@ -1530,7 +1700,7 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     p.priority {
         text-align: center;
         color: #000000;
-        font-family: 'Manrope', sans-serif; 
+        font-family: 'Manrope', sans-serif;
         font-weight: lighter;
         font-size: 1.2rem;
         padding: 0rem 0rem !important;
@@ -1558,7 +1728,7 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         height: 4rem;
     }
     .sidenav {
-        width: 25rem; 
+        width: 25rem;
     }
 }
 
@@ -1577,7 +1747,7 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         transform: translate(0, -28rem);
         width: 100%;
     }
-    .flecheWeb{
+    .flecheWeb {
         color: white;
         padding: 0rem 5rem;
         background-image: url("images/PointeCardGame.svg");
@@ -1594,9 +1764,8 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         height: 36rem;
     }
     .sidenav {
-        width: 22rem; 
+        width: 22rem;
     }
-    
 }
 
 @media (max-width: 576px) {
@@ -1605,9 +1774,11 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     }
 }
 
+
 /*SM*/
+
 @media (max-width: 425px) {
-    .bg-dark a { 
+    .bg-dark a {
         font-size: 1.7rem;
     }
     h1.banner {
@@ -1625,7 +1796,7 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         padding-right: 1.6rem;
     }
     hr {
-       margin: 0.2rem !important;
+        margin: 0.2rem !important;
     }
     .mrxLogo {
         position: absolute;
@@ -1634,7 +1805,6 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         width: 9rem;
         height: 4rem;
     }
-
     section.jumbotron {
         height: fit-content;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -1654,7 +1824,6 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     #face {
         visibility: collapse;
     }
-
     .modal-body {
         height: fit-content;
     }
@@ -1682,12 +1851,11 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         background-color: rgb(14, 14, 14);
     }
     .modal-title {
-        color: rgb(255, 255, 255); 
-        font-family: 'Manrope', sans-serif;    
+        color: rgb(255, 255, 255);
+        font-family: 'Manrope', sans-serif;
         font-weight: normal;
         border-bottom: grey solid 1px;
     }
-
     div.card {
         overflow: hidden;
         min-width: 100%;
@@ -1695,7 +1863,6 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         margin: 0rem;
         background-color: rgb(28, 28, 28);
     }
-
     div.cardWeb {
         overflow: hidden;
         width: fit-content;
@@ -1708,7 +1875,8 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         height: 44.43rem;
         padding-bottom: 0rem;
         padding-top: 18rem;
-        transform: translate(0, -27.9rem); /*-33rem*/
+        transform: translate(0, -27.9rem);
+        /*-33rem*/
         transition: transform .3s ease-out;
         text-shadow: 1px 1px 2px rgb(32, 32, 32);
     }
@@ -1721,7 +1889,7 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     #revealWeb:hover div.TexteWeb {
         transform: translate(0, -18rem);
     }
-    .flecheWeb{
+    .flecheWeb {
         color: white;
         padding: 0rem 10rem;
         background-image: url("images/PointeCardGame.svg");
@@ -1730,8 +1898,8 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         width: 100%;
         height: 3rem;
         backface-visibility: hidden;
-    } 
-    .flecheWebDown{
+    }
+    .flecheWebDown {
         padding: 1rem 9rem;
         background-image: url("images/PointeCardGameDown.svg");
         background-position: center;
@@ -1760,7 +1928,7 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         padding-top: 1rem;
         margin-bottom: 0rem;
     }
-    .cardSubtitleWeb{
+    .cardSubtitleWeb {
         color: rgb(58, 138, 138);
         font-family: 'Manrope', sans-serif;
         font-weight: lighter;
@@ -1769,7 +1937,6 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         margin-bottom: 0.5rem;
         padding-bottom: 0.5rem;
     }
-
     h2#games {
         font-size: 1.7rem;
         padding: 1rem 1.2rem !important;
@@ -1788,7 +1955,6 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         padding-right: 1.2rem !important;
         padding-left: 1.2rem !important;
     }
-
     .pointeSvg2 {
         height: 4rem;
     }
@@ -1815,52 +1981,66 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     .fleche3:hover {
         margin-top: -0.7rem;
     }
-
     div.cardGraph {
         overflow: hidden;
-        width: 27rem; /*20rem*/
-        height: 47rem; /*40rem*/
+        width: 27rem;
+        /*20rem*/
+        height: 47rem;
+        /*40rem*/
         margin: 0rem;
         padding-bottom: 0rem;
     }
     .GameTexte {
-        width: 27rem; /*20*/
-        height: 41rem; /*40*/
-        transform: translate(0, -29rem); /*-33rem*/
+        width: 27rem;
+        /*20*/
+        height: 41rem;
+        /*40*/
+        transform: translate(0, -29rem);
+        /*-33rem*/
     }
     .GameTexteWMM {
         width: 27rem;
         height: 41rem;
-        transform: translate(0, -27rem); /*-33.2rem*/
+        transform: translate(0, -27rem);
+        /*-33.2rem*/
     }
     .GameTexteOTV {
         width: 27rem;
         height: 41rem;
-        transform: translate(0, -29rem); /*-33rem*/
+        transform: translate(0, -29rem);
+        /*-33rem*/
     }
-    .flecheGameDown{
+    .flecheGameDown {
         transform: translate(0rem, -25px);
     }
     .h2CenterCard {
         transform: translate(0rem, -35px);
     }
     .h2CenterCardWMM {
-        transform: translate(0rem, -34px); /*-141*/
+        transform: translate(0rem, -34px);
+        /*-141*/
     }
     .GameTexteG2 {
-        width: 26.5rem; /*20*/
-        height: 41rem; /*40*/
-        transform: translate(0, -21rem); /*-33rem*/
+        width: 26.5rem;
+        /*20*/
+        height: 41rem;
+        /*40*/
+        transform: translate(0, -21rem);
+        /*-33rem*/
     }
     .GameTexteV1 {
-        width: 26.5rem; /*20*/
-        height: 41rem; /*40*/
-        transform: translate(0, -21rem); /*-33rem*/
+        width: 26.5rem;
+        /*20*/
+        height: 41rem;
+        /*40*/
+        transform: translate(0, -21rem);
+        /*-33rem*/
     }
     .GameTexteA1 {
         width: 27rem;
         height: 41rem;
-        transform: translate(0, -23rem); /*-33rem*/
+        transform: translate(0, -23rem);
+        /*-33rem*/
     }
     i.flecheGame {
         margin-bottom: 0.5rem;
@@ -1878,7 +2058,6 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         background-color: rgba(255, 255, 255, 0);
         margin-top: 3rem;
     }
-
     .linkedin {
         padding-left: 0rem;
     }
@@ -1901,7 +2080,7 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     p.priority {
         text-align: center;
         color: #000000;
-        font-family: 'Manrope', sans-serif; 
+        font-family: 'Manrope', sans-serif;
         font-weight: lighter;
         font-size: 1.2rem;
         padding: 0rem 0rem !important;
@@ -1924,13 +2103,15 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         height: 4rem;
     }
     .sidenav {
-        width: 100%; 
+        width: 100%;
     }
 }
 
+
 /*XS*/
+
 @media (max-width: 375px) {
-    .bg-dark a { 
+    .bg-dark a {
         font-size: 1.6rem;
     }
     h1.banner {
@@ -1940,7 +2121,7 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         padding: 0rem 2rem;
     }
     hr {
-        margin: 0.1rem !important;  
+        margin: 0.1rem !important;
     }
     p.lead {
         font-size: 2.5rem;
@@ -1969,11 +2150,10 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         background-color: rgba(255, 255, 255, 0);
         margin-top: 3rem;
     }
-
     .modal-backdrop {
         width: 100%;
         height: 100%;
-    } 
+    }
     .modal-body {
         height: fit-content;
     }
@@ -1986,19 +2166,17 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         padding: 0.3rem;
     }
     .modal-title {
-        color: rgb(255, 255, 255); 
-        font-family: 'Manrope', sans-serif;    
+        color: rgb(255, 255, 255);
+        font-family: 'Manrope', sans-serif;
         font-weight: normal;
         border-bottom: grey solid 1px;
     }
-
     div.card {
         overflow: hidden;
         min-width: 100%;
         height: 13.8rem;
         background-color: rgb(58, 138, 138);
     }
-
     div.cardWeb {
         overflow: hidden;
         width: fit-content;
@@ -2011,7 +2189,8 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         height: 44.43rem;
         padding-bottom: 0rem;
         padding-top: 18rem;
-        transform: translate(0, -27.9rem); /*-33rem*/
+        transform: translate(0, -27.9rem);
+        /*-33rem*/
         transition: transform .3s ease-out;
         text-shadow: 1px 1px 2px rgb(32, 32, 32);
     }
@@ -2023,7 +2202,7 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     #revealWeb:hover div.TexteWeb {
         transform: translate(0, -18rem);
     }
-    .flecheWeb{
+    .flecheWeb {
         color: white;
         padding: 0rem 9rem;
         background-image: url("images/PointeCardGame.svg");
@@ -2032,8 +2211,8 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         width: 100%;
         height: 3rem;
         backface-visibility: hidden;
-    } 
-    .flecheWebDown{
+    }
+    .flecheWebDown {
         padding: 1rem 9rem;
         background-image: url("images/PointeCardGameDown.svg");
         background-position: center;
@@ -2062,7 +2241,7 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         padding-top: 1rem;
         margin-bottom: 0rem;
     }
-    .cardSubtitleWeb{
+    .cardSubtitleWeb {
         color: rgb(58, 138, 138);
         font-family: 'Manrope', sans-serif;
         font-weight: lighter;
@@ -2071,7 +2250,6 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         margin-bottom: 0.5rem;
         padding-bottom: 0.5rem;
     }
-
     #revealexi {
         margin-bottom: 0rem;
     }
@@ -2081,7 +2259,6 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     #revealWMM {
         margin-bottom: 0rem;
     }
-
     h2#games {
         font-size: 1.5rem;
         padding-top: 1.5rem !important;
@@ -2107,7 +2284,6 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         padding-left: 1.2rem !important;
         padding-bottom: 1rem !important;
     }
-
     .pointeSvg2 {
         height: 4rem;
     }
@@ -2135,52 +2311,72 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     .fleche3:hover {
         margin-top: -0.7rem;
     }
-
     div.cardGraph {
         overflow: hidden;
-        width: 23.3rem; /*20rem*/
-        height: 43.3rem; /*40rem*/
+        width: 23.3rem;
+        /*20rem*/
+        height: 43.3rem;
+        /*40rem*/
         margin: 0rem;
         padding-bottom: 0rem;
     }
     .GameTexte {
-        width: 23.3rem; /*20rem*/
-        height: 43.3rem; /*40rem*/
-        transform: translate(0, -31rem); /*-33rem*/
+        width: 23.3rem;
+        /*20rem*/
+        height: 43.3rem;
+        /*40rem*/
+        transform: translate(0, -31rem);
+        /*-33rem*/
     }
     .GameTexteWMM {
-        width: 23.3rem; /*20rem*/
-        height: 43.3rem; /*40rem*/
-        transform: translate(0, -31rem); /*-33rem*/
+        width: 23.3rem;
+        /*20rem*/
+        height: 43.3rem;
+        /*40rem*/
+        transform: translate(0, -31rem);
+        /*-33rem*/
     }
     .GameTexteOTV {
-        width: 23.3rem; /*20rem*/
-        height: 43.3rem; /*40rem*/
-        transform: translate(0, -31rem); /*-33rem*/
+        width: 23.3rem;
+        /*20rem*/
+        height: 43.3rem;
+        /*40rem*/
+        transform: translate(0, -31rem);
+        /*-33rem*/
     }
-    .flecheGameDown{
+    .flecheGameDown {
         transform: translate(0rem, -120px);
     }
     .h2CenterCard {
         transform: translate(0rem, -131px);
     }
     .h2CenterCardWMM {
-        transform: translate(0rem, -131px); /*-141*/
+        transform: translate(0rem, -131px);
+        /*-141*/
     }
     .GameTexteG2 {
-        width: 23.3rem; /*20rem*/
-        height: 43.3rem; /*40rem*/
-        transform: translate(0, -21rem); /*-33rem*/
+        width: 23.3rem;
+        /*20rem*/
+        height: 43.3rem;
+        /*40rem*/
+        transform: translate(0, -21rem);
+        /*-33rem*/
     }
     .GameTexteV1 {
-        width: 23.3rem; /*20rem*/
-        height: 43.3rem; /*40rem*/
-        transform: translate(0, -21rem); /*-33rem*/
+        width: 23.3rem;
+        /*20rem*/
+        height: 43.3rem;
+        /*40rem*/
+        transform: translate(0, -21rem);
+        /*-33rem*/
     }
     .GameTexteA1 {
-        width: 23.3rem; /*20rem*/
-        height: 43.3rem; /*40rem*/
-        transform: translate(0, -23rem); /*-33rem*/
+        width: 23.3rem;
+        /*20rem*/
+        height: 43.3rem;
+        /*40rem*/
+        transform: translate(0, -23rem);
+        /*-33rem*/
     }
     i.flecheGame {
         margin-bottom: 0.5rem;
@@ -2192,7 +2388,6 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         margin-right: 0.2rem;
         margin-bottom: 2rem;
     }
-
     .footer {
         height: 7rem;
         padding: 0.6rem 0rem;
@@ -2215,7 +2410,7 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     p.priority {
         text-align: center;
         color: #000000;
-        font-family: 'Manrope', sans-serif; 
+        font-family: 'Manrope', sans-serif;
         font-weight: lighter;
         font-size: 1.2rem;
         padding: 0rem 0rem !important;
@@ -2238,12 +2433,12 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         height: 4rem;
     }
     .sidenav {
-        width: 100%; 
+        width: 100%;
     }
 }
 
 @media (max-width: 320px) {
-    .bg-dark a { 
+    .bg-dark a {
         font-size: 1.4rem;
     }
     h1.banner {
@@ -2282,11 +2477,10 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         background-color: rgba(255, 255, 255, 0);
         margin-top: 3rem;
     }
-
     .modal-backdrop {
         width: 100%;
         height: 100%;
-    } 
+    }
     .modal-body {
         height: fit-content;
     }
@@ -2299,19 +2493,17 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         padding: 0.3rem;
     }
     .modal-title {
-        color: rgb(255, 255, 255); 
-        font-family: 'Manrope', sans-serif;    
+        color: rgb(255, 255, 255);
+        font-family: 'Manrope', sans-serif;
         font-weight: normal;
         border-bottom: grey solid 1px;
     }
-
     div.card {
         overflow: hidden;
         min-width: 100%;
         height: 13.8rem;
         background-color: rgb(58, 138, 138);
     }
-
     div.cardWeb {
         overflow: hidden;
         width: fit-content;
@@ -2324,7 +2516,8 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         height: 44.43rem;
         padding-bottom: 0rem;
         padding-top: 18rem;
-        transform: translate(0, -27.9rem); /*-33rem*/
+        transform: translate(0, -27.9rem);
+        /*-33rem*/
         transition: transform .3s ease-out;
         text-shadow: 1px 1px 2px rgb(32, 32, 32);
     }
@@ -2336,7 +2529,7 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     #revealWeb:hover div.TexteWeb {
         transform: translate(0, -18rem);
     }
-    .flecheWeb{
+    .flecheWeb {
         color: white;
         padding: 0rem 9rem;
         background-image: url("images/PointeCardGame.svg");
@@ -2345,8 +2538,8 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         width: 100%;
         height: 3rem;
         backface-visibility: hidden;
-    } 
-    .flecheWebDown{
+    }
+    .flecheWebDown {
         padding: 1rem 9rem;
         background-image: url("images/PointeCardGameDown.svg");
         background-position: center;
@@ -2375,7 +2568,7 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         padding-top: 1rem;
         margin-bottom: 0rem;
     }
-    .cardSubtitleWeb{
+    .cardSubtitleWeb {
         color: rgb(58, 138, 138);
         font-family: 'Manrope', sans-serif;
         font-weight: lighter;
@@ -2384,7 +2577,6 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         margin-bottom: 0.5rem;
         padding-bottom: 0.5rem;
     }
-
     #revealexi {
         margin-bottom: 0rem;
     }
@@ -2394,7 +2586,6 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     #revealWMM {
         margin-bottom: 0rem;
     }
-
     h2#games {
         font-size: 1.5rem;
         padding-top: 1.5rem !important;
@@ -2420,7 +2611,6 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         padding-left: 1.2rem !important;
         padding-bottom: 1rem !important;
     }
-
     .pointeSvg2 {
         height: 4rem;
     }
@@ -2448,52 +2638,66 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     .fleche3:hover {
         margin-top: -0.7rem;
     }
-
     div.cardGraph {
         overflow: hidden;
-        width: 20rem; /*20rem*/
-        height: 40rem; /*40rem*/
+        width: 20rem;
+        /*20rem*/
+        height: 40rem;
+        /*40rem*/
         margin: 0rem;
         padding-bottom: 0rem;
     }
     .GameTexte {
-        width: 20rem; /*20*/
-        height: 40rem; /*40*/
-        transform: translate(0, -33rem); /*-33rem*/
+        width: 20rem;
+        /*20*/
+        height: 40rem;
+        /*40*/
+        transform: translate(0, -33rem);
+        /*-33rem*/
     }
     .GameTexteWMM {
         width: 20rem;
         height: 40rem;
-        transform: translate(0, -33.2rem); /*-33.2rem*/
+        transform: translate(0, -33.2rem);
+        /*-33.2rem*/
     }
     .GameTexteOTV {
         width: 20rem;
         height: 40rem;
-        transform: translate(0, -33rem); /*-33rem*/
+        transform: translate(0, -33rem);
+        /*-33rem*/
     }
-    .flecheGameDown{
+    .flecheGameDown {
         transform: translate(0rem, -120px);
     }
     .h2CenterCard {
         transform: translate(0rem, -131px);
     }
     .h2CenterCardWMM {
-        transform: translate(0rem, -131px); /*-141*/
+        transform: translate(0rem, -131px);
+        /*-141*/
     }
     .GameTexteG2 {
-        width: 20rem; /*20*/
-        height: 40rem; /*40*/
-        transform: translate(0, -21rem); /*-33rem*/
+        width: 20rem;
+        /*20*/
+        height: 40rem;
+        /*40*/
+        transform: translate(0, -21rem);
+        /*-33rem*/
     }
     .GameTexteV1 {
-        width: 20rem; /*20*/
-        height: 40rem; /*40*/
-        transform: translate(0, -21rem); /*-33rem*/
+        width: 20rem;
+        /*20*/
+        height: 40rem;
+        /*40*/
+        transform: translate(0, -21rem);
+        /*-33rem*/
     }
     .GameTexteA1 {
         width: 20rem;
         height: 40rem;
-        transform: translate(0, -23rem); /*-33rem*/
+        transform: translate(0, -23rem);
+        /*-33rem*/
     }
     i.flecheGame {
         margin-bottom: 0.5rem;
@@ -2505,7 +2709,6 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         margin-right: 0.2rem;
         margin-bottom: 2rem;
     }
-
     .footer {
         height: 7rem;
         padding: 0.6rem 0rem;
@@ -2528,7 +2731,7 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     p.priority {
         text-align: center;
         color: #000000;
-        font-family: 'Manrope', sans-serif; 
+        font-family: 'Manrope', sans-serif;
         font-weight: lighter;
         font-size: 1.2rem;
         padding: 0rem 0rem !important;
@@ -2551,13 +2754,143 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         height: 4rem;
     }
     .sidenav {
-        width: 100%; 
+        width: 100%;
     }
 }
 
 
+/*ANIMATION KEYFRAMES*/
 
+.jello-horizontal {
+    -webkit-animation: jello-horizontal 2s infinite both;
+    animation: jello-horizontal 2s infinite both;
+}
 
+@-webkit-keyframes jello-horizontal {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+        -webkit-transform: scale3d(0.95, 1.05, 1);
+        transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+        -webkit-transform: scale3d(1.05, 0.95, 1);
+        transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
 
+@keyframes jello-horizontal {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+        -webkit-transform: scale3d(0.95, 1.05, 1);
+        transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+        -webkit-transform: scale3d(1.05, 0.95, 1);
+        transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
 
+.jello-horizontal2 {
+    -webkit-animation: jello-horizontal 1.5s 1s infinite both;
+    animation: jello-horizontal 1.5s 1s infinite both;
+}
 
+@-webkit-keyframes jello-horizontal2 {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+        -webkit-transform: scale3d(0.95, 1.05, 1);
+        transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+        -webkit-transform: scale3d(1.05, 0.95, 1);
+        transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes jello-horizontal2 {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+        -webkit-transform: scale3d(0.95, 1.05, 1);
+        transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+        -webkit-transform: scale3d(1.05, 0.95, 1);
+        transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
