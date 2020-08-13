@@ -1619,6 +1619,7 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     }
     .sidenav {
         width: 25rem;
+        background: linear-gradient(15deg, #e2af408c, rgb(51, 116, 116)50%, rgb(51, 116, 116));
     }
 }
 
