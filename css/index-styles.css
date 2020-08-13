@@ -61,8 +61,7 @@ button:focus {
     height: 100%; 
     width: 25rem; 
     position: fixed; 
-    z-index: 5; 
-    top: 0; 
+    z-index: 5;  
     left: -27rem;
     background: linear-gradient(15deg, #e2af40a9, rgba(51, 116, 116, 0.589)30%, rgb(51, 116, 116));
     overflow: hidden;
@@ -212,7 +211,7 @@ a.item:not(:hover) {
     display: flex;
     z-index: 10;
     right: -148px;
-
+    
 }
 .eyes .eye {
     position: relative;

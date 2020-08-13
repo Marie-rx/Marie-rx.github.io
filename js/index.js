@@ -14,7 +14,7 @@ var minWidth640px = window.matchMedia("(min-width:640px)");
 var minWidth1024px = window.matchMedia("(min-width:1024px)");
 
 $(document).ready(() => {  
-
+    
     //Change my age with time
     var myAge = document.getElementById("age");
     const getAge = birthDate => Math.floor((new Date() - new Date(birthDate).getTime()) / 3.15576e+10);
