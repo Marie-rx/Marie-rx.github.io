@@ -29,20 +29,20 @@ $(document).ready(() => {
 
     $("#openButton").click(function() {
         openNav();
-        console.log("Opening nav")
+        //console.log("Opening nav")
     });
     $("#closeButton").click(function() {
         closeNav();
-        console.log("Closing nav")
+        //console.log("Closing nav")
     });
     
     document.addEventListener("mouseup", function(event){
         var nav = document.getElementById('mySidenav');
         if(open == true && event.target != nav && event.target.parentNode != nav){
                 closeNav();
-                console.log("Closing because the click was not on the nav and not on the nav links");
+                //console.log("Closing because the click was not on the nav and not on the nav links");
         } else if (open == false) {
-            console.log("Nav is closed by default")
+            //console.log("Nav is closed by default")
         }  
     })
 
