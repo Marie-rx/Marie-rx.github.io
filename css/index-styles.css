@@ -512,6 +512,15 @@ h2 {
     height: 44.43rem;
     padding: 0rem;
 }
+#revealWeb1 {
+    background-image: url("images/skullColor.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 47.18rem;
+    height: 44.43rem;
+    padding: 0rem;
+}
 
 .TexteWeb {
     background-image: linear-gradient(rgba(16, 15, 31, 0.89)60%, rgba(255, 192, 203, 0)98%);
@@ -525,7 +534,7 @@ h2 {
     text-shadow: 1px 1px 2px rgb(32, 32, 32);
 }
 
-#revealWeb:hover div.TexteWeb {
+#revealWeb:hover div.TexteWeb, #revealWeb1:hover div.TexteWeb  {
     transform: translate(0, -14rem);
 }
 
@@ -626,6 +635,16 @@ div.cardWeb {
 .fleche2:hover {
     margin-top: 2rem;
     color: rgb(58, 138, 138);
+}
+.disabled {
+    color: rgb(65, 65, 65) !important;
+    font-family: 'Manrope', sans-serif;
+    font-weight: lighter;
+    font-size: 1.3rem;
+    width: fit-content;
+    border-color: rgb(63, 63, 63)!important;
+    padding: 0.9rem 0.9rem;
+    margin-bottom: 0.7rem !important;
 }
 
 
@@ -1779,8 +1798,11 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     .flecheWebDown {
         transform: translate(0rem, -250px);
     }
-    #revealWeb {
+    #revealWeb, #revealWeb1 {
         height: 36rem;
+    }
+    #revealWeb1 {
+        background-image: url("images/skullColorSmall.png");
     }
     .sidenav {
         width: 22rem;
@@ -1790,6 +1812,9 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
 @media (max-width: 576px) {
     .modal-dialog {
         max-width: 100%;
+    }
+    #revealWeb1 {
+        background-image: url("images/skullColorSmall.png");
     }
 }
 
@@ -1899,13 +1924,16 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         transition: transform .3s ease-out;
         text-shadow: 1px 1px 2px rgb(32, 32, 32);
     }
-    #revealWeb {
+    #revealWeb, #revealWeb1 {
         height: 100%;
         width: 100%;
         margin: 0rem;
         background-size: cover;
     }
-    #revealWeb:hover div.TexteWeb {
+    #revealWeb1 {
+        background-image: url("images/skullColorSmall.png");
+    }
+    #revealWeb:hover div.TexteWeb, #revealWeb1:hover div.TexteWeb {
         transform: translate(0, -18rem);
     }
     .flecheWeb {
@@ -2213,12 +2241,15 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         transition: transform .3s ease-out;
         text-shadow: 1px 1px 2px rgb(32, 32, 32);
     }
-    #revealWeb {
+    #revealWeb, #revealWeb1 {
         height: 100%;
         width: 100%;
         margin: 0rem;
     }
-    #revealWeb:hover div.TexteWeb {
+    #revealWeb1 {
+        background-image: url("images/skullColorSmall.png");
+    }
+    #revealWeb:hover div.TexteWeb, #revealWeb1:hover div.TexteWeb {
         transform: translate(0, -18rem);
     }
     .flecheWeb {
@@ -2540,12 +2571,15 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         transition: transform .3s ease-out;
         text-shadow: 1px 1px 2px rgb(32, 32, 32);
     }
-    #revealWeb {
+    #revealWeb, #revealWeb1 {
         height: 100%;
         width: 100%;
         margin: 0rem;
     }
-    #revealWeb:hover div.TexteWeb {
+    #revealWeb1 {
+        background-image: url("images/skullColorSmall.png");
+    }
+    #revealWeb:hover div.TexteWeb, #revealWeb1:hover div.TexteWeb {
         transform: translate(0, -18rem);
     }
     .flecheWeb {
