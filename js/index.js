@@ -73,7 +73,7 @@ $(document).ready(() => {
                     width: "5rem",
                     height: "5rem",
                     borderRadius: "10rem",
-                    zIndex: "5000",
+                    zIndex: "1049",
                 },
                 closeButton: {
                     //display: "none"
