@@ -22,6 +22,7 @@ $(document).ready(() => {
             title: "<img style=' width: 16rem; height: 8rem; margin: auto auto; padding-top: 1.5rem; padding-bottom: 1.5rem;' src='css/images/marieronnauxLogo.png'></img>",
             description: "Contactez-moi !",
             theme: "classic",
+            buttonImg: "<i class='fas fa-comment' style='font-size:2.5rem'/>", 
             fields: [
                 {
                     type: "email",
@@ -42,6 +43,7 @@ $(document).ready(() => {
                     name: "message",
                     placeholder: "Je veux un site web tout neuf !",
                 },
+                
                 { type: "submit" },
             ],
             styles: {
