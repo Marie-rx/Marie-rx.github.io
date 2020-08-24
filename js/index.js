@@ -16,7 +16,6 @@ var minWidth1024px = window.matchMedia("(min-width:1024px)");
 $(document).ready(() => {
         //FREEFORM CONTACT FORM BOTTOM
         window.formbutton = window.formbutton || function () { (formbutton.q = formbutton.q || []).push(arguments) };
-
         formbutton("create", {
             action: "https://formspree.io/mzbjqwpy",
             title: "<img style=' width: 16rem; height: 8rem; margin: auto auto; padding-top: 1.5rem; padding-bottom: 1.5rem;' src='css/images/marieronnauxLogo.png'></img>",
@@ -57,7 +56,7 @@ $(document).ready(() => {
                 },
                 modal: {
                     background: "#e6b244",
-                    borderRadius: "3rem"
+                    borderRadius: "0rem",
                   },
                 fontFamily: "'Manrope', sans-serif",
                 title: {
@@ -66,13 +65,15 @@ $(document).ready(() => {
                     paddingRight: "0rem",
                     paddingBottom: "0rem",
                     paddingTop: "0rem",
-                    margin: "auto"
+                    margin: "auto",
+                    borderRadius: "0rem",
                 },
                 button: {
                     background: "linear-gradient(-25deg, rgb(252, 223, 57), rgb(42, 170, 170)60%)",
                     width: "5rem",
                     height: "5rem",
-                    borderRadius: "10rem"
+                    borderRadius: "10rem",
+                    zIndex: "5000",
                 },
                 closeButton: {
                     //display: "none"
@@ -83,6 +84,8 @@ $(document).ready(() => {
             },
             initiallyVisible: false
         });
+
+        
 
     //SIDENAV OPEN AND CLOSE DEPENDING ON IF LINK IS CLICKED OR NOT
     var open = false;
@@ -275,6 +278,7 @@ $(document).ready(() => {
             scale: 1.2,
         });
 
+        
 
     };
     if (minWidth640px.matches) {
@@ -404,13 +408,13 @@ $(document).ready(() => {
             scale: 1.2,
         });
 
-
     };
     //-------------------------------------END OF SMALL ANIMATIONS
 
 
     //-------------------------------------LARGE SIZE SCREEN ANIM
     if (minWidth1024px.matches) {
+
         document.getElementById("imgBg").style.visibility = "visible";
 
         sr.reveal('#imgBg', {
