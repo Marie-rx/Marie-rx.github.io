@@ -75,7 +75,10 @@ $(document).ready(() => {
                     borderRadius: "10rem"
                 },
                 closeButton: {
-                    display: "none"
+                    //display: "none"
+                    position: "fixed",
+                    top: "1.5rem",
+                    right: "1rem"
                   }
             },
             initiallyVisible: false
