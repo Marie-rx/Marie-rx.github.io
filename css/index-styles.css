@@ -1,5 +1,4 @@
-html,
-body {
+html, body {
     font-size: 1rem;
     /* "x" pixel / 16 rem*/
     width: 100%;
@@ -9,8 +8,8 @@ body {
 body {
     padding-top: 0;
     background-color: #e6b34400;
-    z-index:-1000;
-  position:relative;
+    z-index: -1000;
+    position: relative;
     /*font-family: 'Anton', sans-serif;
     font-family: 'Comfortaa', cursive;
     font-family: 'Lexend Deca', sans-serif;
@@ -20,7 +19,6 @@ body {
     font-family: 'Roboto', sans-serif;
     font-family: 'Quicksand', sans-serif;*/
 }
-
 
 /*NAV BAR*/
 
@@ -115,8 +113,9 @@ a.item:not(:hover) {
     transition: 0.2s;
 }
 
-
 /*END OF NAV BAR*/
+
+/*FORM CLOSE BUTTON*/
 
 
 /*BANNER -------------------------------------------------------------------------------------------------------------------------------------*/
@@ -199,7 +198,6 @@ a.item:not(:hover) {
     color: #e2af40;
 }
 
-
 /*PHOTO*/
 
 #face {
@@ -250,9 +248,7 @@ a.item:not(:hover) {
     border: 20px solid rgb(69, 168, 69);
 }
 
-
 /*END OF PHOTO*/
-
 
 /*TITLE*/
 
@@ -321,16 +317,11 @@ h1.banner {
     color: rgb(255, 213, 98);
 }
 
-.fa-github,
-.fa-linkedin,
-.fa-twitter,
-.fa-envelope,
-.fa-file-pdf {
+.fa-github, .fa-linkedin, .fa-twitter, .fa-envelope, .fa-file-pdf {
     font-size: 1.7rem !important;
 }
 
-a.mailIcon,
-a.cvIcon {
+a.mailIcon, a.cvIcon {
     font-size: 1.1rem;
 }
 
@@ -341,12 +332,9 @@ hr {
     margin-bottom: 0.1rem;
 }
 
-
 /*END OF TITLE*/
 
-
 /*END OF BANNER -------------------------------------------------------------------------------------------------------------------------------------*/
-
 
 /*SKILLS*/
 
@@ -483,9 +471,7 @@ p.profileInfos {
     color: rgb(255, 255, 255);
 }
 
-
 /*END OF SKILLS*/
-
 
 /*WEB DESIGN CARDS*/
 
@@ -512,6 +498,7 @@ h2 {
     height: 44.43rem;
     padding: 0rem;
 }
+
 #revealWeb1 {
     background-image: url("images/skullColor.png");
     background-position: center;
@@ -534,7 +521,7 @@ h2 {
     text-shadow: 1px 1px 2px rgb(32, 32, 32);
 }
 
-#revealWeb:hover div.TexteWeb, #revealWeb1:hover div.TexteWeb  {
+#revealWeb:hover div.TexteWeb, #revealWeb1:hover div.TexteWeb {
     transform: translate(0, -14rem);
 }
 
@@ -636,6 +623,7 @@ div.cardWeb {
     margin-top: 2rem;
     color: rgb(58, 138, 138);
 }
+
 .disabled {
     color: rgb(65, 65, 65) !important;
     font-family: 'Manrope', sans-serif;
@@ -647,9 +635,7 @@ div.cardWeb {
     margin-bottom: 0.7rem !important;
 }
 
-
 /*END OF WEB DESIGN CARDS*/
-
 
 /*GAME CARDS*/
 
@@ -870,12 +856,9 @@ i.flecheGame {
     padding: 0rem;
 }
 
-#revealexi:hover div.GameTexte,
-#revealWMM:hover div.GameTexteWMM,
-#revealOTV:hover div.GameTexteOTV {
+#revealexi:hover div.GameTexte, #revealWMM:hover div.GameTexteWMM, #revealOTV:hover div.GameTexteOTV {
     transform: translate(0, -15rem);
 }
-
 
 /*GAME CARDS MODAL*/
 
@@ -886,8 +869,7 @@ i.flecheGame {
     background-color: rgb(14, 14, 14);
 }
 
-.carousel-control-next,
-.carousel-control-prev {
+.carousel-control-next, .carousel-control-prev {
     width: 7% !important;
     opacity: 23%;
     height: 20%;
@@ -937,12 +919,9 @@ span {
     font-size: 1.1rem;
 }
 
-
 /*END OF GAME CARDS MODAL*/
 
-
 /*END OF GAME CARDS*/
-
 
 /*GRAPHISME CARDS*/
 
@@ -1025,9 +1004,7 @@ span {
     padding: 0rem 1rem;
 }
 
-#reveal2:hover div.GameTexteG2,
-#reveal3:hover div.GameTexteV1,
-#reveal4:hover div.GameTexteA1 {
+#reveal2:hover div.GameTexteG2, #reveal3:hover div.GameTexteV1, #reveal4:hover div.GameTexteA1 {
     transform: translate(0, -15rem);
 }
 
@@ -1048,7 +1025,6 @@ div.cardGraph {
     padding: 0rem;
     backface-visibility: hidden;
 }
-
 
 /*GRAPHISME CARDS MODAL*/
 
@@ -1073,12 +1049,9 @@ div.cardGraph {
     background-color: rgb(26, 25, 25);
 }
 
-
 /*END OF GRAPHISME CARDS MODAL*/
 
-
 /*END OF GRAPHISME CARDS*/
-
 
 /*GRAPHISTE FREELANCE*/
 
@@ -1212,9 +1185,7 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     transform: translate(0rem, 10px);
 }
 
-
 /*END OF GRAPHISTE FREELANCE*/
-
 
 /*FOOTER*/
 
@@ -1259,12 +1230,9 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     padding: 0 15px;
 }
 
-
 /*END OF FOOTER*/
 
-
 /*PADDING UNDER NAVBAR AND TYPO RESPONSIVE*/
-
 
 /*XXXL*/
 
@@ -1326,15 +1294,10 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         padding-left: 30rem;
         padding-right: 30rem;
     }
-    .fa-github,
-    .fa-linkedin,
-    .fa-twitter,
-    .fa-envelope,
-    .fa-file-pdf {
+    .fa-github, .fa-linkedin, .fa-twitter, .fa-envelope, .fa-file-pdf {
         font-size: 3rem !important;
     }
-    a.mailIcon,
-    a.cvIcon {
+    a.mailIcon, a.cvIcon {
         font-size: 1.5rem;
     }
     .fa-chevron-down {
@@ -1526,7 +1489,6 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     }
 }
 
-
 /*XL*/
 
 @media (max-width: 1200px) {
@@ -1608,7 +1570,6 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     }
 }
 
-
 /*LG*/
 
 @media (max-width: 992px) {
@@ -1659,7 +1620,6 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         font-size: 1.6rem;
     }
 }
-
 
 /*MD*/
 
@@ -1817,7 +1777,6 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         background-image: url("images/skullColorSmall.png");
     }
 }
-
 
 /*SM*/
 
@@ -2153,7 +2112,6 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         width: 100%;
     }
 }
-
 
 /*XS*/
 
@@ -2810,7 +2768,6 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         width: 100%;
     }
 }
-
 
 /*ANIMATION KEYFRAMES*/
 

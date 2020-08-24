@@ -14,6 +14,70 @@ var minWidth640px = window.matchMedia("(min-width:640px)");
 var minWidth1024px = window.matchMedia("(min-width:1024px)");
 
 $(document).ready(() => {
+        //FREEFORM CONTACT FORM BOTTOM
+        window.formbutton = window.formbutton || function () { (formbutton.q = formbutton.q || []).push(arguments) };
+
+        formbutton("create", {
+            action: "https://formspree.io/mzbjqwpy",
+            title: "<img style=' width: 16rem; height: 8rem; margin: auto auto; padding-top: 1.5rem; padding-bottom: 1.5rem;' src='css/images/marieronnauxLogo.png'></img>",
+            description: "Contactez-moi !",
+            theme: "classic",
+            fields: [
+                {
+                    type: "email",
+                    label: "Email:",
+                    name: "email",
+                    required: true,
+                    placeholder: "votre@email.com"
+                },
+                {
+                    type: "input",
+                    label: "Nom & prénom:",
+                    name: "name",
+                    placeholder: "Nom et prénom",
+                },
+                {
+                    type: "textarea",
+                    label: "Message:",
+                    name: "message",
+                    placeholder: "Je veux un site web tout neuf !",
+                },
+                { type: "submit" },
+            ],
+            styles: {
+                description: {
+                    background: "#e6b244",
+                    fontSize: "1.5rem",
+                    color: "rgb(116, 86, 31)",
+                    fontWeight: "normal",
+                    textAlign: "center",
+                    borderRadius: "3rem"
+                },
+                modal: {
+                    background: "#e6b244",
+                    borderRadius: "3rem"
+                  },
+                fontFamily: "'Manrope', sans-serif",
+                title: {
+                    background:"linear-gradient( rgb(42, 170, 170), rgb(226, 179, 76))",
+                    paddingLeft: "0rem",
+                    paddingRight: "0rem",
+                    paddingBottom: "0rem",
+                    paddingTop: "0rem",
+                    margin: "auto"
+                },
+                button: {
+                    background: "linear-gradient(-25deg, rgb(252, 223, 57), rgb(42, 170, 170)60%)",
+                    width: "5rem",
+                    height: "5rem",
+                    borderRadius: "10rem"
+                },
+                closeButton: {
+                    display: "none"
+                  }
+            },
+            initiallyVisible: false
+        });
 
     //SIDENAV OPEN AND CLOSE DEPENDING ON IF LINK IS CLICKED OR NOT
     var open = false;
