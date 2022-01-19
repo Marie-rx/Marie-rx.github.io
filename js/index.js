@@ -40,7 +40,7 @@ $(document).ready(() => {
                     type: "textarea",
                     label: "Message:",
                     name: "message",
-                    placeholder: "Je veux un site web tout neuf !",
+                    placeholder: "Rédigez votre message ici",
                 },
                 
                 { type: "submit" },
@@ -276,6 +276,33 @@ $(document).ready(() => {
             },
             delay: 200,
             scale: 1.2,
+        });
+
+        //Anim DA
+        sr.reveal('.animEntree', {
+            duration: 1000,
+            origin: 'left',
+            rotate: {
+                y: 100,
+            },
+            scale: 0.75,
+            viewFactor: 0.5,
+
+        });
+        sr.reveal('.animEntree2', {
+            duration: 1000,
+            origin: 'bottom',
+            distance: '4rem',
+            viewFactor: 0,
+            delay: 200,
+        });
+
+        sr.reveal('.animEntree3', {
+            duration: 1000,
+            origin: 'bottom',
+            distance: '6rem',
+            viewFactor: 0,
+            delay: 400,
         });
 
         
