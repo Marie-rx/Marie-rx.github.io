@@ -1,7 +1,7 @@
 ### 👋 Hello! Welcome to my portfolio, I'm Marie!  https://marie-rx.github.io
 
 
-## 💬 I'm an Art Director in video games / Lead Graphic artist, front-end developer junior and I teach UI/UX and logo design!
+## 💬 I am a UI/UX Designer/Lead Graphic artist - web & video games.
 - ⚡️ I love writting SF/fantasy novels, hiking, playing video games and learn useless things
 - 🖖 Star trek fan
 
