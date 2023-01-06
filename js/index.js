@@ -21,7 +21,7 @@ $(document).ready(() => {
             title: "<img style=' width: 16rem; height: 8rem; margin: auto auto; padding-top: 1.5rem; padding-bottom: 1.5rem;' src='css/images/marieronnauxLogo.png'></img>",
             description: "Envoyer un Email à : ronnaux.marie@gmail.com",
             theme: "classic",
-            buttonImg: "<img src='CSS/Images/envelope-regular-white.svg' class='upFooter'/>", 
+            buttonImg: "<img src='css/images/envelope-regular-white.svg' class='upFooter'/>", 
             fields: [
                 {
                     type: "email",
