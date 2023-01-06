@@ -7,7 +7,7 @@ html, body {
 
 body {
     padding-top: 0;
-    background-color: #e6b34400;
+    background-color: #292929;
     z-index: -1000;
     position: relative;
     /*font-family: 'Anton', sans-serif;
@@ -23,24 +23,34 @@ body {
 /*NAV BAR*/
 
 .navbar-toggler {
-    border-color: rgba(236, 236, 236, 0.719) !important;
-    border-width: 0.2rem;
+    border-color: rgba(255, 255, 255, 0.815) !important;
+    border-width: 0.1rem;
     border-radius: 0%;
     margin-top: 0.5rem;
     margin-left: 0.5rem;
     padding: 0.5rem;
     position: fixed;
     z-index: 1;
+    right: 1rem;
+    top: 0.5rem;
+}
+
+.navbar-toggler:hover{
+    background-color: #2ba8a2;
 }
 
 button:focus {
     outline: 0px !important;
 }
 
+button:hover {
+    background-color: #2ba8a2;
+}
+
 .mrxLogo {
     position: absolute;
     top: 4px;
-    left: 4rem;
+    left: 1rem;
     width: 8rem;
     height: 4rem;
 }
@@ -50,7 +60,7 @@ button:focus {
     width: 25rem;
     position: fixed;
     z-index: 10000;
-    left: -27rem;
+    right: -27rem;
     background: linear-gradient(-25deg, #ffb71d3d, rgba(51, 116, 116, 0.61), rgb(51, 116, 116)30%);
     overflow: hidden;
     padding-top: 1rem;
@@ -136,19 +146,22 @@ a.item:not(:hover) {
 }
 
 .artefactCover2 {
-    background-color: #e6b244;
+    background: linear-gradient(#292929 40%, #e6b244 100%);
+    
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    
 }
 
 .artefactCover3 {
-    background: linear-gradient(#252525 90%, #3b3b3b 100%);
+    background: linear-gradient(#292929 90%, #ffdada 100%);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    border: none !important;
 }
 
 .artefactCover4 {
-    background-color: #3d3d3d;
+    background: linear-gradient(#000000 90%, #292929 100%);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
@@ -197,6 +210,8 @@ a.item:not(:hover) {
     margin-top: 2.2rem;
     color: #e2af40;
 }
+
+
 
 /*PHOTO*/
 
@@ -274,6 +289,16 @@ h1.banner {
     font-size: 2rem;
 }
 
+.sousTitre {
+    color: rgb(61, 61, 61);
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-top: 1rem;
+    padding-right: 2rem;
+    padding-left: 1rem;
+}
+
 .contactUp {
     color: rgb(34, 34, 34);
     font-family: 'Manrope', sans-serif;
@@ -290,6 +315,10 @@ h1.banner {
 .linkedin {
     color: rgb(34, 34, 34);
     padding-right: 1rem;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .linkedin:hover {
@@ -300,21 +329,74 @@ h1.banner {
     padding-right: 0.7rem;
     color: rgb(34, 34, 34);
     font-family: 'Manrope', sans-serif;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .twitter:hover {
     color: rgb(255, 213, 98);
 }
 
-.cv {
-    padding-left: 1rem;
-    padding-right: 0rem;
+/*.cv {
     color: rgb(34, 34, 34);
     font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    text-align: center;
 }
 
 .cv:hover {
-    color: rgb(255, 213, 98);
+    color: rgb(48, 48, 48);
+    border: #e2af40 solid 1px;
+}*/
+
+.buttonD {
+	display: flex;
+    align-content: center;
+    align-items: center;
+	border: none;
+	outline: none;
+	overflow: none;
+	font-family: "Manrope", sans-serif;
+	cursor: pointer;
+    text-decoration:none;
+    background-color: #e6b244;
+	font-size: 1rem;
+	font-weight: 500;
+	cursor: pointer;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.buttonD:hover {
+	background-color: #ffca57;
+    text-decoration:none;
+}
+
+.buttonD:active {
+	background-color: #deebe8;
+    text-decoration:none;
+}
+
+.button__text {
+	display: inline-flex;
+	align-items: center;
+	color: rgb(26, 26, 26);
+	height: 100%;    
+    padding: 0.7rem;
+    text-decoration:none;
+}
+
+.button__icon {
+    display: inline-flex;
+	align-items: center;
+	font-size: 1.5em;
+    color: rgb(26, 26, 26);
+	background-color: #c4993d;
+    height: 100%;
+    padding: 0.8rem;
+    text-decoration: none;
 }
 
 .fa-github, .fa-linkedin, .fa-twitter, .fa-envelope, .fa-file-pdf {
@@ -322,7 +404,7 @@ h1.banner {
 }
 
 a.mailIcon, a.cvIcon {
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 hr {
@@ -337,7 +419,10 @@ hr {
 /*END OF BANNER -------------------------------------------------------------------------------------------------------------------------------------*/
 
 /*SKILLS*/
-
+.espaceTopCompetence {
+    margin-top: 2.5rem!important;
+    margin-bottom: 8rem!important;
+}
 .fondSkills {
     background-color: #e6b244;
     padding-bottom: 3.7rem;
@@ -443,7 +528,7 @@ h2.profile2h2 {
 }
 
 .ProfileBars {
-    margin: 0rem;
+    margin-top: 3rem;
     padding: 0 !important;
 }
 
@@ -596,6 +681,16 @@ h2 {
     padding: 0rem;
 }
 
+#revealWebD {
+    background-image: url("images/apliafter.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 47.18rem;
+    height: 44.43rem;
+    padding: 0rem;
+}
+
 .TexteWeb {
     background-image: linear-gradient(rgba(16, 15, 31, 0.89)60%, rgba(255, 192, 203, 0)98%);
     width: 47.18rem;
@@ -608,17 +703,21 @@ h2 {
     text-shadow: 1px 1px 2px rgb(32, 32, 32);
 }
 
-#revealWeb:hover div.TexteWeb, #revealWebT:hover div.TexteWeb, #revealWeb1:hover div.TexteWeb {
+#revealWeb:hover div.TexteWeb, #revealWebT:hover div.TexteWeb, #revealWeb1:hover div.TexteWeb, #revealWebD:hover div.TexteWeb {
     transform: translate(0, -14rem);
 }
 
 .btn-style {
-    color: rgb(58, 138, 138);
+    color: rgb(29, 29, 29);
     font-family: 'Manrope', sans-serif;
     font-weight: lighter;
     font-size: 1.3rem;
     width: fit-content;
     padding: 0.6rem;
+}
+
+.btn-outline-info {
+    border-color: rgb(29, 29, 29);
 }
 
 .h2CenterCardWeb {
@@ -654,9 +753,8 @@ h2 {
 
 div.card {
     overflow: hidden;
-    min-width: 30rem;
+    min-width: 20rem;
     height: 20rem;
-    margin: 0.5rem;
     background-color: #e6b244;
 }
 
@@ -664,7 +762,7 @@ div.cardWeb {
     overflow: hidden;
     width: 47.18rem;
     height: 44.43rem;
-    margin: 0rem;
+    margin: 0.5rem !important;
 }
 
 .flecheWebDown {
@@ -728,9 +826,10 @@ div.cardWeb {
 
 .fondGame {
     background-color: #3a3a3a;
-    padding-bottom: 3.7rem;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
+    padding-bottom: 1.6rem !important;
+    -webkit-backface-visibility: hidden !important;
+    backface-visibility: hidden !important;
+    padding-top: 0rem !important;
 }
 
 .fondGameFree {
@@ -980,8 +1079,8 @@ i.flecheGame {
 h2.modTitle {
     color: #0f0f0f;
     font-family: 'Quicksand', sans-serif;
-    font-weight: lighter;
-    font-size: 2.3rem;
+    font-weight: bolder;
+    font-size: 1.7rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     padding-top: 0.5rem;
@@ -1002,7 +1101,7 @@ h2.modTitle {
 }
 
 span {
-    color: rgb(64, 148, 130);
+    color: rgb(32, 32, 32);
     font-size: 1.1rem;
 }
 
@@ -1168,7 +1267,7 @@ div.cardGraph {
     color: #000000;
     font-family: 'Quicksand', sans-serif;
     font-weight: lighter;
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 1rem 0.5rem;
     margin: 0rem;
     border-bottom: rgba(0, 0, 0, 0) solid 10px;
@@ -1195,7 +1294,7 @@ div.cardGraph {
 }
 
 .card-text {
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 .freelancePicture {
@@ -1208,20 +1307,19 @@ div.cardGraph {
 div#comContainer {
     height: fit-content !important;
     height: -moz-fit-content;
-    margin-top: 0rem;
-    margin-left: 0.2rem;
-    margin-right: 0.2rem;
-    margin-bottom: 0.4rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
 }
 
 div#comContainerSpirou {
     height: fit-content !important;
     height: -moz-fit-content;
-    margin-top: 0rem;
+    margin-top: 1rem;
     margin-left: 0rem;
     margin-right: 0rem;
     margin-bottom: 1rem;
-    width: 60.5rem;
+    width: 20rem;
 }
 
 div#comContainer p {
@@ -1274,6 +1372,44 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
 
 /*END OF GRAPHISTE FREELANCE*/
 
+/*FLOATING BUTTON ANCHOR UP*/
+/*.float-right {
+    position: fixed;
+    right: 7rem;
+    bottom: 2rem;
+}
+.btn-circle {
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff00;
+    border: white solid 0.1rem;
+    filter: drop-shadow(9px 5px 11px rgb(61, 61, 61));
+}*/
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 23px;
+    right: 7rem; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: solid white 0.1rem; /* Remove borders */
+    outline: none; /* Remove outline */
+    background: rgba(255, 255, 255, 0);/*linear-gradient(-25deg, rgb(252, 223, 57), rgb(42, 170, 170) 60%);*/ /* Set a background color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+  }
+
+  .upFooter {
+    height: 2rem;
+    width: 2rem;
+}
+
+
+
 /*FOOTER*/
 
 .footer {
@@ -1318,12 +1454,22 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
 }
 
 /*END OF FOOTER*/
-
+.contactBox {
+    padding: 0rem !important;
+    margin-left: 0rem !important;
+    margin-right: 0rem !important;
+    display: flex;
+}
 /*PADDING UNDER NAVBAR AND TYPO RESPONSIVE*/
+
 
 /*XXXL*/
 
 @media (min-width: 2560px) {
+    .contactBox {
+
+        align-items: flex-start;
+    }
     .Section {
         width: 40%;
     }
@@ -1365,34 +1511,59 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
 
     .bannerBox {
         padding-top: 10rem;
+        width: 52rem;
     }
 
     p.lead {
         font-size: 2.8rem
     }
 
+    .sousTitre {
+        color: rgb(61, 61, 61);
+        font-family: 'Manrope', sans-serif;
+        font-weight: normal;
+        font-size: 2rem;
+        margin-top: 0rem;
+        margin-bottom: 1rem;
+        padding-right: 2rem;
+        padding-left: 2rem;
+        padding-top: 1rem;
+    }
+
     .pointeSvg {
-        height: 7.5rem;
+        height: 7.5rem !important;
     }
 
     .pointeSvg2 {
-        height: 6rem;
+        height: 6rem !important;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
     }
 
     .pointeSvg3 {
-        height: 5.5rem;
+        height: 5.5rem !important;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
     }
 
     .pointeSvg4 {
-        height: 6rem;
+        height: 4.5rem !important;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
+        background-color: #292929;
     }
 
+    .pointeSvg2 {
+        background-image: url("images/pointe2.svg");
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 4.5rem !important;
+        background-color: #3a3a3a;
+        padding: 0rem;
+        backface-visibility: hidden;
+    }
+   
     .fondGameFree {
         padding-left: 30rem;
         padding-right: 30rem;
@@ -1411,7 +1582,7 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     }
 
     .fleche {
-        padding-top: 2rem;
+        padding-top: 2.5rem;
         padding-left: 2.2rem;
         padding-right: 2.2rem;
         color: #2b2b2b;
@@ -1419,12 +1590,12 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     }
 
     .fleche:hover {
-        padding-top: 2.2rem;
+        padding-top: 3rem;
         color: #e2af40;
     }
 
     .fleche2 {
-        padding-top: 1.1rem;
+        padding-top: 0rem;
         padding-left: 2.2rem;
         padding-right: 2.2rem;
         color: #2b2b2b;
@@ -1432,12 +1603,12 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     }
 
     .fleche2:hover {
-        padding-top: 1.6rem;
+        padding-top: 0.5rem;
         color: #33977e;
     }
 
     .fleche4 {
-        padding-top: 1.1rem;
+        padding-top: 0rem;
         padding-left: 2.2rem;
         padding-right: 2.2rem;
         color: #e2af40;
@@ -1445,12 +1616,12 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     }
 
     .fleche4:hover {
-        padding-top: 1.6rem;
+        padding-top: 0.5rem;
         color: #33977e;
     }
 
     .fleche5 {
-        padding-top: 1.1rem;
+        padding-bottom: 1.1rem;
         padding-left: 2.2rem;
         padding-right: 2.2rem;
         color: #e2af40;
@@ -1490,7 +1661,7 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
 
     .ProfileBars {
 
-        margin-top: 13rem;
+        margin-top: 3rem;
         margin-left: 0rem;
         margin-right: 0rem;
         padding: 0 !important;
@@ -1508,6 +1679,10 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         font-size: 1.3rem;
         padding-bottom: 0rem;
         line-height: 1.9rem;
+    }
+
+    div.cardWeb {
+        margin: 0.5rem !important;
     }
 
     div#comContainer p {
@@ -1540,10 +1715,10 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
 
     .mrxLogo {
         position: absolute;
-        top: 15px;
-        left: 7rem;
-        width: 11rem;
-        height: 5rem;
+        top: 4px;
+        left: 1rem;
+        width: 16rem;
+        height: 7.8rem;
     }
 
     .sidenav {
@@ -1554,12 +1729,20 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     .sidenav a.item {
         font-size: 1.6rem;
     }
+    
 }
 
 @media (max-width: 2560px) {
+    div#comContainer {
+        max-width: 20rem;
+    }
+    
+    div#comContainerSpirou {
+        max-width: 20rem;
+    }
     .ProfileBars {
 
-        margin-top: 11rem;
+        margin-top: 3rem;
         margin-left: 0rem;
         margin-right: 0rem;
         padding: 0 !important;
@@ -1628,13 +1811,7 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         backface-visibility: hidden;
     }
 
-    .mrxLogo {
-        position: absolute;
-        top: 10px;
-        left: 5rem;
-        width: 8rem;
-        height: 3.6rem;
-    }
+    
 
     hr {
         margin-top: 1rem;
@@ -1653,12 +1830,20 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     h2.about {
         margin: 0rem;
     }
+
+    div.cardWeb {
+        margin: 0.5rem !important;
+    }
 }
 
 @media (max-width: 1440px) {
+    .contactBox {
+
+        align-items: baseline;
+    }
     .ProfileBars {
 
-        margin-top: 11rem;
+        margin-top: 3rem;
         margin-left: 0rem;
         margin-right: 0rem;
         padding: 0 !important;
@@ -1729,10 +1914,10 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
 
     .mrxLogo {
         position: absolute;
-        top: 10px;
-        left: 5rem;
+        top: 4px;
+        left: 1rem;
         width: 8rem;
-        height: 3.6rem;
+        height: 4rem;
     }
 
     hr {
@@ -1757,12 +1942,13 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
 /*XL*/
 
 @media (max-width: 1200px) {
+   
     h2.about {
         margin: 0rem;
     }
 
     .ProfileBars {
-        margin-top: 11rem;
+        margin-top: 3rem;
         margin-left: 0rem;
         margin-right: 0rem;
         padding: 0 !important;
@@ -1803,8 +1989,9 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
 }
 
 @media (max-width: 1024px) {
+    
     .ProfileBars {
-        margin-top: 11rem;
+        margin-top: 3rem;
         margin-left: 0rem;
         margin-right: 0rem;
         padding: 0 !important;
@@ -1822,8 +2009,21 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     }
 
     p.lead {
-        padding-bottom: 1rem;
+        padding-bottom: 0rem;
+        padding-right: 1rem;
         font-size: 2.5rem;
+        margin-bottom: 0rem;
+    }
+
+    .sousTitre {
+        color: rgb(61, 61, 61);
+        font-family: 'Manrope', sans-serif;
+        font-weight: normal;
+        font-size: 1rem;
+        margin-top: 0rem;
+        margin-bottom: 1rem;
+        padding-right: 2rem;
+        padding-left: 0rem;
     }
 
     section.jumbotron {
@@ -1855,9 +2055,9 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
 
     .mrxLogo {
         position: absolute;
-        top: 5px;
-        left: 5rem;
-        width: 9rem;
+        top: 4px;
+        left: 1rem;
+        width: 8rem;
         height: 4rem;
     }
 
@@ -1953,6 +2153,14 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
 /*MD*/
 
 @media (max-width: 768px) {
+    .contactBox {
+        padding: 0rem !important;
+        margin-left: 0rem !important;
+        margin-right: 0rem !important;
+        display: flex;
+        flex-flow: row wrap;
+        flex-wrap: wrap;
+    }
     .Section {
         width: 100%;
     }
@@ -1972,6 +2180,17 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
 
     p.lead {
         font-size: 2.5rem;
+        padding-bottom: 0rem;
+    }
+    .sousTitre {
+        color: rgb(61, 61, 61);
+        font-family: 'Manrope', sans-serif;
+        font-weight: normal;
+        font-size: 1rem;
+        margin-top: 0rem;
+        margin-bottom: 1rem;
+        padding-right: 2rem;
+        padding-left: 0rem;
     }
 
     .bannerBox {
@@ -2064,17 +2283,11 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         color: rgb(44, 44, 44);
     }
 
-    .contactBox {
-        padding: 0rem !important;
-        margin-left: 0rem !important;
-        margin-right: 0rem !important;
-    }
-
     .mrxLogo {
         position: absolute;
-        top: 5px;
-        left: 4.5rem;
-        width: 9rem;
+        top: 4px;
+        left: 1rem;
+        width: 8rem;
         height: 4rem;
     }
 
@@ -2084,15 +2297,27 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
 }
 
 @media (max-width: 640px) {
+    .buttonD {
+        margin-right: 8rem;
+    }
+    
+    .contactBox {
+        padding: 0rem !important;
+        margin-left: 1rem !important;
+        margin-right: 0rem !important;
+        display: flex;
+        flex-flow: row wrap;
+        flex-wrap: wrap;
+    }
     .Section {
         width: 100%;
     }
 
     .mrxLogo {
         position: absolute;
-        top: 5px;
-        left: 4.5rem;
-        width: 9rem;
+        top: 4px;
+        left: 1rem;
+        width: 8rem;
         height: 4rem;
     }
 
@@ -2120,7 +2345,7 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         transform: translate(0rem, -250px);
     }
 
-    #revealWeb, #revealWebT, #revealWeb1 {
+    #revealWeb, #revealWebT, #revealWeb1, #revealWebD {
         height: 36rem;
     }
 
@@ -2134,6 +2359,9 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
 }
 
 @media (max-width: 576px) {
+    .buttonD {
+        margin-right: 12rem;
+    }
     .Section {
         width: 100%;
     }
@@ -2151,6 +2379,10 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
 /*SM*/
 
 @media (max-width: 425px) {
+    .buttonD {
+        margin-right: 8rem;
+    }
+
     .profileP2, .gameDescription {
         color: #e6b244;
         font-family: 'Manrope', sans-serif;
@@ -2193,6 +2425,16 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         padding-left: 1.6rem;
         padding-right: 1.6rem;
     }
+    .sousTitre {
+        color: rgb(61, 61, 61);
+        font-family: 'Manrope', sans-serif;
+        font-weight: normal;
+        font-size: 1rem;
+        margin-top: 0rem;
+        margin-bottom: 1rem;
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
 
     hr {
         margin: 0.2rem !important;
@@ -2200,9 +2442,9 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
 
     .mrxLogo {
         position: absolute;
-        top: 6px;
-        left: 17rem;
-        width: 9rem;
+        top: 4px;
+        left: 1rem;
+        width: 8rem;
         height: 4rem;
     }
 
@@ -2295,7 +2537,7 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         text-shadow: 1px 1px 2px rgb(32, 32, 32);
     }
 
-    #revealWeb, #revealWebT, #revealWeb1 {
+    #revealWeb, #revealWebT, #revealWeb1, #revealWebD {
         height: 100%;
         width: 100%;
         margin: 0rem;
@@ -2306,7 +2548,7 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         background-image: url("images/skullColorSmall.png");
     }
 
-    #revealWeb:hover div.TexteWeb, #revealWebT:hover div.TexteWeb, #revealWeb1:hover div.TexteWeb {
+    #revealWeb:hover div.TexteWeb, #revealWebT:hover div.TexteWeb, #revealWeb1:hover div.TexteWeb, #revealWebD:hover div.TexteWeb {
         transform: translate(0, -18rem);
     }
 
@@ -2513,12 +2755,6 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         padding-left: 0rem;
     }
 
-    .contactBox {
-        padding: 0rem !important;
-        margin-left: 1.5rem !important;
-        margin-right: 2rem !important;
-    }
-
     .footer {
         height: 7rem;
         padding: 0.6rem 0rem;
@@ -2554,14 +2790,6 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         color: rgb(44, 44, 44);
     }
 
-    .mrxLogo {
-        position: absolute;
-        top: 5px;
-        left: 4.5rem;
-        width: 9rem;
-        height: 4rem;
-    }
-
     .sidenav {
         width: 100%;
     }
@@ -2570,6 +2798,24 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
 /*XS*/
 
 @media (max-width: 375px) {
+    .barName {
+        font-size: 0.9rem;
+        padding-top: 0.2rem;
+        font-weight: 700;
+    }
+    
+    .progress-bar {
+        font-size: 0.9rem;
+    }
+    
+    .buttonD {
+        margin-right: 5rem;
+        margin-left: 3rem;
+    }
+    .contactBox {
+
+        justify-content: center;
+    }
     .Section {
         width: 100%;
     }
@@ -2612,6 +2858,16 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         font-size: 2.5rem;
         margin: 0rem 2rem;
         padding: 0rem 2rem;
+    }
+
+    .sousTitre {
+        color: rgb(61, 61, 61);
+        font-family: 'Manrope', sans-serif;
+        font-weight: normal;
+        font-size: 1rem;
+        margin-left: 2rem;
+        margin-bottom: 1rem;
+        padding-left: 2rem;
     }
 
     .bannerBox {
@@ -2703,7 +2959,7 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         background-image: url("images/skullColorSmall.png");
     }
 
-    #revealWeb:hover div.TexteWeb, #revealWebT:hover div.TexteWeb, #revealWeb1:hover div.TexteWeb {
+    #revealWeb:hover div.TexteWeb, #revealWebT:hover div.TexteWeb, #revealWeb1:hover div.TexteWeb, #revealWebD:hover div.TexteWeb {
         transform: translate(0, -18rem);
     }
 
@@ -2938,12 +3194,6 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         padding-left: 0rem;
     }
 
-    .contactBox {
-        padding: 2rem !important;
-        margin-left: 2rem !important;
-        margin-right: 2rem !important;
-    }
-
     .fondPriority {
         margin-left: 0rem;
         margin-right: 0rem;
@@ -2972,9 +3222,9 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
 
     .mrxLogo {
         position: absolute;
-        top: 5px;
-        left: 4.5rem;
-        width: 9rem;
+        top: 4px;
+        left: 1rem;
+        width: 8rem;
         height: 4rem;
     }
 
@@ -2984,6 +3234,21 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
 }
 
 @media (max-width: 320px) {
+    
+    .barName {
+        font-size: 0.5rem;
+        padding-top: 0.2rem;
+        font-weight: 700;
+    }
+    
+    .progress-bar {
+        font-size: 0.5rem;
+    }
+    
+    .buttonD {
+        margin-right: 3rem;
+        margin-left: 2rem;
+    }
     .photoInfos {
         width: auto;
         height: 320px;
@@ -3098,7 +3363,7 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         text-shadow: 1px 1px 2px rgb(32, 32, 32);
     }
 
-    #revealWeb, #revealWebT, #revealWeb1 {
+    #revealWeb, #revealWebT, #revealWeb1, #revealWebD {
         height: 100%;
         width: 100%;
         margin: 0rem;
@@ -3159,7 +3424,7 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         color: rgb(58, 138, 138);
         font-family: 'Manrope', sans-serif;
         font-weight: lighter;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         text-align: center;
         margin-bottom: 0.5rem;
         padding-bottom: 0.5rem;
@@ -3337,12 +3602,6 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         padding-left: 0rem;
     }
 
-    .contactBox {
-        padding: 2rem !important;
-        margin-left: 2rem !important;
-        margin-right: 2rem !important;
-    }
-
     .fondPriority {
         margin-left: 0rem;
         margin-right: 0rem;
@@ -3371,9 +3630,9 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
 
     .mrxLogo {
         position: absolute;
-        top: 5px;
-        left: 4.5rem;
-        width: 9rem;
+        top: 4px;
+        left: 1rem;
+        width: 8rem;
         height: 4rem;
     }
 

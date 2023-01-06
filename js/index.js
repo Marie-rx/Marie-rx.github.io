@@ -19,26 +19,26 @@ $(document).ready(() => {
         formbutton("create", {
             action: "https://formspree.io/mzbjqwpy",
             title: "<img style=' width: 16rem; height: 8rem; margin: auto auto; padding-top: 1.5rem; padding-bottom: 1.5rem;' src='css/images/marieronnauxLogo.png'></img>",
-            description: "Contactez-moi !",
+            description: "Envoyer un Email à : ronnaux.marie@gmail.com",
             theme: "classic",
-            buttonImg: "<i class='fas fa-comment' style='font-size:2.5rem'/>", 
+            buttonImg: "<img src='CSS/Images/envelope-regular-white.svg' class='upFooter'/>", 
             fields: [
                 {
                     type: "email",
-                    label: "Email:",
+                    label: "Votre Email:",
                     name: "email",
                     required: true,
                     placeholder: "votre@email.com"
                 },
                 {
                     type: "input",
-                    label: "Nom & prénom:",
+                    label: "Votre nom & prénom:",
                     name: "name",
                     placeholder: "Nom et prénom",
                 },
                 {
                     type: "textarea",
-                    label: "Message:",
+                    label: "Votre message:",
                     name: "message",
                     placeholder: "Rédigez votre message ici",
                 },
@@ -48,9 +48,9 @@ $(document).ready(() => {
             styles: {
                 description: {
                     background: "#e6b244",
-                    fontSize: "1.5rem",
-                    color: "rgb(116, 86, 31)",
-                    fontWeight: "normal",
+                    fontSize: "1rem",
+                    color: "rgb(29, 29, 29)",
+                    fontWeight: "bold",
                     textAlign: "center",
                     borderRadius: "3rem"
                 },
@@ -68,13 +68,19 @@ $(document).ready(() => {
                     margin: "auto",
                     borderRadius: "0rem",
                 },
-                button: {
-                    background: "linear-gradient(-25deg, rgb(252, 223, 57), rgb(42, 170, 170)60%)",
+                button:  {
+                    background: "rgba(255, 255, 255, 0)", //"linear-gradient(-25deg, rgb(252, 223, 57), rgb(42, 170, 170)60%)"
+                    borderColor: "rgb(255, 255, 255)",
+                    borderWidth: "0.1rem",
+                    border: "solid",
                     width: "5rem",
                     height: "5rem",
-                    borderRadius: "10rem",
+                    borderRadius: "0rem",
                     zIndex: "1049",
+                    boxShadow: "none",
                 },
+                
+               
                 closeButton: {
                     //display: "none"
                     position: "fixed",
@@ -90,12 +96,12 @@ $(document).ready(() => {
     //SIDENAV OPEN AND CLOSE DEPENDING ON IF LINK IS CLICKED OR NOT
     var open = false;
     function openNav() {
-        $("#mySidenav").css({"left": "0rem"});
+        $("#mySidenav").css({"right": "0rem"});
         open = true;
     }
 
     function closeNav() {
-        $("#mySidenav").css({"left": "-27rem"});
+        $("#mySidenav").css({"right": "-27rem"});
         open = false;
     }
 
@@ -110,7 +116,7 @@ $(document).ready(() => {
     
     document.addEventListener("mouseup", function(event){
         var nav = document.getElementById('mySidenav');
-        if(open == true && event.target != nav && event.target.parentNode != nav){
+        if(open == true && event.target != nav){ //if(open == true && event.target != nav && event.target.parentNode != nav){ "Closing because the click was not on the nav and not on the nav links"
                 closeNav();
                 //console.log("Closing because the click was not on the nav and not on the nav links");
         } else if (open == false) {
@@ -150,6 +156,20 @@ $(document).ready(() => {
         });
     });
 
+    //********************************************************back to top button
+    mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 3000 || document.documentElement.scrollTop > 1000) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
 
     //-------------------------------------SMALL SIZE SCREEN ANIM
     if (minWidth200px.matches) {
@@ -175,6 +195,13 @@ $(document).ready(() => {
             distance: '1rem',
             viewFactor: 0.5,
         });
+        sr.reveal('span.sousTitre', {
+            duration: 1000,
+            origin: 'left',
+            distance: '5rem',
+            viewFactor: 0.5,
+            delay: 500
+        });
         sr.reveal('hr.text-left', {
             duration: 1000,
             origin: 'right',
@@ -183,6 +210,15 @@ $(document).ready(() => {
 
         //banner icons anim
         sr.reveal('.icon', {
+            duration: 1000,
+            origin: 'left',
+            distance: '2rem',
+            viewFactor: 0,
+            interval: 100,
+            delay: 800
+        });
+
+        sr.reveal('.buttonD', {
             duration: 1000,
             origin: 'left',
             distance: '2rem',
@@ -209,13 +245,12 @@ $(document).ready(() => {
 
         });
         sr.reveal('.Profile', {
-            duration: 1000,
+            duration: 500,
             origin: 'left',
-            viewFactor: 0.5,
+            viewFactor: 0,
             distance: '2rem',
-            viewFactor: 0.5,
-            delay: 100
         });
+
         sr.reveal('.allBars', {
             duration: 500,
             origin: 'left',
@@ -367,9 +402,8 @@ $(document).ready(() => {
         sr.reveal('.Profile', {
             duration: 1000,
             origin: 'left',
-            viewFactor: 0.5,
+            viewFactor: 0,
             distance: '2rem',
-            viewFactor: 0.5,
             delay: 100
         });
         sr.reveal('.allBars', {
@@ -537,9 +571,8 @@ $(document).ready(() => {
         sr.reveal('.Profile', {
             duration: 1000,
             origin: 'left',
-            viewFactor: 0.5,
+            viewFactor: 0,
             distance: '10rem',
-            viewFactor: 0.5,
             delay: 100
         });
         sr.reveal('.allBars', {
