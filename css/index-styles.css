@@ -15,9 +15,10 @@ body {
     font-family: 'Lexend Deca', sans-serif;
     font-family: 'Lobster', cursive;
     font-family: 'Lobster Two', cursive;
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-family: 'Roboto', sans-serif;
-    font-family: 'Quicksand', sans-serif;*/
+    font-family: 'Poppins', sans-serif;*/
+    font-family: 'Poppins', sans-serif;
 }
 
 /*NAV BAR*/
@@ -69,7 +70,7 @@ button:hover {
 
 .sidenav a.item {
     padding: 1.5rem 1.5rem 1.5rem 1.5rem;
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-decoration: none;
     font-size: 1.6rem;
     color: rgb(92, 206, 206);
@@ -92,7 +93,7 @@ a.item:not(:hover) {
 
 .closebtn {
     padding: 0.1rem 1rem;
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: bold;
     text-decoration: none;
     font-size: 0rem;
@@ -161,7 +162,7 @@ a.item:not(:hover) {
 }
 
 .artefactCover4 {
-    background: linear-gradient(#000000 90%, #292929 100%);
+    background: linear-gradient(#433551 90%, #292929 100%);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
@@ -240,7 +241,7 @@ a.item:not(:hover) {
     width: 80px;
     height: 80px;
     display: block;
-    background-color: rgb(255, 255, 255);
+    background-color: #ece9e9;
     margin-right: 40px;
     border-radius: 50%;
     overflow: hidden;
@@ -258,7 +259,7 @@ a.item:not(:hover) {
     /*changer la distance entre le centre de rotation et les pupilles*/
     width: 50px;
     height: 50px;
-    background-color: black;
+    background-color: #433551;
     border-radius: 50%;
     border: 20px solid rgb(69, 168, 69);
 }
@@ -278,20 +279,20 @@ h1.banner {
     padding-bottom: 0rem;
     padding-top: 9rem;
     line-height: 4rem;
-    font-family: 'Manrope', sans-serif;
-    color: rgb(34, 34, 34);
+    font-family: 'Poppins', sans-serif;
+    color: #433551;
 }
 
 .lead {
     color: rgb(255, 213, 98);
-    font-family: 'Manrope', sans-serif;
-    font-weight: lighter;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
     font-size: 2rem;
 }
 
 .sousTitre {
     color: rgb(61, 61, 61);
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 1rem;
     margin-top: 1rem;
@@ -301,7 +302,7 @@ h1.banner {
 
 .contactUp {
     color: rgb(34, 34, 34);
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: normal;
     font-size: 1.4rem;
     width: 10rem;
@@ -328,7 +329,7 @@ h1.banner {
 .twitter {
     padding-right: 0.7rem;
     color: rgb(34, 34, 34);
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Poppins', sans-serif;
     display: flex;
     align-content: center;
     justify-content: center;
@@ -341,7 +342,7 @@ h1.banner {
 
 /*.cv {
     color: rgb(34, 34, 34);
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     text-align: center;
 }
@@ -382,7 +383,7 @@ h1.banner {
 .button__text {
 	display: inline-flex;
 	align-items: center;
-	color: rgb(26, 26, 26);
+	color: #433551;
 	height: 100%;    
     padding: 0.7rem;
     text-decoration:none;
@@ -392,7 +393,7 @@ h1.banner {
     display: inline-flex;
 	align-items: center;
 	font-size: 1.5em;
-    color: rgb(26, 26, 26);
+    color: #433551;
 	background-color: #c4993d;
     height: 100%;
     padding: 0.8rem;
@@ -447,8 +448,8 @@ h2.about {
 p.priority {
     text-align: center;
     color: #e6b244;
-    font-family: 'Manrope', sans-serif;
-    font-weight: lighter;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
     font-size: 1.2rem;
     padding: 0rem 0.5rem !important;
 }
@@ -459,13 +460,13 @@ p.priority {
 }
 
 .iconColors {
-    color: #e6b244;
+    color: #3B8A8A;
 }
 
 h2.priorityH2 {
     color: #e6b244;
-    font-family: 'Manrope', sans-serif;
-    font-weight: lighter;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
     font-size: 1.6rem;
     text-align: center;
 }
@@ -487,9 +488,9 @@ h2.priorityH2 {
 }
 
 h2.profileh2 {
-    color: rgb(31, 31, 31);
-    font-family: 'Manrope', sans-serif;
-    font-weight: 500;
+    color: #433551;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
     font-size: 1.6rem;
     text-align: center;
     padding-top: 1rem;
@@ -497,32 +498,32 @@ h2.profileh2 {
 
 h2.profile2h2 {
     color: #e6b244;
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1.6rem;
     text-align: center;
-
+font-weight: 500;
 }
 
 .profileP {
-    color: #000000;
-    font-family: 'Manrope', sans-serif;
-    font-weight: lighter;
+    color: #433551;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
     font-size: 1.1rem;
-    text-align: justify;
+    text-align: left;
 }
 
 .profileP2 {
     color: #e6b244;
-    font-family: 'Manrope', sans-serif;
-    font-weight: lighter;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
     font-size: 1.1rem;
     text-align: justify;
 }
 
 .gameDescription {
     color: #e6b244;
-    font-family: 'Manrope', sans-serif;
-    font-weight: lighter;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
     font-size: 1.1rem;
     text-align: justify;
 }
@@ -540,32 +541,35 @@ h2.profile2h2 {
 .barName {
     height: 1.8rem;
     width: 10rem;
-    letter-spacing: 2px;
     padding: 0rem 0rem;
-    color: #000000;
-    background-color: rgb(250, 228, 104);
-    font-family: 'Manrope', sans-serif;
+    color: #433551;
+    background-color: rgb(235, 220, 136);
+    font-family: 'Poppins', sans-serif;
     font-weight: normal;
     font-size: 1rem;
-    text-align: center;
+    text-align: left;
 }
 
 div.barName p {
-    text-align: center;
-    padding-top: 0.1rem;
+    text-align: left;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    padding: 0.2rem 0.2rem 0.5rem 0.5rem;
+    font-weight: 700;
 }
 
 .progress-bar {
     background-color: rgb(67, 156, 156);
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: normal;
     font-size: 1rem;
+    color: #433551;
 }
 
 span#age {
-    color: #000000;
-    font-family: 'Manrope', sans-serif;
-    font-weight: lighter;
+    color: #433551;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
     font-size: 1.1rem;
     text-align: center;
 }
@@ -573,17 +577,17 @@ span#age {
 i.profileInfosFA {
     font-size: 1.4rem;
     padding-right: 0.1rem;
-    color: rgb(0, 0, 0);
+    color: #433551;
 }
 
 p.profileInfos {
-    font-family: 'Manrope', sans-serif;
-    color: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+    color: #433551;
     margin-bottom: 0.3rem;
 }
 
 .profileInfosFA:hover {
-    color: rgb(255, 255, 255);
+    color: #e6e6e6;
 }
 
 /*END OF SKILLS*/
@@ -639,8 +643,8 @@ p.profileInfos {
 
 h2 {
     color: #e6b244;
-    font-family: 'Manrope', sans-serif;
-    font-weight: lighter;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
     font-size: 2rem;
 }
 
@@ -708,22 +712,22 @@ h2 {
 }
 
 .btn-style {
-    color: rgb(29, 29, 29);
-    font-family: 'Manrope', sans-serif;
-    font-weight: lighter;
+    color: #433551;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
     font-size: 1.3rem;
     width: fit-content;
     padding: 0.6rem;
 }
 
 .btn-outline-info {
-    border-color: rgb(29, 29, 29);
+    border-color: #433551;
 }
 
 .h2CenterCardWeb {
-    color: #ffffff;
+    color: #ece9e9;
     font-family: 'Quicksand', sans-serif;
-    font-weight: lighter;
+    font-weight: normal;
     font-size: 2rem;
     padding: 1rem 0.5rem;
     transform: translate(0rem, -150px);
@@ -733,9 +737,9 @@ h2 {
 }
 
 .h2TitleWeb {
-    color: #ffffff;
+    color: #ece9e9;
     font-family: 'Quicksand', sans-serif;
-    font-weight: lighter;
+    font-weight: normal;
     font-size: 2.5rem;
     padding-top: 1rem;
     margin-bottom: 1rem;
@@ -743,8 +747,8 @@ h2 {
 
 .cardSubtitleWeb {
     color: rgb(58, 138, 138);
-    font-family: 'Manrope', sans-serif;
-    font-weight: lighter;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
     font-size: 1.5rem;
     text-align: center;
     margin-bottom: 3rem;
@@ -811,8 +815,8 @@ div.cardWeb {
 
 .disabled {
     color: rgb(65, 65, 65) !important;
-    font-family: 'Manrope', sans-serif;
-    font-weight: lighter;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
     font-size: 1.3rem;
     width: fit-content;
     border-color: rgb(63, 63, 63) !important;
@@ -840,36 +844,36 @@ div.cardWeb {
 }
 
 .h2TitleGame {
-    color: #ffffff;
+    color: #ece9e9;
     font-family: 'Quicksand', sans-serif;
-    font-weight: lighter;
+    font-weight: normal;
     font-size: 3rem;
     padding-top: 1rem;
     margin-bottom: 1rem;
 }
 
 .h2TitleGameWMM {
-    color: #ffffff;
+    color: #ece9e9;
     font-family: 'Quicksand', sans-serif;
-    font-weight: lighter;
+    font-weight: normal;
     font-size: 2rem;
     padding: 0rem 2rem;
     margin-bottom: 1rem;
 }
 
 .h2TitleGameOTV {
-    color: #ffffff;
+    color: #ece9e9;
     font-family: 'Quicksand', sans-serif;
-    font-weight: lighter;
+    font-weight: normal;
     font-size: 2.2rem;
     padding: 0rem 2rem;
     margin-bottom: 1rem;
 }
 
 .h2CenterCard {
-    color: #ffffff;
+    color: #ece9e9;
     font-family: 'Quicksand', sans-serif;
-    font-weight: lighter;
+    font-weight: normal;
     font-size: 2rem;
     padding: 1rem 0.5rem;
     transform: translate(0rem, -141px);
@@ -879,9 +883,9 @@ div.cardWeb {
 }
 
 .h2CenterCardWMM {
-    color: #ffffff;
+    color: #ece9e9;
     font-family: 'Quicksand', sans-serif;
-    font-weight: lighter;
+    font-weight: normal;
     font-size: 1.9rem;
     padding: 1rem 0.5rem;
     transform: translate(0rem, -141px);
@@ -891,9 +895,9 @@ div.cardWeb {
 }
 
 .cardSubtitleGame {
-    color: rgb(255, 255, 255);
-    font-family: 'Manrope', sans-serif;
-    font-weight: lighter;
+    color: #ece9e9;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
     font-size: 1.3rem;
     text-align: center;
     margin-bottom: 0rem;
@@ -901,9 +905,9 @@ div.cardWeb {
 }
 
 .btn-styleGame {
-    color: rgb(255, 255, 255);
-    font-family: 'Manrope', sans-serif;
-    font-weight: lighter;
+    color: #ece9e9;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
     font-size: 1.3rem;
     width: fit-content;
     border-color: ivory;
@@ -912,9 +916,9 @@ div.cardWeb {
 }
 
 .mission {
-    color: #ffffff;
-    font-family: 'Manrope', sans-serif;
-    font-weight: lighter;
+    color: #ece9e9;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
     font-size: 1.2rem;
     text-align: left;
     padding-bottom: 0.5rem;
@@ -924,7 +928,7 @@ div.cardWeb {
 
 #bold {
     color: rgb(236, 196, 62);
-    font-weight: lighter;
+    font-weight: normal;
     font-size: 1.2rem;
 }
 
@@ -1077,8 +1081,8 @@ i.flecheGame {
 }
 
 h2.modTitle {
-    color: #0f0f0f;
-    font-family: 'Quicksand', sans-serif;
+    color: #433551;
+    font-family: 'Poppins', sans-serif;
     font-weight: bolder;
     font-size: 1.7rem;
     padding-left: 0.5rem;
@@ -1090,8 +1094,8 @@ h2.modTitle {
 }
 
 .modP {
-    color: #0f0f0f;
-    font-family: 'Manrope', sans-serif;
+    color: #433551;
+    font-family: 'Poppins', sans-serif;
     font-weight: normal;
     font-size: 1.2rem;
     padding-right: 0.5rem;
@@ -1101,8 +1105,9 @@ h2.modTitle {
 }
 
 span {
-    color: rgb(32, 32, 32);
+    color: #433551;
     font-size: 1.1rem;
+    font-weight: 600;
 }
 
 /*END OF GAME CARDS MODAL*/
@@ -1181,9 +1186,9 @@ span {
 }
 
 .cardSubtitleGraph {
-    color: rgb(255, 255, 255);
-    font-family: 'Manrope', sans-serif;
-    font-weight: lighter;
+    color: #ece9e9;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
     font-size: 1.5rem;
     text-align: center;
     margin-bottom: 2rem;
@@ -1215,8 +1220,8 @@ div.cardGraph {
 /*GRAPHISME CARDS MODAL*/
 
 .modal-title {
-    color: rgb(255, 255, 255);
-    font-family: 'Manrope', sans-serif;
+    color: #ece9e9;
+    font-family: 'Poppins', sans-serif;
     font-weight: normal;
     border-bottom: grey solid 1px;
 }
@@ -1256,7 +1261,7 @@ div.cardGraph {
 
 .h2TitleCom {
     color: rgb(47, 48, 48);
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: bold;
     font-size: 1.5rem;
     text-transform: uppercase;
@@ -1264,9 +1269,9 @@ div.cardGraph {
 }
 
 .h2CenterCardFreelance {
-    color: #000000;
+    color: #433551;
     font-family: 'Quicksand', sans-serif;
-    font-weight: lighter;
+    font-weight: normal;
     font-size: 1.5rem;
     padding: 1rem 0.5rem;
     margin: 0rem;
@@ -1289,7 +1294,7 @@ div.cardGraph {
 }
 
 .ComText {
-    background-color: #ffffff;
+    background-color: #ece9e9;
     padding: 0rem;
 }
 
@@ -1323,7 +1328,7 @@ div#comContainerSpirou {
 }
 
 div#comContainer p {
-    color: rgb(26, 26, 26);
+    color: #433551;
     font-weight: normal;
     padding-top: 2rem;
     padding-left: 2rem;
@@ -1333,7 +1338,7 @@ div#comContainer p {
 }
 
 div#comContainerSpirou p {
-    color: rgb(26, 26, 26);
+    color: #433551;
     font-weight: normal;
     padding-top: 2rem;
     padding-left: 2rem;
@@ -1342,9 +1347,9 @@ div#comContainerSpirou p {
 }
 
 span.freelance {
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1.4rem;
-    color: #2b2b2b;
+    color: #433551;
     background-color: #ffc64b;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -1430,9 +1435,9 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
 }
 
 .footer span {
-    font-family: 'Manrope', sans-serif;
-    font-weight: lighter;
-    color: rgba(243, 229, 103, 0.568);
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    color: rgba(255, 202, 87, 0.466);
 }
 
 .contactFooter {
@@ -1520,7 +1525,7 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
 
     .sousTitre {
         color: rgb(61, 61, 61);
-        font-family: 'Manrope', sans-serif;
+        font-family: 'Poppins', sans-serif;
         font-weight: normal;
         font-size: 2rem;
         margin-top: 0rem;
@@ -2017,7 +2022,7 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
 
     .sousTitre {
         color: rgb(61, 61, 61);
-        font-family: 'Manrope', sans-serif;
+        font-family: 'Poppins', sans-serif;
         font-weight: normal;
         font-size: 1rem;
         margin-top: 0rem;
@@ -2184,7 +2189,7 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     }
     .sousTitre {
         color: rgb(61, 61, 61);
-        font-family: 'Manrope', sans-serif;
+        font-family: 'Poppins', sans-serif;
         font-weight: normal;
         font-size: 1rem;
         margin-top: 0rem;
@@ -2265,8 +2270,8 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     p.priority {
         text-align: center;
         color: #e6b244;
-        font-family: 'Manrope', sans-serif;
-        font-weight: lighter;
+        font-family: 'Poppins', sans-serif;
+        font-weight: normal;
         font-size: 1.2rem;
         padding: 0rem 0rem !important;
     }
@@ -2385,8 +2390,8 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
 
     .profileP2, .gameDescription {
         color: #e6b244;
-        font-family: 'Manrope', sans-serif;
-        font-weight: lighter;
+        font-family: 'Poppins', sans-serif;
+        font-weight: normal;
         font-size: 1.1rem;
         text-align: justify;
 
@@ -2427,7 +2432,7 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     }
     .sousTitre {
         color: rgb(61, 61, 61);
-        font-family: 'Manrope', sans-serif;
+        font-family: 'Poppins', sans-serif;
         font-weight: normal;
         font-size: 1rem;
         margin-top: 0rem;
@@ -2488,7 +2493,7 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     }
 
     div#comContainerSpirou p {
-        color: rgb(26, 26, 26);
+        color: #433551;
         font-weight: normal;
         padding-top: 2rem;
         padding-left: 0.5rem;
@@ -2504,8 +2509,8 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     }
 
     .modal-title {
-        color: rgb(255, 255, 255);
-        font-family: 'Manrope', sans-serif;
+        color: #ece9e9;
+        font-family: 'Poppins', sans-serif;
         font-weight: normal;
         border-bottom: grey solid 1px;
     }
@@ -2575,9 +2580,9 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     }
 
     .h2CenterCardWeb {
-        color: #ffffff;
+        color: #ece9e9;
         font-family: 'Quicksand', sans-serif;
-        font-weight: lighter;
+        font-weight: normal;
         font-size: 1.8rem;
         padding: 1rem 0.5rem;
         transform: translate(0rem, -505px);
@@ -2587,9 +2592,9 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     }
 
     .h2TitleWeb {
-        color: #ffffff;
+        color: #e6b244;
         font-family: 'Quicksand', sans-serif;
-        font-weight: lighter;
+        font-weight: normal;
         font-size: 1.7rem;
         padding-top: 1rem;
         margin-bottom: 0rem;
@@ -2597,8 +2602,8 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
 
     .cardSubtitleWeb {
         color: rgb(58, 138, 138);
-        font-family: 'Manrope', sans-serif;
-        font-weight: lighter;
+        font-family: 'Poppins', sans-serif;
+        font-weight: normal;
         font-size: 1.3rem;
         text-align: center;
         margin-bottom: 0.5rem;
@@ -2772,8 +2777,8 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     p.priority {
         text-align: center;
         color: #e6b244;
-        font-family: 'Manrope', sans-serif;
-        font-weight: lighter;
+        font-family: 'Poppins', sans-serif;
+        font-weight: normal;
         font-size: 1.2rem;
         padding: 0rem 0rem !important;
     }
@@ -2862,7 +2867,7 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
 
     .sousTitre {
         color: rgb(61, 61, 61);
-        font-family: 'Manrope', sans-serif;
+        font-family: 'Poppins', sans-serif;
         font-weight: normal;
         font-size: 1rem;
         margin-left: 2rem;
@@ -2917,8 +2922,8 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     }
 
     .modal-title {
-        color: rgb(255, 255, 255);
-        font-family: 'Manrope', sans-serif;
+        color: #ece9e9;
+        font-family: 'Poppins', sans-serif;
         font-weight: normal;
         border-bottom: grey solid 1px;
     }
@@ -2986,9 +2991,9 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     }
 
     .h2CenterCardWeb {
-        color: #ffffff;
+        color: #ece9e9;
         font-family: 'Quicksand', sans-serif;
-        font-weight: lighter;
+        font-weight: normal;
         font-size: 1.8rem;
         padding: 1rem 0.5rem;
         transform: translate(0rem, -505px);
@@ -2998,9 +3003,9 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     }
 
     .h2TitleWeb {
-        color: #ffffff;
+        color: #e6b244;
         font-family: 'Quicksand', sans-serif;
-        font-weight: lighter;
+        font-weight: normal;
         font-size: 1.7rem;
         padding-top: 1rem;
         margin-bottom: 0rem;
@@ -3008,8 +3013,8 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
 
     .cardSubtitleWeb {
         color: rgb(58, 138, 138);
-        font-family: 'Manrope', sans-serif;
-        font-weight: lighter;
+        font-family: 'Poppins', sans-serif;
+        font-weight: normal;
         font-size: 1.3rem;
         text-align: center;
         margin-bottom: 0.5rem;
@@ -3202,8 +3207,8 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     p.priority {
         text-align: center;
         color: #e6b244;
-        font-family: 'Manrope', sans-serif;
-        font-weight: lighter;
+        font-family: 'Poppins', sans-serif;
+        font-weight: normal;
         font-size: 1.2rem;
         padding: 0rem 0rem !important;
     }
@@ -3331,8 +3336,8 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     }
 
     .modal-title {
-        color: rgb(255, 255, 255);
-        font-family: 'Manrope', sans-serif;
+        color: #ece9e9;
+        font-family: 'Poppins', sans-serif;
         font-weight: normal;
         border-bottom: grey solid 1px;
     }
@@ -3400,9 +3405,9 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     }
 
     .h2CenterCardWeb {
-        color: #ffffff;
+        color: #ece9e9;
         font-family: 'Quicksand', sans-serif;
-        font-weight: lighter;
+        font-weight: normal;
         font-size: 1.8rem;
         padding: 1rem 0.5rem;
         transform: translate(0rem, -505px);
@@ -3412,9 +3417,9 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     }
 
     .h2TitleWeb {
-        color: #ffffff;
+        color: #e6b244;
         font-family: 'Quicksand', sans-serif;
-        font-weight: lighter;
+        font-weight: normal;
         font-size: 1.7rem;
         padding-top: 1rem;
         margin-bottom: 0rem;
@@ -3422,8 +3427,8 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
 
     .cardSubtitleWeb {
         color: rgb(58, 138, 138);
-        font-family: 'Manrope', sans-serif;
-        font-weight: lighter;
+        font-family: 'Poppins', sans-serif;
+        font-weight: normal;
         font-size: 1.1rem;
         text-align: center;
         margin-bottom: 0.5rem;
@@ -3610,8 +3615,8 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
     p.priority {
         text-align: center;
         color: #e6b244;
-        font-family: 'Manrope', sans-serif;
-        font-weight: lighter;
+        font-family: 'Poppins', sans-serif;
+        font-weight: normal;
         font-size: 1.2rem;
         padding: 0rem 0rem !important;
     }
