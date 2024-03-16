@@ -209,7 +209,7 @@ $(document).ready(() => {
         });
 
         //banner icons anim
-        sr.reveal('.icon', {
+        sr.reveal('.linkedin', {
             duration: 1000,
             origin: 'left',
             distance: '2rem',
@@ -218,14 +218,7 @@ $(document).ready(() => {
             delay: 800
         });
 
-        sr.reveal('.buttonD', {
-            duration: 1000,
-            origin: 'left',
-            distance: '2rem',
-            viewFactor: 0,
-            interval: 100,
-            delay: 800
-        });
+
 
         //about anim skills
         sr.reveal('h2.about', {
@@ -373,7 +366,7 @@ $(document).ready(() => {
         });
 
         //banner icons anim
-        sr.reveal('.icon', {
+        sr.reveal('.linkedin', {
             duration: 1000,
             origin: 'left',
             distance: '2rem',
@@ -541,7 +534,7 @@ $(document).ready(() => {
 
         //banner icons anim
 
-        sr.reveal('.icon', {
+        sr.reveal('.linkedin', {
             duration: 1000,
             origin: 'left',
             distance: '5rem',
