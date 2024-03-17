@@ -261,7 +261,7 @@ a.item:not(:hover) {
     height: 50px;
     background-color: #433551;
     border-radius: 50%;
-    border: 20px solid rgb(69, 168, 69);
+    border: 20px solid #5DA383;
 }
 
 /*END OF PHOTO*/
