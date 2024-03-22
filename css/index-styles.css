@@ -31,7 +31,7 @@ body {
     margin-left: 0.5rem;
     padding: 0.5rem;
     position: fixed;
-    z-index: 1;
+    z-index: 1049;
     right: 1rem;
     top: 0.5rem;
 }
@@ -106,7 +106,7 @@ a.item:not(:hover) {
     top: 0;
     right: 0px;
     font-size: 36px;
-    z-index: 1;
+    z-index: 3;
     transition: 0.2s;
     overflow: hidden;
 }
@@ -797,7 +797,7 @@ div.cardWeb {
     background-size: cover;
     width: 100%;
     height: 4rem;
-    background-color: #3a3a3a;
+    background-color: #292929;
     padding: 0rem;
     backface-visibility: hidden;
 }
@@ -825,6 +825,74 @@ div.cardWeb {
 }
 
 /*END OF WEB DESIGN CARDS*/
+
+/*UI UX*/
+
+
+.uiuximage {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    /* Set a specific height */
+    height: 1143px;
+    width: 3285px;
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+/*Thank you "Coding with Robby"*/
+  @keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .logos {
+    overflow: hidden;
+    padding: 0px 0;
+    background: #292929;
+    white-space: nowrap;
+    position: relative;
+  }
+  
+  .logos:before,
+  .logos:after {
+    position: absolute;
+    top: 0;
+    width: 20rem;
+    height: 100%;
+    content: "";
+    z-index: 2;
+  }
+  
+  .logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), #292929);
+  }
+  
+  .logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #292929);
+  }
+  
+  /*.logos:hover .logos-slide {
+    animation-play-state: paused;
+  }*/
+  
+  .logos-slide {
+    display: inline-block;
+    animation: 35s slide infinite linear;
+  }
+  
+  .logos-slide img {
+    height: 100%;
+    margin: 0 0rem;
+  }
+  /*FIN UIUX*/
 
 /*GAME CARDS*/
 
@@ -1471,8 +1539,8 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
 /*XXXL*/
 
 @media (min-width: 2560px) {
-    .contactBox {
 
+    .contactBox {
         align-items: flex-start;
     }
     .Section {
@@ -1543,6 +1611,7 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         height: 6rem !important;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
+        background-color: #292929;
     }
 
     .pointeSvg3 {
@@ -1564,7 +1633,7 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         background-size: cover;
         width: 100%;
         height: 4.5rem !important;
-        background-color: #3a3a3a;
+        background-color: #292929;
         padding: 0rem;
         backface-visibility: hidden;
     }
@@ -1802,6 +1871,7 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         height: 5rem;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
+        background-color: #292929;
     }
 
     .pointeSvg3 {
@@ -1903,6 +1973,7 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
         height: 5rem;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
+        background-color: #292929;
     }
 
     .pointeSvg3 {
@@ -2086,6 +2157,11 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
 
 @media (max-width: 992px) {
 
+    .logos:before,
+    .logos:after {
+    width: 2rem;
+    }
+
     .ProfileBars {
         margin-top: 0rem;
         margin-left: 0rem;
@@ -2158,6 +2234,11 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
 /*MD*/
 
 @media (max-width: 768px) {
+    .logos:before,
+    .logos:after {
+    width: 2rem;
+    }
+
     .contactBox {
         padding: 0rem !important;
         margin-left: 0rem !important;
@@ -2302,6 +2383,10 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
 }
 
 @media (max-width: 640px) {
+    .logos:before,
+    .logos:after {
+    width: 2rem;
+    }
     .buttonD {
         margin-right: 8rem;
     }
@@ -2364,6 +2449,10 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
 }
 
 @media (max-width: 576px) {
+    .logos:before,
+    .logos:after {
+    width: 2rem;
+    }
     .buttonD {
         margin-right: 12rem;
     }
@@ -2384,6 +2473,10 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
 /*SM*/
 
 @media (max-width: 425px) {
+    .logos:before,
+    .logos:after {
+    width: 2rem;
+    }
     .buttonD {
         margin-right: 8rem;
     }
@@ -2634,6 +2727,7 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
 
     .pointeSvg2 {
         height: 4rem;
+        background-color: #292929;
     }
 
     .pointeSvg {
@@ -2803,6 +2897,10 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
 /*XS*/
 
 @media (max-width: 375px) {
+    .logos:before,
+    .logos:after {
+    width: 2rem;
+    }
     .barName {
         font-size: 0.9rem;
         padding-top: 0.2rem;
@@ -3064,6 +3162,7 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
 
     .pointeSvg2 {
         height: 4rem;
+        background-color: #292929;
     }
 
     .pointeSvg {
@@ -3239,7 +3338,10 @@ div#comContainerSpirou:hover .flecheFreelanceDown {
 }
 
 @media (max-width: 320px) {
-    
+    .logos:before,
+    .logos:after {
+    width: 2rem;
+    }
     .barName {
         font-size: 0.5rem;
         padding-top: 0.2rem;
