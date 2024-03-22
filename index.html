@@ -94,7 +94,7 @@
 
             <a id="navLink1" class="animNav item text-decoration-none align-bottom" href="#skills">A PROPOS DE MOI</a>
 
-            <a id="navLink4" class="animNav item text-decoration-none align-bottom" href="#webDesign">UX/UI & FRONT-END</a>
+            <a id="navLink4" class="animNav item text-decoration-none align-bottom" href="#UIUX">UX/UI JV & WEB</a>
 
             <a id="navLink3" class="animNav item text-decoration-none align-bottom" href="#games">JEUX VIDEO</a>
 
@@ -198,7 +198,7 @@
 
                     <div class="d-flex flex-wrap justify-content-left w-100">
                         <p class="profileInfos mr-3"><i data-toggle="tooltip" data-placement="top" class="profileInfosFA pl-1 fas fa-birthday-cake align-baseline"></i> <span id="age"></span> ans</p>
-                        <p class="profileInfos mr-3"><i data-toggle="tooltip" data-placement="top" title="~ Lille" class="profileInfosFA fas fa-map-marker-alt"></i></p>
+                        <p class="profileInfos mr-3"><i data-toggle="tooltip" data-placement="top" title="Valenciennes, 59" class="profileInfosFA fas fa-map-marker-alt"></i></p>
                         <p class="profileInfos mr-3"><i data-toggle="tooltip" data-placement="top" title="Escape games" class="profileInfosFA fas fa-brain"></i></p>
                         <p class="profileInfos mr-3"><i data-toggle="tooltip" data-placement="top" title="Vélo" class="profileInfosFA fas fa-biking"></i></p>
                         <p class="profileInfos mr-3"><i data-toggle="tooltip" data-placement="top" title="Jeux vidéo" class="profileInfosFA fas fa-gamepad"></i></p>
@@ -216,6 +216,7 @@
                             <div class="progress-bar bar" role="progressbar" style="width: 50%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">Intermédiaire</div>
                         </div>
                     </div>
+
 
                     <div class="allBars d-flex m-3">
                         <div class="barName">
@@ -418,7 +419,7 @@
         <!--END OF SKILLS SECTION-->
 
         <div class="col-12 pointeSvg2 d-flex justify-content-center">
-            <a class="align-bottom fleche2" href="#webDesign"><i class="fas fa-chevron-down fa-2x"></i></a>
+            <a class="align-bottom fleche2" href="#UIUX"><i class="fas fa-chevron-down fa-2x"></i></a>
         </div>
 
     </div>
@@ -463,6 +464,24 @@
     </div>
 </div>-->
 <!-- END OF salariat SECTION-->
+
+<!--UIUX SECTION-->
+    <div class="artefactCover4">
+        <section class="fond1">
+            <div class="logos">
+                <div class="logos-slide">
+                    <img class="uiuximage" id="UIUX" src="css/images/all uiux2.png" alt="Marie Ronnaux">
+                </div>
+            </div>
+        </section>
+    </div>
+<!--END OF UIUX SECTION-->
+
+
+    <div class="col-12 pointeSvg3 d-flex justify-content-center">
+        <a class="align-bottom fleche4" href="#webDesign"><i class="fas fa-chevron-down fa-2x"></i></a>
+    </div>
+</div>
 
  <!--WEB DESIGN SECTION-->
  <div class="artefactCover4">
@@ -1159,6 +1178,12 @@
 
     <!-- Required meta tags for bootstrap JS-->
     <script src="https://kwes.io/js/kwes.js" charset="utf-8"></script>
+   
+   <script>
+        var copy = document.querySelector(".logos-slide").cloneNode(true);
+        document.querySelector(".logos").appendChild(copy);
+      </script>
+
 </body>
 
 </html>
